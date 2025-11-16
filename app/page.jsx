@@ -16,7 +16,7 @@ export default function Home() {
           </video>
           <div className="hero-overlay"></div>
           <div className="hero-content reveal-on-scroll" data-delay="0">
-            <h1 className="hero-title" id="hero-title">FORNIERI</h1>
+            <h1 className="hero-title" id="hero-title">FORNIERI & AZAR</h1>
             <p className="hero-subheading">People. Purpose. Property.</p>
           </div>
         </section>

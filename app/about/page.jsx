@@ -14,7 +14,7 @@ export default function AboutPage() {
           <div className="page-hero__content">
             <p className="page-hero__eyebrow">Our Story</p>
             <h1 className="page-hero__title" id="about-title">Boutique stewardship for remarkable properties</h1>
-            <p className="page-hero__meta">Fornieri blends decades of negotiation experience, deep market intelligence, and bespoke marketing to elevate every prestige transaction.</p>
+            <p className="page-hero__meta">Fornieri & Azar blends decades of negotiation experience, deep market intelligence, and bespoke marketing to elevate every prestige transaction.</p>
           </div>
         </section>
 
@@ -26,7 +26,7 @@ export default function AboutPage() {
           </div>
           <div className="intro-grid">
             <div className="intro-card">
-              <img src="/images/images.jpeg" alt="Fornieri bespoke marketing materials" loading="lazy" />
+              <img src="/images/images.jpeg" alt="Fornieri & Azar bespoke marketing materials" loading="lazy" />
               <div className="intro-card__content">
                 <h3>Our philosophy</h3>
                 <p>We approach every mandate with a boutique mindset, crafting bespoke strategies that protect privacy, maximise visibility, and put our clients a step ahead.</p>
@@ -42,7 +42,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <section className="metrics" aria-label="Fornieri achievements">
+        <section className="metrics" aria-label="Fornieri & Azar achievements">
           <div className="metric-card">
             <p className="metric-card__value">$2.4B+</p>
             <p className="metric-card__label">Prestige transactions facilitated</p>
@@ -97,7 +97,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <section className="experience" aria-label="Why clients choose Fornieri">
+        <section className="experience" aria-label="Why clients choose Fornieri & Azar">
           <div className="experience-media">
             <img src="/images/main.jpg" alt="Architectural detail of luxury residence" loading="lazy" />
           </div>
@@ -126,7 +126,7 @@ export default function AboutPage() {
           <div className="testimonial-grid">
             <figure className="testimonial-card">
               <blockquote>
-                "Fornieri orchestrated a private sale that exceeded our expectations within a fortnight while keeping our family's privacy paramount."
+                "Fornieri & Azar orchestrated a private sale that exceeded our expectations within a fortnight while keeping our family's privacy paramount."
               </blockquote>
               <figcaption>Private vendor, Toorak</figcaption>
             </figure>

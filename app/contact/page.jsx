@@ -133,7 +133,7 @@ export default function ContactPage() {
           <div className="testimonial-grid">
             <figure className="testimonial-card">
               <blockquote>
-                "Every interaction was discreet, professional, and insight-driven. Fornieri's team delivered above our price expectations."
+                "Every interaction was discreet, professional, and insight-driven. Fornieri & Azar's team delivered above our price expectations."
               </blockquote>
               <figcaption>Vendor, Brighton</figcaption>
             </figure>

@@ -1,8 +1,8 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'Fornieri | Luxury Real Estate Melbourne',
-  description: 'Fornieri is Melbourne\'s trusted luxury real estate advisor, curating prestige properties with concierge-level service and unparalleled market insight.',
+  title: 'Fornieri & Azar | Luxury Real Estate Melbourne',
+  description: 'Fornieri & Azar is Melbourne\'s trusted luxury real estate advisor, curating prestige properties with concierge-level service and unparalleled market insight.',
 };
 
 export default function RootLayout({ children }) {
