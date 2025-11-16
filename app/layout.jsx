@@ -1,20 +1,27 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'Fornieri & Azar | Luxury Real Estate Melbourne',
-  description: 'Fornieri & Azar is Melbourne\'s trusted luxury real estate advisor, curating prestige properties with concierge-level service and unparalleled market insight.',
+  title: 'Fornieri & Azar | Real Estate Melbourne',
+  description: 'Premium real estate services in Melbourne. Sales, buying, and rental management.',
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Lexend+Tera:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
+        <style>{`
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+
+          body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
+            line-height: 1.6;
+            color: #000;
+          }
+        `}</style>
       </head>
       <body>
         {children}

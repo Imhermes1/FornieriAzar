@@ -2,60 +2,44 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { useState } from 'react';
 
 export default function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
   return (
-    <header className="site-header" id="home">
-      <div className="nav-sidebar">
-        <Link href="/" className="nav-logo" aria-label="Fornieri & Azar home">
+    <header style={{
+      position: 'fixed',
+      top: 0,
+      left: 0,
+      right: 0,
+      zIndex: 1000,
+      backgroundColor: 'transparent',
+      padding: '20px 30px',
+      backdropFilter: 'blur(10px)'
+    }}>
+      <div style={{
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        maxWidth: '1400px',
+        margin: '0 auto'
+      }}>
+        <Link href="/" style={{ display: 'flex', alignItems: 'center' }}>
           <Image
             src="/images/FnA.svg"
             alt="Fornieri & Azar"
-            width={50}
-            height={50}
+            width={40}
+            height={40}
             priority
           />
         </Link>
-        <div className="nav-brand-text">FORNIERI & AZAR</div>
-        <div className="nav-social" aria-label="Follow Fornieri & Azar">
-          <a className="nav-social__link" href="#" aria-label="Instagram">IG</a>
-          <a className="nav-social__link" href="#" aria-label="Facebook">FB</a>
-          <a className="nav-social__link" href="#" aria-label="LinkedIn">IN</a>
-        </div>
+
+        <nav style={{ display: 'flex', gap: '40px' }}>
+          <Link href="/" style={{ textDecoration: 'none', color: 'white', fontSize: '0.95rem', fontWeight: '400', transition: 'opacity 0.3s' }}>Home</Link>
+          <Link href="/about" style={{ textDecoration: 'none', color: 'white', fontSize: '0.95rem', fontWeight: '400', transition: 'opacity 0.3s' }}>About</Link>
+          <Link href="/sales" style={{ textDecoration: 'none', color: 'white', fontSize: '0.95rem', fontWeight: '400', transition: 'opacity 0.3s' }}>Sales</Link>
+          <Link href="/buying" style={{ textDecoration: 'none', color: 'white', fontSize: '0.95rem', fontWeight: '400', transition: 'opacity 0.3s' }}>Buying</Link>
+          <Link href="/rentals" style={{ textDecoration: 'none', color: 'white', fontSize: '0.95rem', fontWeight: '400', transition: 'opacity 0.3s' }}>Rentals</Link>
+        </nav>
       </div>
-      <nav className="nav-top" data-component="nav" aria-label="Main navigation">
-        <div className="nav-top__inner">
-          <ul className="nav-links nav-links--desktop">
-            <li><Link href="/listings" data-nav="listings">Property</Link></li>
-            <li><Link href="/services" data-nav="services">Advocacy</Link></li>
-            <li><Link href="/about" data-nav="about">About</Link></li>
-            <li><Link href="/team" data-nav="team">Media</Link></li>
-          </ul>
-          <button
-            className="nav-toggle"
-            type="button"
-            aria-expanded={menuOpen}
-            aria-controls="primary-navigation"
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
-            <span className="sr-only">Toggle navigation</span>
-            <span className="nav-toggle__bar"></span>
-            <span className="nav-toggle__bar"></span>
-            <span className="nav-toggle__bar"></span>
-          </button>
-        </div>
-        <div className="nav-links-wrapper" id="primary-navigation">
-          <ul className="nav-links">
-            <li><Link href="/listings" data-nav="listings">Property</Link></li>
-            <li><Link href="/services" data-nav="services">Advocacy</Link></li>
-            <li><Link href="/about" data-nav="about">About</Link></li>
-            <li><Link href="/team" data-nav="team">Media</Link></li>
-          </ul>
-        </div>
-      </nav>
     </header>
   );
 }
