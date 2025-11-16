@@ -648,7 +648,7 @@ function Home() {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                         className: "hero",
                         style: {
-                            backgroundImage: 'url(/images/main.jpg)',
+                            backgroundImage: 'url(/images/pat-whelen-4QhSpFP0yWI-unsplash.jpg)',
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                             minHeight: '60vh',
@@ -656,64 +656,70 @@ function Home() {
                             alignItems: 'center',
                             justifyContent: 'center',
                             textAlign: 'center',
-                            color: 'white'
+                            color: 'white',
+                            position: 'relative'
                         },
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            style: {
-                                backgroundColor: 'rgba(0, 0, 0, 0.4)',
-                                padding: '60px 20px',
-                                maxWidth: '600px'
-                            },
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                    style: {
-                                        fontSize: '3.5rem',
-                                        marginBottom: '20px',
-                                        fontWeight: '700'
-                                    },
-                                    children: "FORNIERI & AZAR"
-                                }, void 0, false, {
-                                    fileName: "[project]/app/page.jsx",
-                                    lineNumber: 14,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    style: {
-                                        fontSize: '1.3rem',
-                                        marginBottom: '40px',
-                                        fontWeight: '300'
-                                    },
-                                    children: "Luxury real estate advisory in Melbourne"
-                                }, void 0, false, {
-                                    fileName: "[project]/app/page.jsx",
-                                    lineNumber: 15,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                    href: "/contact",
-                                    style: {
-                                        display: 'inline-block',
-                                        padding: '15px 40px',
-                                        backgroundColor: '#1e3a5f',
-                                        color: 'white',
-                                        textDecoration: 'none',
-                                        fontSize: '1rem',
-                                        fontWeight: '600',
-                                        borderRadius: '4px'
-                                    },
-                                    children: "Get in touch"
-                                }, void 0, false, {
-                                    fileName: "[project]/app/page.jsx",
-                                    lineNumber: 16,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/app/page.jsx",
-                            lineNumber: 13,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                style: {
+                                    backgroundColor: 'rgba(0, 0, 0, 0.4)',
+                                    padding: '60px 20px',
+                                    maxWidth: '600px'
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                        style: {
+                                            fontSize: '3.5rem',
+                                            marginBottom: '20px',
+                                            fontWeight: '700'
+                                        },
+                                        children: "FORNIERI & AZAR"
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/page.jsx",
+                                        lineNumber: 14,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        style: {
+                                            fontSize: '1.3rem',
+                                            marginBottom: '40px',
+                                            fontWeight: '300'
+                                        },
+                                        children: "Luxury real estate advisory in Melbourne"
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/page.jsx",
+                                        lineNumber: 15,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/app/page.jsx",
+                                lineNumber: 13,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                href: "/contact",
+                                style: {
+                                    position: 'absolute',
+                                    bottom: '30px',
+                                    right: '30px',
+                                    padding: '12px 25px',
+                                    backgroundColor: '#1e3a5f',
+                                    color: 'white',
+                                    textDecoration: 'none',
+                                    fontSize: '0.95rem',
+                                    fontWeight: '600',
+                                    borderRadius: '4px',
+                                    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+                                },
+                                children: "Get in touch"
+                            }, void 0, false, {
+                                fileName: "[project]/app/page.jsx",
+                                lineNumber: 17,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
                         fileName: "[project]/app/page.jsx",
                         lineNumber: 12,
                         columnNumber: 9

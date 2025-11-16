@@ -9,12 +9,12 @@ export default function Home() {
     <div data-page="home">
       <Header />
       <main>
-        <section className="hero" style={{ backgroundImage: 'url(/images/main.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '60vh', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', color: 'white' }}>
+        <section className="hero" style={{ backgroundImage: 'url(/images/pat-whelen-4QhSpFP0yWI-unsplash.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '60vh', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', color: 'white', position: 'relative' }}>
           <div style={{ backgroundColor: 'rgba(0, 0, 0, 0.4)', padding: '60px 20px', maxWidth: '600px' }}>
             <h1 style={{ fontSize: '3.5rem', marginBottom: '20px', fontWeight: '700' }}>FORNIERI & AZAR</h1>
             <p style={{ fontSize: '1.3rem', marginBottom: '40px', fontWeight: '300' }}>Luxury real estate advisory in Melbourne</p>
-            <Link href="/contact" style={{ display: 'inline-block', padding: '15px 40px', backgroundColor: '#1e3a5f', color: 'white', textDecoration: 'none', fontSize: '1rem', fontWeight: '600', borderRadius: '4px' }}>Get in touch</Link>
           </div>
+          <Link href="/contact" style={{ position: 'absolute', bottom: '30px', right: '30px', padding: '12px 25px', backgroundColor: '#1e3a5f', color: 'white', textDecoration: 'none', fontSize: '0.95rem', fontWeight: '600', borderRadius: '4px', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)' }}>Get in touch</Link>
         </section>
 
         <section style={{ padding: '80px 20px', maxWidth: '900px', margin: '0 auto', textAlign: 'center' }}>
