@@ -712,7 +712,7 @@ function Home() {
                                     borderRadius: '4px',
                                     boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
                                 },
-                                children: "Get in touch"
+                                children: "Contact us"
                             }, void 0, false, {
                                 fileName: "[project]/app/page.jsx",
                                 lineNumber: 17,

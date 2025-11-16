@@ -3,3 +3,6 @@
 [00:00:12.764] Browser WARN    Image with src "http://localhost:3000/images/FnA.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
 [00:11:06.642] Server  LOG      ✓ Compiled in 135ms
 [00:13:09.783] Server  LOG      ✓ Compiled in 96ms
+[00:13:56.038] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:13:56.186] Browser WARN    Image with src "http://localhost:3000/images/FnA.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:14:08.720] Server  LOG      ✓ Compiled in 11ms
