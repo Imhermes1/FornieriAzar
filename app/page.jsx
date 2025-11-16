@@ -14,7 +14,9 @@ export default function Home() {
             <h1 style={{ fontSize: '3.5rem', marginBottom: '20px', fontWeight: '700' }}>FORNIERI & AZAR</h1>
             <p style={{ fontSize: '1.3rem', marginBottom: '40px', fontWeight: '300' }}>Luxury real estate advisory in Melbourne</p>
           </div>
-          <Link href="/contact" style={{ position: 'absolute', bottom: '30px', right: '30px', padding: '12px 25px', backgroundColor: '#1e3a5f', color: 'white', textDecoration: 'none', fontSize: '0.95rem', fontWeight: '600', borderRadius: '4px', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)' }}>Contact us</Link>
+          <div style={{ position: 'absolute', bottom: '15px', right: '15px', fontSize: '0.75rem', color: 'rgba(255, 255, 255, 0.7)' }}>
+            Photo by <a href="https://unsplash.com/@patwhelen?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" style={{ color: 'rgba(255, 255, 255, 0.9)', textDecoration: 'none' }}>Pat Whelen</a> on <a href="https://unsplash.com/photos/aerial-view-of-highway-near-body-of-water-during-daytime-4QhSpFP0yWI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" style={{ color: 'rgba(255, 255, 255, 0.9)', textDecoration: 'none' }}>Unsplash</a>
+          </div>
         </section>
 
         <section style={{ padding: '80px 20px', maxWidth: '900px', margin: '0 auto', textAlign: 'center' }}>
