@@ -1,6 +1,6 @@
 'use client';
 
-import Image from 'next/image';
+import Link from 'next/link';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -9,125 +9,39 @@ export default function Home() {
     <div data-page="home">
       <Header />
       <main>
-        <section className="hero" aria-labelledby="hero-title">
-          <video className="hero-media" autoPlay muted loop playsInline poster="/images/main.jpg">
-            <source src="/video/27-Cambridge-Drive-hero.mp4" type="video/mp4" />
-            Your browser does not support the background video. Enjoy a still image instead.
-          </video>
-          <div className="hero-overlay"></div>
-          <div className="hero-content reveal-on-scroll" data-delay="0">
-            <h1 className="hero-title" id="hero-title">FORNIERI & AZAR</h1>
-            <p className="hero-subheading">People. Purpose. Property.</p>
+        <section className="hero" style={{ backgroundImage: 'url(/images/main.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '60vh', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', color: 'white' }}>
+          <div style={{ backgroundColor: 'rgba(0, 0, 0, 0.4)', padding: '60px 20px', maxWidth: '600px' }}>
+            <h1 style={{ fontSize: '3.5rem', marginBottom: '20px', fontWeight: '700' }}>FORNIERI & AZAR</h1>
+            <p style={{ fontSize: '1.3rem', marginBottom: '40px', fontWeight: '300' }}>Luxury real estate advisory in Melbourne</p>
+            <Link href="/contact" style={{ display: 'inline-block', padding: '15px 40px', backgroundColor: '#1e3a5f', color: 'white', textDecoration: 'none', fontSize: '1rem', fontWeight: '600', borderRadius: '4px' }}>Get in touch</Link>
           </div>
         </section>
 
-        <section className="intro" id="about">
-          <div className="section-heading reveal-on-scroll" data-delay="0">
-            <p> We believe trust is the cornerstone of a great result. We provide a sophisticated, personal service
-              and an intelligent strategy tailored for you, acting as dedicated advisors to ensure your property
-              journey is seamless and successful.</p>
+        <section style={{ padding: '80px 20px', maxWidth: '900px', margin: '0 auto', textAlign: 'center' }}>
+          <h2 style={{ fontSize: '2rem', marginBottom: '30px', color: '#1e3a5f' }}>Boutique Real Estate Services</h2>
+          <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#666', marginBottom: '50px' }}>We provide sophisticated, personal real estate advisory tailored for your unique goals. Trust is the cornerstone of every great result.</p>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '40px' }}>
+            <div>
+              <h3 style={{ color: '#1e3a5f', marginBottom: '15px' }}>Selling</h3>
+              <p style={{ color: '#666', lineHeight: '1.6' }}>Strategic marketing and negotiation to maximize your property's value.</p>
+            </div>
+            <div>
+              <h3 style={{ color: '#1e3a5f', marginBottom: '15px' }}>Buying</h3>
+              <p style={{ color: '#666', lineHeight: '1.6' }}>Discreet acquisition support with access to exclusive properties.</p>
+            </div>
+            <div>
+              <h3 style={{ color: '#1e3a5f', marginBottom: '15px' }}>Advisory</h3>
+              <p style={{ color: '#666', lineHeight: '1.6' }}>Expert guidance on portfolio strategy and market opportunities.</p>
+            </div>
           </div>
         </section>
 
-        <section className="property-search">
-          <div className="search-container">
-            <select className="search-filter">
-              <option>All</option>
-              <option>For Sale</option>
-              <option>For Rent</option>
-              <option>Sold</option>
-            </select>
-
-            <input type="text" className="search-input" placeholder="Search properties" />
-
-            <select className="search-filter">
-              <option>Min Price</option>
-              <option>$500,000</option>
-              <option>$1,000,000</option>
-              <option>$2,000,000</option>
-              <option>$5,000,000</option>
-              <option>$10,000,000+</option>
-            </select>
-
-            <select className="search-filter">
-              <option>Max Price</option>
-              <option>$1,000,000</option>
-              <option>$2,000,000</option>
-              <option>$5,000,000</option>
-              <option>$10,000,000</option>
-              <option>$20,000,000+</option>
-            </select>
-
-            <select className="search-filter">
-              <option>Bed</option>
-              <option>1+</option>
-              <option>2+</option>
-              <option>3+</option>
-              <option>4+</option>
-              <option>5+</option>
-            </select>
-
-            <select className="search-filter">
-              <option>Bath</option>
-              <option>1+</option>
-              <option>2+</option>
-              <option>3+</option>
-              <option>4+</option>
-              <option>5+</option>
-            </select>
-
-            <select className="search-filter">
-              <option>Car</option>
-              <option>1+</option>
-              <option>2+</option>
-              <option>3+</option>
-              <option>4+</option>
-              <option>5+</option>
-            </select>
-          </div>
-        </section>
-
-        <section className="property-mosaic" id="properties">
-          <div className="mosaic-grid">
-            <article className="mosaic-item mosaic-item--large">
-              <img src="/images/LowRes_2k_07.jpg" alt="27 Cambridge Drive, Brighton" loading="lazy" />
-              <div className="mosaic-item__overlay">
-                <h3>27 Cambridge Drive</h3>
-                <p className="mosaic-item__suburb">Brighton</p>
-              </div>
-            </article>
-
-            <article className="mosaic-item">
-              <img src="/images/LowRes_2k_08.jpg" alt="88 Collins Street Residences" loading="lazy" />
-              <div className="mosaic-item__overlay">
-                <h3>88 Collins Street</h3>
-                <p className="mosaic-item__suburb">Melbourne CBD</p>
-              </div>
-            </article>
-
-            <article className="mosaic-item">
-              <img src="/images/LowRes_2k_17.jpg" alt="Kensington Road Estate" loading="lazy" />
-              <div className="mosaic-item__overlay">
-                <h3>Kensington Road</h3>
-                <p className="mosaic-item__suburb">Toorak</p>
-              </div>
-            </article>
-
-            <article className="mosaic-item mosaic-item--wide">
-              <img src="/images/LowRes_2k_18.jpg" alt="South Yarra Penthouse" loading="lazy" />
-              <div className="mosaic-item__overlay">
-                <h3>Chapel Street Residence</h3>
-                <p className="mosaic-item__suburb">South Yarra</p>
-              </div>
-            </article>
-
-            <article className="mosaic-item">
-              <img src="/images/LowRes_2k_07.jpg" alt="Brighton Beach House" loading="lazy" />
-              <div className="mosaic-item__overlay">
-                <h3>Beach House</h3>
-                <p className="mosaic-item__suburb">Brighton</p>
-              </div>
-            </article>
+        <section style={{ backgroundColor: '#f5f5f5', padding: '60px 20px', textAlign: 'center' }}>
+          <div style={{ maxWidth: '600px', margin: '0 auto' }}>
+            <h2 style={{ fontSize: '1.8rem', marginBottom: '20px', color: '#1e3a5f' }}>Ready to discuss your property goals?</h2>
+            <p style={{ fontSize: '1rem', color: '#666', marginBottom: '30px', lineHeight: '1.6' }}>Contact us for a confidential consultation.</p>
+            <Link href="/contact" style={{ display: 'inline-block', padding: '12px 35px', backgroundColor: '#1e3a5f', color: 'white', textDecoration: 'none', fontSize: '1rem', fontWeight: '600', borderRadius: '4px' }}>Book a consultation</Link>
           </div>
         </section>
       </main>
