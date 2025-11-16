@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 
 export default function Header() {
@@ -9,6 +10,15 @@ export default function Header() {
   return (
     <header className="site-header" id="home">
       <div className="nav-sidebar">
+        <Link href="/" className="nav-logo" aria-label="Fornieri & Azar home">
+          <Image
+            src="/images/FnA.svg"
+            alt="Fornieri & Azar"
+            width={50}
+            height={50}
+            priority
+          />
+        </Link>
         <div className="nav-brand-text">FORNIERI & AZAR</div>
         <div className="nav-social" aria-label="Follow Fornieri & Azar">
           <a className="nav-social__link" href="#" aria-label="Instagram">IG</a>
