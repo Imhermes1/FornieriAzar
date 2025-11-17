@@ -109,7 +109,7 @@ export default function Home() {
                 fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
                 fontWeight: '400'
               }}>
-                Strategic marketing and expert negotiation to maximize your property's value and market reach.
+                Strategic marketing and expert negotiation to maximise your property's value and market reach.
               </p>
             </div>
 
