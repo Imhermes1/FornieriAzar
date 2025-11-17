@@ -29,20 +29,24 @@ export default function Home() {
           backdropFilter: 'blur(8px)',
           pointerEvents: 'none'
         }} />
-        {/* Centered Logo */}
-        <Image
-          src="/images/FnA.svg"
-          alt="Fornieri & Azar"
-          width={2000}
-          height={2000}
-          priority
-          style={{
-            maxWidth: '72vw',
-            height: 'auto',
-            position: 'relative',
-            zIndex: 10
-          }}
-        />
+        {/* Centered Logo with glow */}
+        <div style={{
+          position: 'relative',
+          zIndex: 10,
+          filter: 'drop-shadow(0 0 30px rgba(0, 0, 0, 0.3))'
+        }}>
+          <Image
+            src="/images/FnA.svg"
+            alt="Fornieri & Azar"
+            width={2000}
+            height={2000}
+            priority
+            style={{
+              maxWidth: '72vw',
+              height: 'auto'
+            }}
+          />
+        </div>
 
         {/* Image attribution at bottom */}
         <div style={{
