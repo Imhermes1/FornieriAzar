@@ -25,9 +25,13 @@ export default function Home() {
         <Image
           src="/images/FnA.svg"
           alt="Fornieri & Azar"
-          width={200}
-          height={200}
+          width={2000}
+          height={2000}
           priority
+          style={{
+            maxWidth: '90vw',
+            height: 'auto'
+          }}
         />
 
         {/* Image attribution at bottom */}
