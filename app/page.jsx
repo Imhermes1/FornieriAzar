@@ -19,8 +19,16 @@ export default function Home() {
         backgroundAttachment: 'fixed',
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        backdropFilter: 'blur(8px)'
       }}>
+        {/* Frosted blur overlay */}
+        <div style={{
+          position: 'absolute',
+          inset: 0,
+          backdropFilter: 'blur(8px)',
+          pointerEvents: 'none'
+        }} />
         {/* Centered Logo */}
         <Image
           src="/images/FnA.svg"
@@ -29,8 +37,10 @@ export default function Home() {
           height={2000}
           priority
           style={{
-            maxWidth: '90vw',
-            height: 'auto'
+            maxWidth: '72vw',
+            height: 'auto',
+            position: 'relative',
+            zIndex: 10
           }}
         />
 
