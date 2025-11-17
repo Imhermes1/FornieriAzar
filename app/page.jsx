@@ -32,11 +32,11 @@ export default function Home() {
         {/* Glow effect behind logo */}
         <div style={{
           position: 'absolute',
-          width: '500px',
-          height: '500px',
-          background: 'radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 70%)',
+          width: '800px',
+          height: '800px',
+          background: 'radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 40%, rgba(255, 255, 255, 0) 80%)',
           borderRadius: '50%',
-          filter: 'blur(40px)',
+          filter: 'blur(60px)',
           zIndex: 9
         }} />
 
