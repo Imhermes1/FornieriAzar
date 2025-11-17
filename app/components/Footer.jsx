@@ -17,7 +17,7 @@ export default function Footer() {
           <Link className="footer-logo" href="/" aria-label="Fornieri & Azar home">
             Fornieri & Azar
           </Link>
-          <p>Level 18, 120 Collins Street, Melbourne VIC 3000</p>
+          <p>PO Box Suite 5028, 165 Waverley Road, Malvern East VIC 3145</p>
           <a className="footer-contact" href="tel:+61390000000">+61 (03) 9000 0000</a>
           <a className="footer-contact" href="mailto:hello@fornieriazar.com.au">hello@fornieriazar.com.au</a>
         </div>
