@@ -33,7 +33,7 @@ export default function TeamPage() {
                 <li>Featured in AFR Top Agents 2024</li>
               </ul>
               <div className="cta-actions">
-                <a className="btn btn--primary" href="mailto:hello@fornieri.com.au">Connect with Luke</a>
+                <a className="btn btn--primary" href="mailto:hello@fornieriazar.com.au">Connect with Luke</a>
                 <Link className="btn btn--ghost" href="/services">View advisory services</Link>
               </div>
             </div>
@@ -95,7 +95,7 @@ export default function TeamPage() {
             </div>
             <div className="cta-actions">
               <Link className="btn btn--primary" href="/contact">Schedule introductions</Link>
-              <a className="btn btn--ghost" href="mailto:hello@fornieri.com.au">Email the leadership desk</a>
+              <a className="btn btn--ghost" href="mailto:hello@fornieriazar.com.au">Email the leadership desk</a>
             </div>
           </div>
         </section>

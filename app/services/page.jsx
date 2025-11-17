@@ -115,7 +115,7 @@ export default function ServicesPage() {
             </div>
             <div className="cta-actions">
               <Link className="btn btn--primary" href="/contact">Start a conversation</Link>
-              <a className="btn btn--ghost" href="mailto:hello@fornieri.com.au">Email our advisors</a>
+              <a className="btn btn--ghost" href="mailto:hello@fornieriazar.com.au">Email our advisors</a>
             </div>
           </div>
         </section>

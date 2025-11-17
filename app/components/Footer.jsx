@@ -19,7 +19,7 @@ export default function Footer() {
           </Link>
           <p>Level 18, 120 Collins Street, Melbourne VIC 3000</p>
           <a className="footer-contact" href="tel:+61390000000">+61 (03) 9000 0000</a>
-          <a className="footer-contact" href="mailto:hello@fornieriandar.com.au">hello@fornieriandar.com.au</a>
+          <a className="footer-contact" href="mailto:hello@fornieriazar.com.au">hello@fornieriazar.com.au</a>
         </div>
         <div className="footer-links">
           <div>
@@ -35,8 +35,8 @@ export default function Footer() {
             <h3>Resources</h3>
             <ul>
               <li><Link href="/contact">Book consultation</Link></li>
-              <li><a href="mailto:media@fornieriandar.com.au">Media enquiries</a></li>
-              <li><a href="mailto:careers@fornieriandar.com.au">Careers</a></li>
+              <li><a href="mailto:media@fornieriazar.com.au">Media enquiries</a></li>
+              <li><a href="mailto:careers@fornieriazar.com.au">Careers</a></li>
               <li><a href="#">Privacy policy</a></li>
             </ul>
           </div>

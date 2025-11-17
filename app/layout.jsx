@@ -3,6 +3,12 @@ import './globals.css';
 export const metadata = {
   title: 'Fornieri & Azar | Real Estate Melbourne',
   description: 'Premium real estate services in Melbourne. Sales, buying, and rental management.',
+  openGraph: {
+    title: 'Fornieri & Azar | Real Estate Melbourne',
+    description: 'Premium real estate services in Melbourne. Sales, buying, and rental management.',
+    url: 'https://fornieriazar.com.au',
+    siteName: 'Fornieri & Azar',
+  },
 };
 
 export default function RootLayout({ children }) {

@@ -1,8 +1,8 @@
 {
-    "name": "fornieri-real-estate-website",
+    "name": "fornieri-azar-real-estate",
     "version": "1.0.0",
     "private": true,
-    "description": "Luxury real estate marketing site for Fornieri with multipage layout and Vite dev server.",
+    "description": "Premium real estate services in Melbourne - Sales, buying, and rental management.",
     "scripts": {
         "dev": "next dev",
         "build": "next build",
