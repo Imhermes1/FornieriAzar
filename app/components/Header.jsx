@@ -9,8 +9,8 @@ export default function Header() {
   return (
     <header className="site-header" id="home">
       <div className="nav-sidebar">
-        <div className="nav-brand-text">FORNIERI AND AZAR</div>
-        <div className="nav-social" aria-label="Follow Fornieri and Azar">
+        <div className="nav-brand-text">FORNIERI & AZAR</div>
+        <div className="nav-social" aria-label="Follow Fornieri & Azar">
           <a className="nav-social__link" href="#" aria-label="Instagram">IG</a>
           <a className="nav-social__link" href="#" aria-label="Facebook">FB</a>
           <a className="nav-social__link" href="#" aria-label="LinkedIn">IN</a>
