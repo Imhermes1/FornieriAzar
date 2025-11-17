@@ -17,21 +17,11 @@ export default function Header() {
     }}>
       <div style={{
         display: 'flex',
-        justifyContent: 'space-between',
+        justifyContent: 'center',
         alignItems: 'center',
         maxWidth: '1400px',
         margin: '0 auto'
       }}>
-        <Link href="/" style={{ display: 'flex', alignItems: 'center' }}>
-          <Image
-            src="/images/FnA.svg"
-            alt="Fornieri & Azar"
-            width={40}
-            height={40}
-            priority
-          />
-        </Link>
-
         <nav style={{ display: 'flex', gap: '40px' }}>
           <Link href="/" style={{ textDecoration: 'none', color: 'white', fontSize: '0.95rem', fontWeight: '400', transition: 'opacity 0.3s' }}>Home</Link>
           <Link href="/about" style={{ textDecoration: 'none', color: 'white', fontSize: '0.95rem', fontWeight: '400', transition: 'opacity 0.3s' }}>About</Link>

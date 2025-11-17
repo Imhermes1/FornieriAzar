@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -15,9 +16,21 @@ export default function Home() {
         backgroundImage: 'url(/images/pat-whelen-4QhSpFP0yWI-unsplash.jpg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
+        backgroundAttachment: 'fixed',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center'
       }}>
-        {/* Logo and image attribution at bottom */}
+        {/* Centered Logo */}
+        <Image
+          src="/images/FnA.svg"
+          alt="Fornieri & Azar"
+          width={200}
+          height={200}
+          priority
+        />
+
+        {/* Image attribution at bottom */}
         <div style={{
           position: 'absolute',
           bottom: '20px',
