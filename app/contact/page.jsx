@@ -47,7 +47,7 @@ export default function ContactPage() {
               <div className="experience-highlights">
                 <div>
                   <p className="experience-highlights__label">Office</p>
-                  <p className="experience-highlights__value">120 Collins Street</p>
+                  <p className="experience-highlights__value">Malvern East VIC 3145</p>
                 </div>
                 <div>
                   <p className="experience-highlights__label">Direct line</p>
