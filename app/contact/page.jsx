@@ -7,22 +7,63 @@ import Footer from '../components/Footer';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
-    name: '',
+    fullName: '',
     email: '',
     phone: '',
     interest: 'selling',
     message: ''
   });
 
+  const [status, setStatus] = useState({
+    submitting: false,
+    submitted: false,
+    error: null
+  });
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
+    // Clear error when user starts typing
+    if (status.error) {
+      setStatus(prev => ({ ...prev, error: null }));
+    }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Form submission will be handled via API route when you configure it
-    console.log('Form submitted:', formData);
+    setStatus({ submitting: true, submitted: false, error: null });
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to send enquiry');
+      }
+
+      setStatus({ submitting: false, submitted: true, error: null });
+      // Reset form after successful submission
+      setFormData({
+        fullName: '',
+        email: '',
+        phone: '',
+        interest: 'selling',
+        message: ''
+      });
+    } catch (error) {
+      setStatus({
+        submitting: false,
+        submitted: false,
+        error: error.message || 'Failed to send enquiry. Please try again.'
+      });
+    }
   };
 
   return (
@@ -56,16 +97,46 @@ export default function ContactPage() {
               </div>
             </div>
             <form className="cta-form" onSubmit={handleSubmit} aria-label="Contact form">
+              {status.submitted && (
+                <div style={{
+                  padding: '20px',
+                  background: 'rgba(147, 151, 160, 0.15)',
+                  borderRadius: '8px',
+                  border: '1px solid rgba(147, 151, 160, 0.3)',
+                  color: 'var(--white)',
+                  marginBottom: '20px'
+                }}>
+                  <strong>Thank you for your enquiry!</strong>
+                  <p style={{ margin: '8px 0 0', fontSize: '14px', opacity: 0.9 }}>
+                    We have received your message and will respond within one business day.
+                  </p>
+                </div>
+              )}
+
+              {status.error && (
+                <div style={{
+                  padding: '20px',
+                  background: 'rgba(220, 38, 38, 0.15)',
+                  borderRadius: '8px',
+                  border: '1px solid rgba(220, 38, 38, 0.3)',
+                  color: 'var(--white)',
+                  marginBottom: '20px'
+                }}>
+                  <strong>Error:</strong> {status.error}
+                </div>
+              )}
+
               <div className="form-row">
-                <label htmlFor="name">Full name</label>
+                <label htmlFor="fullName">Full name</label>
                 <input
-                  id="name"
+                  id="fullName"
                   type="text"
-                  name="name"
+                  name="fullName"
                   autoComplete="name"
                   placeholder="Alexandra Thompson"
-                  value={formData.name}
+                  value={formData.fullName}
                   onChange={handleChange}
+                  disabled={status.submitting}
                   required
                 />
               </div>
@@ -79,6 +150,7 @@ export default function ContactPage() {
                   placeholder="alexandra@example.com"
                   value={formData.email}
                   onChange={handleChange}
+                  disabled={status.submitting}
                   required
                 />
               </div>
@@ -92,6 +164,7 @@ export default function ContactPage() {
                   placeholder="+61 400 000 000"
                   value={formData.phone}
                   onChange={handleChange}
+                  disabled={status.submitting}
                 />
               </div>
               <div className="form-row">
@@ -101,11 +174,12 @@ export default function ContactPage() {
                   name="interest"
                   value={formData.interest}
                   onChange={handleChange}
+                  disabled={status.submitting}
                 >
-                  <option value="selling">Selling a property</option>
-                  <option value="buying">Buyer representation</option>
-                  <option value="projects">Project collaboration</option>
-                  <option value="valuation">Portfolio valuation</option>
+                  <option value="Selling a property">Selling a property</option>
+                  <option value="Buyer representation">Buyer representation</option>
+                  <option value="Project collaboration">Project collaboration</option>
+                  <option value="Portfolio valuation">Portfolio valuation</option>
                 </select>
               </div>
               <div className="form-row">
@@ -117,9 +191,18 @@ export default function ContactPage() {
                   placeholder="Share any key details or timeframes"
                   value={formData.message}
                   onChange={handleChange}
+                  disabled={status.submitting}
+                  required
                 ></textarea>
               </div>
-              <button className="btn btn--primary" type="submit">Submit enquiry</button>
+              <button
+                className="btn btn--primary"
+                type="submit"
+                disabled={status.submitting}
+                style={{ opacity: status.submitting ? 0.6 : 1 }}
+              >
+                {status.submitting ? 'Sending...' : 'Submit enquiry'}
+              </button>
               <p className="cta-form__disclaimer">Submitting this form does not create an agency agreement. We keep your information confidential.</p>
             </form>
           </div>
