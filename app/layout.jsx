@@ -1,11 +1,12 @@
 import './globals.css';
+import FloatingContactButton from './components/FloatingContactButton';
 
 export const metadata = {
-  title: 'Fornieri & Azar | Real Estate Melbourne',
-  description: 'Premium real estate services in Melbourne. Sales, buying, and rental management.',
+  title: 'Fornieri & Azar | Boutique Real Estate Melbourne',
+  description: 'A trusted boutique real estate agency in Melbourne helping families buy, sell, and manage properties with honest advice and personal service.',
   openGraph: {
-    title: 'Fornieri & Azar | Real Estate Melbourne',
-    description: 'Premium real estate services in Melbourne. Sales, buying, and rental management.',
+    title: 'Fornieri & Azar | Boutique Real Estate Melbourne',
+    description: 'A trusted boutique real estate agency in Melbourne helping families buy, sell, and manage properties with honest advice and personal service.',
     url: 'https://fornieriazar.com.au',
     siteName: 'Fornieri & Azar',
   },
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         {children}
+        <FloatingContactButton />
       </body>
     </html>
   );

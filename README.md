@@ -43,6 +43,7 @@ Add these to your `.env.local` file:
 RESEND_API_KEY=re_your_resend_api_key_here
 CONTACT_EMAIL_TO=enquiry@fornieriazar.com.au
 CONTACT_EMAIL_FROM=website@fornieriazar.com.au
+RESEND_AUDIENCE_ID=aud_1234xyz
 ```
 
 ### Getting a Resend API Key
@@ -51,6 +52,16 @@ CONTACT_EMAIL_FROM=website@fornieriazar.com.au
 2. Create a new API key in the dashboard
 3. Add the API key to `.env.local`
 4. Verify your sending domain (fornieriazar.com.au)
+
+### Audience Sync
+
+The contact form now saves each enquiry to a Resend audience so you can run follow‑ups later.
+
+1. In the Resend dashboard go to **Audiences** > **Create Audience** and name it something like `Website Enquiries`.
+2. Copy the Audience ID (it starts with `aud_...`) and set `RESEND_AUDIENCE_ID` in `.env.local` and Vercel.
+3. The API automatically upserts whoever submits the form, including their phone, interest and message as contact properties.
+
+The audience sync only runs when `RESEND_AUDIENCE_ID` is configured, so you can enable it whenever you are ready to collect contacts centrally.
 
 **Note**: In development, Resend allows sending to verified email addresses only. In production with a verified domain, you can send to anyone.
 

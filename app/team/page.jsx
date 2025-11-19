@@ -9,32 +9,31 @@ export default function TeamPage() {
     <div data-page="team">
       <Header />
       <main>
-        <section className="page-hero" aria-labelledby="team-title">
-          <img className="page-hero__media" src="/images/Luke_010_HiRes.jpg" alt="Luke Fornieri speaking with clients" />
-          <div className="page-hero__content">
-            <p className="page-hero__eyebrow">Leadership</p>
-            <h1 className="page-hero__title" id="team-title">A collective of advisors with deep market intelligence</h1>
-            <p className="page-hero__meta">Fornieri pairs decades of prestige property experience with specialists across research, marketing, and client service to deliver uncompromising outcomes.</p>
+        <section className="simple-hero" aria-labelledby="team-title">
+          <div className="simple-hero__content">
+            <p className="eyebrow">Our Team</p>
+            <h1 className="simple-hero__title" id="team-title">Experienced property professionals</h1>
+            <p className="simple-hero__description">Our team brings decades of combined expertise in Melbourne's premium property market, delivering results through strategic insight and market knowledge.</p>
           </div>
         </section>
 
         <section className="team" aria-label="Leadership profile">
           <div className="team-card">
             <div className="team-card__media">
-              <img src="/images/Luke_010_HiRes.jpg" alt="Portrait of Luke Fornieri" loading="lazy" />
+              <img src="/images/Luke_010_HiRes.jpg" alt="Luke Fornieri" loading="lazy" />
             </div>
             <div className="team-card__body">
-              <p className="eyebrow">Principal advisor</p>
+              <p className="eyebrow">Founder</p>
               <h2>Luke Fornieri</h2>
-              <p>Luke is recognised for confident deal management, nuanced negotiation, and a global network cultivated over twenty years in Melbourne's prestige market. He leads every mandate and remains the central point of contact for clients.</p>
+              <p>Luke brings over twenty years of experience in Melbourne's premium property market. Known for strategic negotiation, market analysis, and a results-focused approach, he delivers exceptional outcomes across sales, acquisitions, and development projects.</p>
               <ul className="team-card__credentials">
                 <li>Certified Estate Agent & Auctioneer</li>
                 <li>Member, Real Estate Institute of Victoria</li>
                 <li>Featured in AFR Top Agents 2024</li>
               </ul>
               <div className="cta-actions">
-                <a className="btn btn--primary" href="mailto:hello@fornieriazar.com.au">Connect with Luke</a>
-                <Link className="btn btn--ghost" href="/services">View advisory services</Link>
+                <a className="btn btn--primary" href="mailto:hello@fornieriazar.com.au">Get in touch with Luke</a>
+                <Link className="btn btn--ghost" href="/services">Our services</Link>
               </div>
             </div>
           </div>
@@ -42,46 +41,42 @@ export default function TeamPage() {
 
         <section className="metrics" aria-label="Team metrics">
           <div className="metric-card">
-            <p className="metric-card__value">12 specialists</p>
-            <p className="metric-card__label">Campaign, research, and client success experts</p>
+            <p className="metric-card__value">$200M+</p>
+            <p className="metric-card__label">Worth of property sold</p>
           </div>
           <div className="metric-card">
-            <p className="metric-card__value">4 languages</p>
-            <p className="metric-card__label">Multilingual negotiation across buyer pools</p>
+            <p className="metric-card__value">13+</p>
+            <p className="metric-card__label">Years of experience</p>
           </div>
           <div className="metric-card">
-            <p className="metric-card__value">48 hrs</p>
-            <p className="metric-card__label">Average response time to new briefs</p>
-          </div>
-          <div className="metric-card">
-            <p className="metric-card__value">100%</p>
-            <p className="metric-card__label">Campaigns with bespoke creative production</p>
+            <p className="metric-card__value">100+</p>
+            <p className="metric-card__label">Properties sold</p>
           </div>
         </section>
 
         <section className="testimonials" aria-label="Partner testimonials">
           <div className="section-heading">
-            <p className="eyebrow">Partner network</p>
-            <h2>Industry voices on our collaboration</h2>
+            <p className="eyebrow">Working together</p>
+            <h2>What our partners say</h2>
           </div>
           <div className="testimonial-grid">
             <figure className="testimonial-card">
               <blockquote>
-                "Fornieri's marketing and research teams align seamlessly with our development timelines, elevating every launch."
+                "The team works seamlessly with our development timelines and makes every property launch look amazing."
               </blockquote>
-              <figcaption>Director, boutique developer partner</figcaption>
+              <figcaption>David, Local Developer</figcaption>
             </figure>
             <figure className="testimonial-card">
               <blockquote>
-                "The client service division anticipates needs before they arise, ensuring every inspection is choreographed perfectly."
+                "They're always on top of every detail, and inspections are always perfectly organized and welcoming."
               </blockquote>
-              <figcaption>Interior stylist collaborator</figcaption>
+              <figcaption>Rachel, Interior Stylist</figcaption>
             </figure>
             <figure className="testimonial-card">
               <blockquote>
-                "Data insights and negotiation strategy are unmatched—our vendors feel guided and empowered at every decision."
+                "Their market knowledge and negotiation skills are excellent - my clients always feel well looked after."
               </blockquote>
-              <figcaption>Financial adviser partner</figcaption>
+              <figcaption>Tom, Financial Adviser</figcaption>
             </figure>
           </div>
         </section>
@@ -89,13 +84,13 @@ export default function TeamPage() {
         <section className="cta" aria-labelledby="team-cta-title">
           <div className="cta-inner">
             <div className="cta-copy">
-              <p className="eyebrow">Meet the collective</p>
-              <h2 id="team-cta-title">Engage the specialists behind each campaign</h2>
-              <p>We will coordinate an introduction tailored to your priorities, ensuring you meet the strategists, researchers, and storytellers aligned to your project.</p>
+              <p className="eyebrow">Get started</p>
+              <h2 id="team-cta-title">Ready to work with us?</h2>
+              <p>Contact us to discuss your property objectives and explore how our expertise can deliver results for your specific situation.</p>
             </div>
             <div className="cta-actions">
-              <Link className="btn btn--primary" href="/contact">Schedule introductions</Link>
-              <a className="btn btn--ghost" href="mailto:hello@fornieriazar.com.au">Email the leadership desk</a>
+              <Link className="btn btn--primary" href="/contact">Arrange a meeting</Link>
+              <a className="btn btn--ghost" href="mailto:hello@fornieriazar.com.au">Send us an email</a>
             </div>
           </div>
         </section>

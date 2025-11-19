@@ -1,34 +1,64 @@
 'use client';
 
+import { useState } from 'react';
 import Image from 'next/image';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
 export default function Home() {
+  const [searchQuery, setSearchQuery] = useState('');
+  const [propertyType, setPropertyType] = useState('');
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    const params = new URLSearchParams();
+    if (searchQuery) params.append('search', searchQuery);
+    if (propertyType) params.append('type', propertyType);
+    window.location.href = `/listings?${params.toString()}`;
+  };
+
   return (
     <div>
       <Header />
 
-      {/* Hero section with background image */}
+      {/* Hero section with background video */}
       <section style={{
         position: 'relative',
-        height: '100vh',
-        backgroundImage: 'url(/images/pat-whelen-4QhSpFP0yWI-unsplash.jpg)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed',
+        height: '75vh',
+        minHeight: '600px',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        backdropFilter: 'blur(8px)'
+        overflow: 'hidden'
       }}>
+        {/* Background Video */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            zIndex: 1
+          }}
+        >
+          <source src="/video/8284679-uhd_3840_2160_24fps.mp4" type="video/mp4" />
+        </video>
+
         {/* Frosted blur overlay */}
         <div style={{
           position: 'absolute',
           inset: 0,
           backdropFilter: 'blur(8px)',
-          pointerEvents: 'none'
+          pointerEvents: 'none',
+          zIndex: 2
         }} />
+
         {/* Glow effect behind logo */}
         <div style={{
           position: 'absolute',
@@ -48,22 +78,50 @@ export default function Home() {
           height={2000}
           priority
           style={{
-            maxWidth: '72vw',
+            maxWidth: '68vw',
             height: 'auto',
             position: 'relative',
             zIndex: 10
           }}
         />
 
-        {/* Image attribution at bottom */}
+        {/* Scroll indicator */}
         <div style={{
           position: 'absolute',
-          bottom: '20px',
-          right: '20px',
-          fontSize: '0.75rem',
-          color: 'rgba(255, 255, 255, 0.7)'
+          bottom: '40px',
+          left: '50%',
+          transform: 'translateX(-50%)',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          gap: '12px',
+          opacity: 0.6,
+          zIndex: 10
         }}>
-          Photo by <a href="https://unsplash.com/@patwhelen?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" style={{ color: 'rgba(255, 255, 255, 0.9)', textDecoration: 'none' }}>Pat Whelen</a> on <a href="https://unsplash.com/photos/aerial-view-of-highway-near-body-of-water-during-daytime-4QhSpFP0yWI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" style={{ color: 'rgba(255, 255, 255, 0.9)', textDecoration: 'none' }}>Unsplash</a>
+          <span style={{
+            fontSize: '11px',
+            letterSpacing: '0.2em',
+            textTransform: 'uppercase',
+            color: '#000',
+            fontWeight: '800'
+          }}>Explore</span>
+          <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 0V18M6 18L1 13M6 18L11 13" stroke="#000" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </div>
+
+        {/* Video attribution */}
+        <div style={{
+          position: 'absolute',
+          bottom: '16px',
+          right: '20px',
+          fontSize: '0.85rem',
+          color: '#000',
+          letterSpacing: '0.05em',
+          zIndex: 10,
+          fontWeight: '500'
+        }}>
+          Video from Josh
         </div>
       </section>
 
@@ -72,7 +130,7 @@ export default function Home() {
 
         {/* Services Section */}
         <section style={{
-          padding: '100px 30px',
+          padding: '40px 30px 80px',
           maxWidth: '1200px',
           margin: '0 auto'
         }}>
@@ -157,6 +215,36 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Search Section */}
+        <section className="home-search-section">
+          <div className="home-search-container">
+            <p className="footer-search-eyebrow">Looking for a home?</p>
+            <form className="footer-search-form" onSubmit={handleSearch}>
+              <input
+                type="text"
+                className="footer-search-input"
+                placeholder="Search by suburb, street, or property type..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                aria-label="Search properties"
+              />
+              <select
+                className="footer-search-select"
+                value={propertyType}
+                onChange={(e) => setPropertyType(e.target.value)}
+                aria-label="Property type filter"
+              >
+                <option value="">All types</option>
+                <option value="sale">For sale</option>
+                <option value="rent">For rent</option>
+              </select>
+              <button type="submit" className="footer-search-btn">
+                Search
+              </button>
+            </form>
+          </div>
+        </section>
+
         {/* Why Choose Us Section */}
         <section style={{
           padding: '100px 30px',
@@ -188,14 +276,14 @@ export default function Home() {
                   fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
                   marginBottom: '10px'
                 }}>
-                  20+
+                  $200M+
                 </p>
                 <p style={{
                   fontSize: '1rem',
                   color: '#666',
                   fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif'
                 }}>
-                  Years of experience in real estate
+                  Worth of property sold
                 </p>
               </div>
 
@@ -207,14 +295,14 @@ export default function Home() {
                   fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
                   marginBottom: '10px'
                 }}>
-                  500+
+                  13+
                 </p>
                 <p style={{
                   fontSize: '1rem',
                   color: '#666',
                   fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif'
                 }}>
-                  Successful transactions completed
+                  Years of experience
                 </p>
               </div>
 
@@ -226,14 +314,14 @@ export default function Home() {
                   fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
                   marginBottom: '10px'
                 }}>
-                  98%
+                  100+
                 </p>
                 <p style={{
                   fontSize: '1rem',
                   color: '#666',
                   fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif'
                 }}>
-                  Client satisfaction rate
+                  Properties sold
                 </p>
               </div>
             </div>

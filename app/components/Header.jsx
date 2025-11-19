@@ -1,51 +1,147 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
+import Image from 'next/image';
+import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Close menu when clicking outside or navigating
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [pathname]);
+
+  const isActive = (path) => pathname === path;
 
   return (
-    <header className="site-header" id="home">
-      <div className="nav-sidebar">
-        <div className="nav-brand-text">FORNIERI & AZAR</div>
-        <div className="nav-social" aria-label="Follow Fornieri & Azar">
-          <a className="nav-social__link" href="#" aria-label="Instagram">IG</a>
-          <a className="nav-social__link" href="#" aria-label="Facebook">FB</a>
-          <a className="nav-social__link" href="#" aria-label="LinkedIn">IN</a>
+    <>
+      <header className={`modern-header ${scrolled ? 'scrolled' : ''} ${menuOpen ? 'menu-open' : ''}`}>
+        <div className="modern-header__container">
+          {/* Logo - Empty spacer */}
+          <div className="modern-header__logo"></div>
+
+          {/* Desktop Navigation */}
+          <nav className="modern-header__nav" aria-label="Main navigation">
+            <Link
+              href="/"
+              className={`modern-header__link ${isActive('/') ? 'active' : ''}`}
+            >
+              Home
+            </Link>
+            <Link
+              href="/about"
+              className={`modern-header__link ${isActive('/about') ? 'active' : ''}`}
+            >
+              About
+            </Link>
+            <Link
+              href="/listings"
+              className={`modern-header__link ${isActive('/listings') ? 'active' : ''}`}
+            >
+              Listings
+            </Link>
+            <Link
+              href="/services"
+              className={`modern-header__link ${isActive('/services') ? 'active' : ''}`}
+            >
+              Services
+            </Link>
+            <Link
+              href="/team"
+              className={`modern-header__link ${isActive('/team') ? 'active' : ''}`}
+            >
+              Team
+            </Link>
+          </nav>
+
+          {/* Right Actions */}
+          <div className="modern-header__actions">
+            <Link href="/contact" className="modern-header__contact-btn">
+              Contact
+            </Link>
+
+            {/* Mobile Menu Toggle */}
+            <button
+              className="modern-header__menu-toggle"
+              type="button"
+              aria-expanded={menuOpen}
+              aria-label="Toggle navigation"
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
+              <span className="modern-header__menu-bar"></span>
+              <span className="modern-header__menu-bar"></span>
+              <span className="modern-header__menu-bar"></span>
+            </button>
+          </div>
         </div>
-      </div>
-      <nav className="nav-top" data-component="nav" aria-label="Main navigation">
-        <div className="nav-top__inner">
-          <ul className="nav-links nav-links--desktop">
-            <li><Link href="/listings" data-nav="listings">Property</Link></li>
-            <li><Link href="/services" data-nav="services">Advocacy</Link></li>
-            <li><Link href="/about" data-nav="about">About</Link></li>
-            <li><Link href="/team" data-nav="team">Media</Link></li>
-          </ul>
-          <button
-            className="nav-toggle"
-            type="button"
-            aria-expanded={menuOpen}
-            aria-controls="primary-navigation"
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
-            <span className="sr-only">Toggle navigation</span>
-            <span className="nav-toggle__bar"></span>
-            <span className="nav-toggle__bar"></span>
-            <span className="nav-toggle__bar"></span>
-          </button>
+      </header>
+
+      {/* Mobile Menu Overlay */}
+      {menuOpen && (
+        <div
+          className="modern-mobile-menu"
+          onClick={() => setMenuOpen(false)}
+        >
+          <div className="modern-mobile-menu__content" onClick={(e) => e.stopPropagation()}>
+            <nav className="modern-mobile-menu__nav">
+              <Link
+                href="/"
+                className={`modern-mobile-menu__link ${isActive('/') ? 'active' : ''}`}
+              >
+                Home
+              </Link>
+              <Link
+                href="/about"
+                className={`modern-mobile-menu__link ${isActive('/about') ? 'active' : ''}`}
+              >
+                About
+              </Link>
+              <Link
+                href="/listings"
+                className={`modern-mobile-menu__link ${isActive('/listings') ? 'active' : ''}`}
+              >
+                Listings
+              </Link>
+              <Link
+                href="/services"
+                className={`modern-mobile-menu__link ${isActive('/services') ? 'active' : ''}`}
+              >
+                Services
+              </Link>
+              <Link
+                href="/team"
+                className={`modern-mobile-menu__link ${isActive('/team') ? 'active' : ''}`}
+              >
+                Team
+              </Link>
+            </nav>
+
+            <div className="modern-mobile-menu__footer">
+              <Link href="/contact" className="btn btn--primary" style={{ width: '100%' }}>
+                Get in touch
+              </Link>
+              <div className="modern-mobile-menu__social">
+                <a href="#" aria-label="Instagram">Instagram</a>
+                <a href="#" aria-label="Facebook">Facebook</a>
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="nav-links-wrapper" id="primary-navigation">
-          <ul className="nav-links">
-            <li><Link href="/listings" data-nav="listings">Property</Link></li>
-            <li><Link href="/services" data-nav="services">Advocacy</Link></li>
-            <li><Link href="/about" data-nav="about">About</Link></li>
-            <li><Link href="/team" data-nav="team">Media</Link></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+      )}
+    </>
   );
 }

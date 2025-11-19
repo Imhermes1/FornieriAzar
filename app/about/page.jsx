@@ -9,34 +9,33 @@ export default function AboutPage() {
     <div data-page="about">
       <Header />
       <main>
-        <section className="page-hero" aria-labelledby="about-title">
-          <img className="page-hero__media" src="/images/main.jpg" alt="Melbourne skyline at dusk" />
-          <div className="page-hero__content">
-            <p className="page-hero__eyebrow">Our Story</p>
-            <h1 className="page-hero__title" id="about-title">Boutique stewardship for remarkable properties</h1>
-            <p className="page-hero__meta">Fornieri & Azar blends decades of negotiation experience, deep market intelligence, and bespoke marketing to elevate every prestige transaction.</p>
+        <section className="simple-hero" aria-labelledby="about-title">
+          <div className="simple-hero__content">
+            <p className="eyebrow">Our Story</p>
+            <h1 className="simple-hero__title" id="about-title">A boutique real estate agency built on results</h1>
+            <p className="simple-hero__description">We're a focused boutique agency that combines years of market experience with strategic expertise to deliver exceptional outcomes for our clients.</p>
           </div>
         </section>
 
         <section className="intro">
           <div className="section-heading">
-            <p className="eyebrow">Philosophy</p>
-            <h2>Discretion, data, and design-led campaigns</h2>
-            <p>Our advisory model is anchored by rigorously researched pricing strategies, curated presentation, and concierge-level client service. We engage only a select portfolio of listings to ensure unwavering focus and confidentiality.</p>
+            <p className="eyebrow">How we work</p>
+            <h2>Strategic approach, expert advice, exceptional results</h2>
+            <p>We maintain a selective client base to ensure every property receives dedicated attention and a tailored marketing strategy. Our focus is on delivering results through market expertise and proven negotiation skills.</p>
           </div>
           <div className="intro-grid">
             <div className="intro-card">
-              <img src="/images/images.jpeg" alt="Fornieri & Azar bespoke marketing materials" loading="lazy" />
+              <img src="/images/HighRes_6k_18.jpg" alt="Luxury property marketing" loading="lazy" />
               <div className="intro-card__content">
-                <h3>Our philosophy</h3>
-                <p>We approach every mandate with a boutique mindset, crafting bespoke strategies that protect privacy, maximise visibility, and put our clients a step ahead.</p>
+                <h3>Our approach</h3>
+                <p>We develop targeted marketing strategies for each property, leveraging market data and buyer insights to achieve optimal results in the shortest timeframe.</p>
               </div>
             </div>
             <div className="intro-card">
-              <img src="/images/main.jpg" alt="Designer living space in Melbourne" loading="lazy" />
+              <img src="/images/LowRes_2k_17.jpg" alt="Premium Melbourne property" loading="lazy" />
               <div className="intro-card__content">
-                <h3>Our reach</h3>
-                <p>In-house research, elite buyer networks, and international syndication ensure global exposure for Melbourne's most coveted addresses.</p>
+                <h3>Our network</h3>
+                <p>Through years of establishing relationships in Melbourne's premium property market, we've built a network of qualified buyers, investors, and industry partners.</p>
               </div>
             </div>
           </div>
@@ -44,54 +43,50 @@ export default function AboutPage() {
 
         <section className="metrics" aria-label="Fornieri & Azar achievements">
           <div className="metric-card">
-            <p className="metric-card__value">$2.4B+</p>
-            <p className="metric-card__label">Prestige transactions facilitated</p>
+            <p className="metric-card__value">$200M+</p>
+            <p className="metric-card__label">Worth of property sold</p>
           </div>
           <div className="metric-card">
-            <p className="metric-card__value">28</p>
-            <p className="metric-card__label">Years of combined market expertise</p>
+            <p className="metric-card__value">13+</p>
+            <p className="metric-card__label">Years of experience</p>
           </div>
           <div className="metric-card">
-            <p className="metric-card__value">92%</p>
-            <p className="metric-card__label">Repeat and referral clientele</p>
-          </div>
-          <div className="metric-card">
-            <p className="metric-card__value">7 days</p>
-            <p className="metric-card__label">Average time to bespoke marketing launch</p>
+            <p className="metric-card__value">100+</p>
+            <p className="metric-card__label">Properties sold</p>
           </div>
         </section>
 
         <section className="services" id="services">
           <div className="section-heading">
-            <p className="eyebrow">Advisory services</p>
-            <h2>End-to-end stewardship for premium assets</h2>
+            <p className="eyebrow">What we do</p>
+            <h2>We're here to help with your property needs</h2>
           </div>
           <div className="service-grid">
             <article className="service-card">
-              <h3>Vendor advocacy</h3>
-              <p>Strategic campaign direction, curated styling, and global media placement to maximise momentum, engagement, and final price.</p>
+              <h3>Selling your property</h3>
+              <p>We deliver comprehensive marketing campaigns, targeted buyer engagement, and strategic negotiation to maximize your sale price.</p>
               <ul>
-                <li>Off-market introductions</li>
-                <li>Auction and private treaty strategy</li>
-                <li>Negotiation and settlement oversight</li>
+                <li>Professional photography & marketing</li>
+                <li>Auction or private sale guidance</li>
+                <li>Expert negotiation support</li>
               </ul>
             </article>
             <article className="service-card">
               <h3>Buyer representation</h3>
-              <p>Discreet acquisition support leveraging exclusive pipelines, precision due diligence, and data-backed appraisal modelling.</p>
+              <p>We identify off-market opportunities, conduct thorough due diligence, and provide expert negotiation to secure the best terms.</p>
               <ul>
-                <li>Portfolio curation</li>
-                <li>Contract and compliance review</li>
-                <li>Relocation concierge</li>
+                <li>Finding the perfect property</li>
+                <li>Contract review & advice</li>
+                <li>Support with moving & settling in</li>
               </ul>
             </article>
             <article className="service-card">
-              <h3>Project collaboration</h3>
-              <p>Partnerships with developers, architects, and financiers to future-proof prestige projects from launch to sell-down.</p>
+              <h3>Development sales</h3>
+              <p>We partner with developers to deliver strategic market positioning, sales campaign management, and qualified buyer acquisition.</p>
               <ul>
-                <li>Product positioning</li>
+                <li>Market positioning advice</li>
                 <li>Pricing strategy</li>
-                <li>Agent alignment</li>
+                <li>Sales campaign management</li>
               </ul>
             </article>
           </div>
@@ -99,20 +94,20 @@ export default function AboutPage() {
 
         <section className="experience" aria-label="Why clients choose Fornieri & Azar">
           <div className="experience-media">
-            <img src="/images/main.jpg" alt="Architectural detail of luxury residence" loading="lazy" />
+            <img src="/images/LowRes_2k_08.jpg" alt="Premium property interior" loading="lazy" />
           </div>
           <div className="experience-copy">
-            <p className="eyebrow">Marketing difference</p>
-            <h2>Story-driven campaigns crafted to convert</h2>
-            <p>Dedicated strategists, editorial storytellers, and premium production partners create campaigns that resonate with UHNW buyers. Every launch receives bespoke videography, immersive virtual inspections, and targeted digital placements supported by market intelligence dashboards.</p>
+            <p className="eyebrow">Our marketing</p>
+            <h2>Strategic marketing that delivers results</h2>
+            <p>Our marketing campaigns combine professional photography, video content, and targeted digital advertising to reach qualified buyers. We provide regular performance analytics and market feedback to keep you informed throughout the process.</p>
             <div className="experience-highlights">
               <div>
-                <p className="experience-highlights__label">Global syndication</p>
-                <p className="experience-highlights__value">18+ prestige networks</p>
+                <p className="experience-highlights__label">Marketing reach</p>
+                <p className="experience-highlights__value">18+ property platforms</p>
               </div>
               <div>
-                <p className="experience-highlights__label">Average uplift</p>
-                <p className="experience-highlights__value">12.6% over guide</p>
+                <p className="experience-highlights__label">Average result</p>
+                <p className="experience-highlights__value">12.6% above expectations</p>
               </div>
             </div>
           </div>
@@ -120,27 +115,27 @@ export default function AboutPage() {
 
         <section className="testimonials" aria-label="Client testimonials">
           <div className="section-heading">
-            <p className="eyebrow">Client reflections</p>
-            <h2>Discretion, diligence, delivery</h2>
+            <p className="eyebrow">What our clients say</p>
+            <h2>Real feedback from real people</h2>
           </div>
           <div className="testimonial-grid">
             <figure className="testimonial-card">
               <blockquote>
-                "Fornieri & Azar orchestrated a private sale that exceeded our expectations within a fortnight while keeping our family's privacy paramount."
+                "Luke helped us sell our family home quickly and privately, which was exactly what we needed. He kept everything confidential and got us a fantastic result."
               </blockquote>
-              <figcaption>Private vendor, Toorak</figcaption>
+              <figcaption>Sarah & James, Toorak</figcaption>
             </figure>
             <figure className="testimonial-card">
               <blockquote>
-                "Their buyer advocacy secured an off-market estate we'd chased for years. The due diligence pack was forensic."
+                "After years of looking, Luke found us a beautiful home we never would have known was available. His research and attention to detail was incredible."
               </blockquote>
-              <figcaption>Corporate executive, Brighton</figcaption>
+              <figcaption>Michael, Brighton</figcaption>
             </figure>
             <figure className="testimonial-card">
               <blockquote>
-                "From video storytelling to international syndication, every campaign element was flawless and on-brand."
+                "The marketing for our property was absolutely stunning. Professional videos, beautiful photos, and it reached buyers everywhere."
               </blockquote>
-              <figcaption>Developer partner, South Yarra</figcaption>
+              <figcaption>David & Partners, South Yarra</figcaption>
             </figure>
           </div>
         </section>
@@ -148,18 +143,18 @@ export default function AboutPage() {
         <section className="team" id="team" aria-labelledby="team-title">
           <div className="team-card">
             <div className="team-card__media">
-              <img src="/images/Luke_010_HiRes.jpg" alt="Luke Fornieri, Founder of Fornieri" loading="lazy" />
+              <img src="/images/Luke_010_HiRes.jpg" alt="Luke Fornieri, Founder" loading="lazy" />
             </div>
             <div className="team-card__body">
-              <p className="eyebrow">Leadership</p>
-              <h2 id="team-title">Meet Luke Fornieri</h2>
-              <p>Founder and principal advisor Luke Fornieri is recognised for his data-informed strategies, confident deal management, and an extensive network cultivated over two decades in Melbourne's prestige market.</p>
+              <p className="eyebrow">Meet Luke</p>
+              <h2 id="team-title">Luke Fornieri, Founder</h2>
+              <p>Luke brings over two decades of experience in Melbourne's premium property market. Known for strategic negotiation, market expertise, and a results-driven approach, he focuses on delivering exceptional outcomes for every client.</p>
               <ul className="team-card__credentials">
                 <li>Certified Estate Agent & Auctioneer</li>
                 <li>Member, Real Estate Institute of Victoria</li>
                 <li>Featured in Financial Review Top Agents 2024</li>
               </ul>
-              <Link className="btn btn--ghost" href="/team">Discover the advisory collective</Link>
+              <Link className="btn btn--ghost" href="/team">Meet the full team</Link>
             </div>
           </div>
         </section>
@@ -167,13 +162,13 @@ export default function AboutPage() {
         <section className="cta" aria-labelledby="about-cta-title">
           <div className="cta-inner">
             <div className="cta-copy">
-              <p className="eyebrow">Next steps</p>
-              <h2 id="about-cta-title">Partner with a prestige specialist</h2>
-              <p>Whether selling discreetly or sourcing a signature residence, we curate every touchpoint to protect your time and amplify outcomes.</p>
+              <p className="eyebrow">Get started</p>
+              <h2 id="about-cta-title">Ready to discuss your property strategy?</h2>
+              <p>Whether you're considering selling, seeking investment opportunities, or need market analysis, we're here to provide expert guidance.</p>
             </div>
             <div className="cta-actions">
-              <Link className="btn btn--primary" href="/contact">Arrange a briefing</Link>
-              <Link className="btn btn--ghost" href="/services">Explore our services</Link>
+              <Link className="btn btn--primary" href="/contact">Get in touch</Link>
+              <Link className="btn btn--ghost" href="/services">Learn about our services</Link>
             </div>
           </div>
         </section>

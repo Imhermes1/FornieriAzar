@@ -17,3 +17,141 @@
 [01:15:05.795] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
 [01:15:11.389] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
 [01:15:32.755] Server  LOG      ✓ Compiled in 107ms
+[00:41:15.275] Server  LOG      ✓ Compiled in 320ms
+[00:44:02.854] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:55:36.248] Server  LOG      ✓ Compiled in 150ms
+[00:56:22.131] Server  LOG      ✓ Compiled in 82ms
+[00:56:53.046] Server  LOG      ✓ Compiled in 102ms
+[00:57:03.843] Server  LOG      ✓ Compiled in 69ms
+[00:58:14.170] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:58:58.239] Server  LOG      ✓ Compiled in 94ms
+[00:59:13.100] Server  LOG      ✓ Compiled in 29ms
+[00:59:39.098] Server  LOG      ✓ Compiled in 30ms
+[01:00:16.239] Server  LOG        Reload env: .env.local
+[01:01:20.618] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:05:28.901] Server  LOG      ✓ Compiled in 253ms
+[01:06:27.163] Server  LOG      ✓ Compiled in 69ms
+[01:06:35.131] Server  LOG      ✓ Compiled in 27ms
+[01:11:53.195] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:12:29.456] Server  LOG      ✓ Compiled in 380ms
+[01:12:29.539] Server  WARN     ⚠ The "images.domains" configuration is deprecated. Please use "images.remotePatterns" configuration instead.
+[01:15:18.590] Server  LOG      ✓ Compiled in 232ms
+[01:19:18.001] Server  LOG      ✓ Compiled in 125ms
+[01:25:22.996] Server  LOG      ✓ Compiled in 251ms
+[01:26:10.666] Server  LOG      ✓ Compiled in 71ms
+[01:26:39.509] Server  LOG      ✓ Compiled in 67ms
+[01:27:01.011] Server  LOG      ✓ Compiled in 40ms
+[01:27:29.364] Server  LOG      ✓ Compiled in 28ms
+[01:34:41.850] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:39:56.187] Server  LOG      ✓ Compiled in 137ms
+[01:40:04.516] Server  LOG      ✓ Compiled in 48ms
+[01:40:52.226] Server  LOG      ✓ Compiled in 247ms
+[01:41:18.921] Server  LOG      ✓ Compiled in 123ms
+[01:41:35.893] Server  LOG      ✓ Compiled in 106ms
+[01:41:55.263] Server  LOG      ✓ Compiled in 37ms
+[01:42:00.711] Server  LOG      ✓ Compiled in 63ms
+[01:42:34.906] Server  LOG      ✓ Compiled in 112ms
+[01:46:17.345] Server  LOG      ✓ Compiled in 67ms
+[01:46:29.227] Server  LOG      ✓ Compiled in 40ms
+[01:46:37.939] Server  LOG      ✓ Compiled in 52ms
+[01:46:46.630] Server  LOG      ✓ Compiled in 41ms
+[01:47:12.967] Server  LOG      ✓ Compiled in 172ms
+[01:47:22.013] Server  LOG      ✓ Compiled in 97ms
+[01:49:50.349] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:54:19.633] Server  LOG        Reload env: .env.local
+[01:54:19.851] Server  LOG      ✓ Compiled in 161ms
+[02:05:55.779] Server  LOG      ✓ Compiled in 1278ms
+[02:06:06.680] Server  LOG      ✓ Compiled in 163ms
+[02:10:21.518] Server  LOG      ✓ Compiled in 179ms
+[02:10:45.318] Server  LOG      ✓ Compiled in 78ms
+[02:10:46.330] Server  LOG      ✓ Compiled in 45ms
+[02:10:47.407] Server  LOG      ✓ Compiled in 72ms
+[02:10:48.450] Server  LOG      ✓ Compiled in 51ms
+[02:10:49.461] Server  LOG      ✓ Compiled in 28ms
+[02:11:07.985] Server  LOG      ✓ Compiled in 127ms
+[02:18:56.238] Server  LOG      ✓ Compiled in 222ms
+[02:18:57.100] Server  LOG      ✓ Compiled in 53ms
+[02:18:58.121] Server  LOG      ✓ Compiled in 32ms
+[02:18:59.185] Server  LOG      ✓ Compiled in 29ms
+[02:19:00.237] Server  LOG      ✓ Compiled in 38ms
+[02:19:01.272] Server  LOG      ✓ Compiled in 26ms
+[02:19:02.321] Server  LOG      ✓ Compiled in 30ms
+[02:19:03.358] Server  LOG      ✓ Compiled in 25ms
+[02:19:04.388] Server  LOG      ✓ Compiled in 21ms
+[02:19:05.441] Server  LOG      ✓ Compiled in 28ms
+[02:19:06.473] Server  LOG      ✓ Compiled in 16ms
+[02:19:31.106] Server  LOG      ✓ Compiled in 54ms
+[02:19:32.128] Server  LOG      ✓ Compiled in 25ms
+[02:19:33.133] Server  LOG      ✓ Compiled in 18ms
+[02:19:34.179] Server  LOG      ✓ Compiled in 27ms
+[02:19:35.203] Server  LOG      ✓ Compiled in 17ms
+[02:19:36.247] Server  LOG      ✓ Compiled in 15ms
+[02:19:37.289] Server  LOG      ✓ Compiled in 13ms
+[02:19:54.841] Server  LOG      ✓ Compiled in 49ms
+[02:19:55.847] Server  LOG      ✓ Compiled in 17ms
+[02:19:56.889] Server  LOG      ✓ Compiled in 20ms
+[02:19:57.959] Server  LOG      ✓ Compiled in 41ms
+[02:19:59.031] Server  LOG      ✓ Compiled in 79ms
+[02:20:00.056] Server  LOG      ✓ Compiled in 44ms
+[02:20:36.442] Server  LOG      ✓ Compiled in 126ms
+[02:20:37.346] Server  LOG      ✓ Compiled in 15ms
+[02:20:38.384] Server  LOG      ✓ Compiled in 20ms
+[02:20:39.420] Server  LOG      ✓ Compiled in 15ms
+[02:20:40.468] Server  LOG      ✓ Compiled in 15ms
+[02:20:41.522] Server  LOG      ✓ Compiled in 24ms
+[02:20:42.567] Server  LOG      ✓ Compiled in 29ms
+[02:20:43.596] Server  LOG      ✓ Compiled in 14ms
+[02:20:44.650] Server  LOG      ✓ Compiled in 17ms
+[02:20:45.748] Server  LOG      ✓ Compiled in 46ms
+[02:21:27.703] Server  LOG      ✓ Compiled in 69ms
+[02:21:28.826] Server  LOG      ✓ Compiled in 85ms
+[02:21:29.852] Server  LOG      ✓ Compiled in 65ms
+[02:21:30.854] Server  LOG      ✓ Compiled in 26ms
+[02:21:31.879] Server  LOG      ✓ Compiled in 28ms
+[02:21:32.911] Server  LOG      ✓ Compiled in 21ms
+[02:21:33.948] Server  LOG      ✓ Compiled in 22ms
+[02:21:34.990] Server  LOG      ✓ Compiled in 28ms
+[02:22:13.703] Server  LOG      ✓ Compiled in 71ms
+[02:22:14.627] Server  LOG      ✓ Compiled in 54ms
+[02:22:15.629] Server  LOG      ✓ Compiled in 28ms
+[02:22:16.656] Server  LOG      ✓ Compiled in 21ms
+[02:22:17.836] Server  LOG      ✓ Compiled in 99ms
+[02:22:18.798] Server  LOG      ✓ Compiled in 35ms
+[02:22:19.828] Server  LOG      ✓ Compiled in 27ms
+[02:22:20.866] Server  LOG      ✓ Compiled in 32ms
+[02:22:21.888] Server  LOG      ✓ Compiled in 23ms
+[02:22:22.954] Server  LOG      ✓ Compiled in 45ms
+[02:22:23.956] Server  LOG      ✓ Compiled in 31ms
+[02:22:24.980] Server  LOG      ✓ Compiled in 24ms
+[02:25:12.154] Server  LOG      ✓ Compiled in 213ms
+[02:26:43.403] Server  LOG      ✓ Compiled in 62ms
+[02:27:09.194] Server  LOG      ✓ Compiled in 46ms
+[02:27:56.427] Browser WARN    Image with src "/images/chris'.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[02:27:56.427] Browser WARN    Image with src "/images/luke.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[02:28:46.405] Server  LOG      ✓ Compiled in 124ms
+[02:32:17.355] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:32:17.530] Browser WARN    Image with src "/images/luke.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[02:32:17.536] Browser WARN    Image with src "/images/chris'.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[02:32:42.912] Server  LOG      ✓ Compiled in 304ms
+[02:36:21.178] Server  LOG      ✓ Compiled in 223ms
+[02:36:43.314] Server  LOG      ✓ Compiled in 141ms
+[02:37:29.836] Server  LOG      ✓ Compiled in 107ms
+[02:37:35.577] Server  LOG      ✓ Compiled in 71ms
+[02:38:46.670] Server  LOG      ✓ Compiled in 148ms
+[02:40:24.517] Server  LOG      ✓ Compiled in 191ms
+[02:41:26.045] Server  LOG      ✓ Compiled in 186ms
+[02:41:38.251] Server  LOG      ✓ Compiled in 180ms
+[02:41:47.188] Server  LOG      ✓ Compiled in 360ms
+[02:41:56.671] Server  LOG      ✓ Compiled in 146ms
+[02:43:56.084] Server  LOG      ✓ Compiled in 321ms
+[02:44:03.719] Server  LOG      ✓ Compiled in 98ms
+[02:46:03.534] Server  LOG      ✓ Compiled in 114ms
+[02:47:32.240] Server  LOG      ✓ Compiled in 107ms
+[02:49:10.911] Server  LOG      ✓ Compiled in 121ms
+[02:49:49.648] Server  LOG      ✓ Compiled in 44ms
+[02:52:02.571] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:52:04.551] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:52:17.654] Server  LOG      ✓ Compiled in 306ms
+[02:53:40.276] Server  LOG      ✓ Compiled in 136ms
+[03:02:45.675] Server  LOG      ✓ Compiled in 171ms
+[03:17:26.956] Server  LOG      ✓ Compiled in 240ms

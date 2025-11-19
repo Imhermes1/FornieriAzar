@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
+const RESEND_AUDIENCE_ID = process.env.RESEND_AUDIENCE_ID;
 
 /**
  * POST /api/contact
@@ -143,7 +144,7 @@ Sent on ${new Date().toLocaleString('en-AU', { timeZone: 'Australia/Melbourne' }
     `.trim();
 
     // Send email via Resend
-    const data = await resend.emails.send({
+    const { data: emailResult, error: sendError } = await resend.emails.send({
       from: process.env.CONTACT_EMAIL_FROM || 'website@fornieriazar.com.au',
       to: process.env.CONTACT_EMAIL_TO || 'enquiry@fornieriazar.com.au',
       replyTo: email,
@@ -151,12 +152,27 @@ Sent on ${new Date().toLocaleString('en-AU', { timeZone: 'Australia/Melbourne' }
       html: emailHtml,
       text: emailText,
     });
+    if (sendError) throw sendError;
+
+    const auditContactDetails = {
+      email,
+      fullName,
+      phone,
+      interest,
+      message
+    };
+
+    try {
+      await addContactToAudience(auditContactDetails);
+    } catch (audienceError) {
+      console.warn('Resend audience sync failed:', audienceError);
+    }
 
     return NextResponse.json(
       {
         success: true,
         message: 'Your enquiry has been sent successfully. We will be in touch soon.',
-        emailId: data.id
+        emailId: emailResult?.id
       },
       { status: 200 }
     );
@@ -164,14 +180,71 @@ Sent on ${new Date().toLocaleString('en-AU', { timeZone: 'Australia/Melbourne' }
   } catch (error) {
     console.error('Contact form error:', error);
 
+    const resendErrorMessage =
+      error?.response?.data?.error ||
+      error?.response?.data?.message ||
+      error?.response?.body?.error ||
+      error?.response?.body?.message ||
+      error?.message ||
+      error?.name ||
+      'Unknown error';
+
+    const domainValidationIssue =
+      /validation_error/i.test(resendErrorMessage) ||
+      /domain.*not verified/i.test(resendErrorMessage);
+
+    const errorResponseMessage = domainValidationIssue
+      ? 'The fornieriazar.com.au domain is not verified. Please, add and verify your domain on https://resend.com/domains'
+      : 'Failed to send your enquiry. Please try again or contact us directly.';
+
     return NextResponse.json(
       {
-        error: 'Failed to send your enquiry. Please try again or contact us directly.',
-        details: process.env.NODE_ENV === 'development' ? error.message : undefined
+        error: errorResponseMessage,
+        details: process.env.NODE_ENV === 'development' ? resendErrorMessage : undefined
       },
-      { status: 500 }
+      { status: domainValidationIssue ? 400 : 500 }
     );
   }
+}
+
+async function addContactToAudience(contact) {
+  if (!RESEND_AUDIENCE_ID || !contact?.email) return;
+
+  const properties = buildAudienceProperties(contact);
+  const payload = {
+    audienceId: RESEND_AUDIENCE_ID,
+    email: contact.email,
+    firstName: contact.fullName,
+    ...(properties ? { properties } : {})
+  };
+
+  const { error: createError } = await resend.contacts.create(payload);
+  if (!createError) return;
+
+  if (isDuplicateContactError(createError)) {
+    const { error: updateError } = await resend.contacts.update(payload);
+    if (updateError) throw new Error(`Failed to refresh Resend audience member: ${updateError.message || updateError.name}`);
+    return;
+  }
+
+  throw new Error(`Failed to save contact to Resend audience: ${createError.message || createError.name}`);
+}
+
+function buildAudienceProperties({ phone, interest, message }) {
+  const properties = {};
+  if (phone) properties.phone = phone;
+  if (interest) properties.interest = interest;
+  if (message) properties.message = message;
+  return Object.keys(properties).length ? properties : null;
+}
+
+function isDuplicateContactError(error) {
+  const message = (error?.message ?? '').toString().toLowerCase();
+  return (
+    error?.statusCode === 409 ||
+    error?.name === 'contact_already_exists' ||
+    /already exists/.test(message)
+  );
 }
 
 // OPTIONS handler for CORS preflight requests

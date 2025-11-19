@@ -70,29 +70,24 @@ export default function ContactPage() {
     <div data-page="contact">
       <Header />
       <main>
-        <section className="page-hero" aria-labelledby="contact-title">
-          <img className="page-hero__media" src="/images/main.jpg" alt="Luxury residence foyer" />
-          <div className="page-hero__content">
-            <p className="page-hero__eyebrow">Concierge desk</p>
-            <h1 className="page-hero__title" id="contact-title">Arrange a confidential consultation</h1>
-            <p className="page-hero__meta">Share your objectives and we will tailor a strategy spanning acquisition, divestment, or portfolio optimisation.</p>
+        <section className="simple-hero" aria-labelledby="contact-title">
+          <div className="simple-hero__content">
+            <p className="eyebrow">Get in touch</p>
+            <h1 className="simple-hero__title" id="contact-title">Discuss your property needs</h1>
+            <p className="simple-hero__description">Whether you're considering a sale, seeking acquisition opportunities, or require market analysis, contact us to explore your options.</p>
           </div>
         </section>
 
         <section className="cta" aria-labelledby="contact-form-title">
           <div className="cta-inner">
             <div className="cta-copy">
-              <p className="eyebrow">Contact form</p>
-              <h2 id="contact-form-title">How can we assist?</h2>
-              <p>We typically respond within one business day. Your details remain confidential and are used solely to facilitate your enquiry.</p>
+              <p className="eyebrow">Contact us</p>
+              <h2 id="contact-form-title">How can we help?</h2>
+              <p>We usually get back to you within one business day. Your information is kept private and only used to help with your enquiry.</p>
               <div className="experience-highlights">
                 <div>
                   <p className="experience-highlights__label">Office</p>
                   <p className="experience-highlights__value">Malvern East VIC 3145</p>
-                </div>
-                <div>
-                  <p className="experience-highlights__label">Direct line</p>
-                  <p className="experience-highlights__value">+61 (03) 9000 0000</p>
                 </div>
               </div>
             </div>
@@ -176,10 +171,10 @@ export default function ContactPage() {
                   onChange={handleChange}
                   disabled={status.submitting}
                 >
-                  <option value="Selling a property">Selling a property</option>
-                  <option value="Buyer representation">Buyer representation</option>
-                  <option value="Project collaboration">Project collaboration</option>
-                  <option value="Portfolio valuation">Portfolio valuation</option>
+                  <option value="Selling a property">Selling my home</option>
+                  <option value="Buying a property">Buying a home</option>
+                  <option value="Property development">Property development</option>
+                  <option value="General enquiry">Just have a question</option>
                 </select>
               </div>
               <div className="form-row">
@@ -188,7 +183,7 @@ export default function ContactPage() {
                   id="message"
                   name="message"
                   rows="4"
-                  placeholder="Share any key details or timeframes"
+                  placeholder="Tell us a bit about what you're looking for or any questions you have"
                   value={formData.message}
                   onChange={handleChange}
                   disabled={status.submitting}
@@ -201,36 +196,36 @@ export default function ContactPage() {
                 disabled={status.submitting}
                 style={{ opacity: status.submitting ? 0.6 : 1 }}
               >
-                {status.submitting ? 'Sending...' : 'Submit enquiry'}
+                {status.submitting ? 'Sending...' : 'Send message'}
               </button>
-              <p className="cta-form__disclaimer">Submitting this form does not create an agency agreement. We keep your information confidential.</p>
+              <p className="cta-form__disclaimer">Your information is kept confidential and secure.</p>
             </form>
           </div>
         </section>
 
         <section className="testimonials" aria-label="Client testimonials">
           <div className="section-heading">
-            <p className="eyebrow">Client reflections</p>
-            <h2>Experience and trust from prestige clientele</h2>
+            <p className="eyebrow">What people say</p>
+            <h2>Feedback from our clients</h2>
           </div>
           <div className="testimonial-grid">
             <figure className="testimonial-card">
               <blockquote>
-                "Every interaction was discreet, professional, and insight-driven. Fornieri & Azar's team delivered above our price expectations."
+                "Luke was professional, kept us informed every step of the way, and got us a price well above what we expected."
               </blockquote>
-              <figcaption>Vendor, Brighton</figcaption>
+              <figcaption>Emma, Brighton</figcaption>
             </figure>
             <figure className="testimonial-card">
               <blockquote>
-                "From initial briefing to settlement, the process was precise and transparent. We felt supported at every step."
+                "From the first meeting to when we got the keys, the whole process was smooth and transparent. We always felt looked after."
               </blockquote>
-              <figcaption>Buyer, Toorak</figcaption>
+              <figcaption>Mark & Lisa, Toorak</figcaption>
             </figure>
             <figure className="testimonial-card">
               <blockquote>
-                "Their understanding of luxury assets and network access is invaluable for our family's property strategy."
+                "Their knowledge of the local market and strong network of contacts has been invaluable for our family's property needs."
               </blockquote>
-              <figcaption>Private family office</figcaption>
+              <figcaption>The Chen Family</figcaption>
             </figure>
           </div>
         </section>
