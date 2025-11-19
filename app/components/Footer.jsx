@@ -58,12 +58,18 @@ export default function Footer() {
             <p className="footer-tagline">Your trusted boutique real estate agency in Melbourne</p>
 
             <div className="footer-contact-info">
-              <div className="footer-contact-item">
-                <span className="footer-contact-label">Office</span>
-                <p>PO Box Suite 5028<br/>165 Waverley Road<br/>Malvern East VIC 3145</p>
-                <span className="footer-contact-label" style={{marginTop: '16px'}}>Contact</span>
-                <a href="tel:+61423633740" className="footer-contact-link">0423 633 740</a>
-                <a href="mailto:team@fornieriazar.com.au" className="footer-contact-link">team@fornieriazar.com.au</a>
+              <div className="footer-contact-grid">
+                <div>
+                  <span className="footer-contact-label">Office</span>
+                  <p>PO Box Suite 5028<br/>165 Waverley Road<br/>Malvern East VIC 3145</p>
+                </div>
+                <div>
+                  <span className="footer-contact-label">Contact</span>
+                  <div className="footer-contact-links">
+                    <a href="tel:+61423633740" className="footer-contact-link">0423 633 740</a>
+                    <a href="mailto:team@fornieriazar.com.au" className="footer-contact-link">team@fornieriazar.com.au</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
