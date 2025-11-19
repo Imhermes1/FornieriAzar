@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -8,6 +8,37 @@ import Footer from './components/Footer';
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState('');
   const [propertyType, setPropertyType] = useState('');
+  const [articles, setArticles] = useState([]);
+  const [articlesLoading, setArticlesLoading] = useState(true);
+  const [articlesError, setArticlesError] = useState('');
+  const [articlesPlaceholder, setArticlesPlaceholder] = useState(false);
+
+  useEffect(() => {
+    let active = true;
+    const fetchArticles = async () => {
+      try {
+        setArticlesLoading(true);
+        const response = await fetch('/api/crm/articles?limit=3');
+        const payload = await response.json();
+        if (!active) return;
+        setArticlesPlaceholder(Boolean(payload?.placeholder));
+        const fetchedArticles = payload?.articles ?? payload?.mockArticles ?? [];
+        setArticles(fetchedArticles);
+        if (!response.ok && !payload?.articles) {
+          setArticlesError(payload?.message || 'Unable to load articles right now.');
+        }
+      } catch (error) {
+        if (!active) return;
+        setArticlesError('Unable to load articles right now.');
+      } finally {
+        if (active) setArticlesLoading(false);
+      }
+    };
+    fetchArticles();
+    return () => {
+      active = false;
+    };
+  }, []);
 
   const handleSearch = (e) => {
     e.preventDefault();
@@ -213,6 +244,115 @@ export default function Home() {
               </p>
             </div>
           </div>
+        </section>
+
+        {/* Articles Section */}
+        <section style={{
+          padding: '40px 30px 80px',
+          maxWidth: '1200px',
+          margin: '0 auto'
+        }}>
+          <div style={{
+            marginBottom: '40px',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '8px'
+          }}>
+            <p style={{
+              textTransform: 'uppercase',
+              letterSpacing: '0.35em',
+              fontSize: '0.85rem',
+              color: '#777',
+              margin: 0
+            }}>Insights</p>
+            <h2 style={{
+              fontSize: '2.25rem',
+              margin: 0,
+              color: '#000',
+              fontWeight: '600',
+              letterSpacing: '-0.4px'
+            }}>
+              Articles from LockedOn CRM
+            </h2>
+            <p style={{
+              maxWidth: '560px',
+              lineHeight: '1.7',
+              color: '#555',
+              margin: 0
+            }}>
+              Real estate market insights, advice and suburb profiles written in LockedOn and served directly to this site.
+            </p>
+          </div>
+
+          {articlesLoading ? (
+            <p style={{ color: '#444' }}>Loading articles...</p>
+          ) : articlesError ? (
+            <p style={{ color: '#c0392b' }}>{articlesError}</p>
+          ) : (
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
+              gap: '32px'
+            }}>
+              {articles.map((article) => (
+                <article key={article.id || article.slug} style={{
+                  borderRadius: '18px',
+                  border: '1px solid rgba(0,0,0,0.08)',
+                  padding: '24px',
+                  background: '#fff',
+                  boxShadow: '0 20px 40px rgba(0,0,0,0.05)',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: '14px'
+                }}>
+                  <div style={{
+                    fontSize: '12px',
+                    letterSpacing: '0.3em',
+                    textTransform: 'uppercase',
+                    color: '#777'
+                  }}>
+                    {article.category ?? 'Market Insight'}
+                  </div>
+                  <h3 style={{
+                    margin: 0,
+                    fontSize: '1.3rem',
+                    color: '#111',
+                    lineHeight: '1.35'
+                  }}>
+                    {article.title}
+                  </h3>
+                  <p style={{
+                    margin: 0,
+                    color: '#555',
+                    lineHeight: '1.6'
+                  }}>
+                    {article.excerpt}
+                  </p>
+                  <div style={{
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    fontSize: '0.85rem',
+                    color: '#777'
+                  }}>
+                    <span>{article.author?.name ?? 'Fornieri & Azar'}</span>
+                    <span>{article.readTime ? `${article.readTime} min read` : '—'}</span>
+                  </div>
+                  <div style={{
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    fontSize: '0.75rem',
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.2em',
+                    color: '#999'
+                  }}>
+                    <span>{article.publishedDate ? new Date(article.publishedDate).toLocaleDateString('en-AU') : 'TBA'}</span>
+                    <span>{articlesPlaceholder ? 'Draft / Placeholder' : 'LockedOn API'}</span>
+                  </div>
+                </article>
+              ))}
+            </div>
+          )}
+
         </section>
 
         {/* Search Section */}
