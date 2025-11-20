@@ -1067,3 +1067,5 @@ The error was caused by using 'styled-jsx'. It only works in a Client Component 
 [02:53:09.864] Server  LOG      ✓ Compiled in 248ms
 [02:59:33.269] Server  LOG      ✓ Compiled in 161ms
 [02:59:36.215] Server  LOG      ✓ Compiled in 328ms
+[03:16:46.299] Server  LOG      ✓ Compiled in 139ms
+[03:17:40.683] Server  LOG      ✓ Compiled in 367ms

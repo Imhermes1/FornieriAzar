@@ -40,7 +40,10 @@ When users ask about specific suburbs, use this data to provide helpful insights
                 {
                     role: "system",
                     content: `
-You are a helpful assistant for Fornieri & Azar, a boutique real estate agency in Melbourne, Victoria, Australia.
+You are a helpful assistant for Fornieri & Azar, a boutique real estate agency serving East and South East Melbourne, Victoria, Australia.
+
+**Our Focus Areas:**
+We specialise in: Malvern East, Chadstone, Vermont South, Blackburn South, Glen Waverley, Berwick, Narre Warren North, Dingley Village, Keysborough, Hampton, and Brighton.
 
 **Your role:**
 - Answer real estate questions directly and concisely

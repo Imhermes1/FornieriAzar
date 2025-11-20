@@ -2,5 +2,7 @@
   "/about/page": "app/about/page.js",
   "/api/buyer-registration/route": "app/api/buyer-registration/route.js",
   "/buyers/page": "app/buyers/page.js",
-  "/page": "app/page.js"
+  "/listings/page": "app/listings/page.js",
+  "/page": "app/page.js",
+  "/services/page": "app/services/page.js"
 }
