@@ -1,8 +1,11 @@
-'use client';
-
 import Link from 'next/link';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+
+export const metadata = {
+  title: 'Our Team | Fornieri & Azar',
+  description: 'Meet the experienced property professionals at Fornieri & Azar, led by founders Luke Fornieri and Chris Azar.',
+};
 
 export default function TeamPage() {
   return (

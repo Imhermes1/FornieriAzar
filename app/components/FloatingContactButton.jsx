@@ -163,27 +163,44 @@ export default function FloatingContactButton() {
   return (
     <>
       {/* Floating Button */}
-      <div
-        className="floating-contact-btn"
-        onMouseEnter={() => setIsExpanded(true)}
-        onMouseLeave={() => setIsExpanded(false)}
-        onClick={() => {
-          setShowModal(true);
-          setShowBadge(false);
-        }}
-        role="button"
-        tabIndex={0}
-        aria-label="Ask us anything"
-      >
-        {showBadge && <span className="floating-contact-btn__badge">1</span>}
-        <div className="floating-contact-btn__icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
+      {/* Floating Button */}
+      <div className="floating-contact-wrapper">
+        {/* Speech Bubble Notification */}
+        <div className={`speech-bubble ${showBadge ? 'visible' : ''}`}>
+          <span className="speech-bubble__text">Hi! 👋 How can we help you today?</span>
+          <button
+            className="speech-bubble__close"
+            onClick={(e) => {
+              e.stopPropagation();
+              setShowBadge(false);
+            }}
+          >
+            ×
+          </button>
         </div>
-        <span className={`floating-contact-btn__text ${isExpanded ? 'visible' : ''}`}>
-          Ask us anything
-        </span>
+
+        <div
+          className="floating-contact-btn"
+          onMouseEnter={() => setIsExpanded(true)}
+          onMouseLeave={() => setIsExpanded(false)}
+          onClick={() => {
+            setShowModal(true);
+            setShowBadge(false);
+          }}
+          role="button"
+          tabIndex={0}
+          aria-label="Ask us anything"
+        >
+          {showBadge && <span className="floating-contact-btn__badge">1</span>}
+          <div className="floating-contact-btn__icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </div>
+          <span className={`floating-contact-btn__text ${isExpanded ? 'visible' : ''}`}>
+            Ask us anything
+          </span>
+        </div>
       </div>
 
       {/* Modal Overlay */}
@@ -417,11 +434,76 @@ export default function FloatingContactButton() {
       )}
 
       <style jsx>{`
-        .floating-contact-btn {
+        .floating-contact-wrapper {
           position: fixed;
           bottom: 32px;
           right: 32px;
           z-index: 999;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          gap: 12px;
+        }
+
+        .speech-bubble {
+          background: var(--white);
+          padding: 12px 16px;
+          border-radius: 12px;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+          max-width: 260px;
+          position: relative;
+          opacity: 0;
+          transform: translateY(10px) scale(0.95);
+          transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+          pointer-events: none;
+          display: flex;
+          align-items: flex-start;
+          gap: 8px;
+          margin-bottom: 8px;
+        }
+
+        .speech-bubble.visible {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+          pointer-events: auto;
+        }
+
+        .speech-bubble::after {
+          content: '';
+          position: absolute;
+          bottom: -6px;
+          right: 24px;
+          width: 12px;
+          height: 12px;
+          background: var(--white);
+          transform: rotate(45deg);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .speech-bubble__text {
+          font-size: 13px;
+          color: var(--off-black);
+          line-height: 1.4;
+          font-weight: 500;
+        }
+
+        .speech-bubble__close {
+          background: none;
+          border: none;
+          color: var(--gray-400);
+          font-size: 18px;
+          line-height: 1;
+          padding: 0;
+          cursor: pointer;
+          transition: color 0.2s;
+          flex-shrink: 0;
+        }
+
+        .speech-bubble__close:hover {
+          color: var(--off-black);
+        }
+
+        .floating-contact-btn {
           display: flex;
           align-items: center;
           gap: 12px;
@@ -435,6 +517,7 @@ export default function FloatingContactButton() {
           overflow: hidden;
           mix-blend-mode: difference;
           animation: pulse 2s ease-in-out infinite;
+          position: relative; /* Changed from fixed */
         }
 
         @keyframes pulse {
@@ -455,20 +538,21 @@ export default function FloatingContactButton() {
 
         .floating-contact-btn__badge {
           position: absolute;
-          top: -4px;
-          right: -4px;
-          background: #ff4444;
+          top: -8px;
+          right: -8px;
+          background: var(--off-black);
           color: white;
-          font-size: 11px;
+          font-size: 10px;
           font-weight: 600;
-          width: 20px;
-          height: 20px;
+          width: 18px;
+          height: 18px;
           border-radius: 50%;
           display: flex;
           align-items: center;
           justify-content: center;
-          border: 2px solid white;
-          animation: badgePulse 1.5s ease-in-out infinite;
+          border: 2px solid var(--off-white);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+          z-index: 1000;
         }
 
         @keyframes badgePulse {

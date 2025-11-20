@@ -1,8 +1,11 @@
-'use client';
-
 import Link from 'next/link';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+
+export const metadata = {
+  title: 'About Us | Top Real Estate Agents East & South East Melbourne',
+  description: 'Meet the team at Fornieri & Azar. We are experienced real estate professionals dedicated to achieving exceptional results in East and South East Melbourne.',
+};
 
 export default function AboutPage() {
   return (

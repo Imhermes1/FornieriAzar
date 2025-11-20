@@ -1,8 +1,11 @@
-'use client';
-
 import Link from 'next/link';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+
+export const metadata = {
+  title: 'Real Estate Services East & South East Melbourne | Fornieri & Azar',
+  description: 'Comprehensive real estate services including property sales, buyer advocacy, rentals, and project marketing across East and South East Melbourne.',
+};
 
 export default function ServicesPage() {
   return (

@@ -1,21 +1,14 @@
-'use client';
-
-import { useState } from 'react';
 import Image from 'next/image';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import HomeSearch from './components/HomeSearch';
+
+export const metadata = {
+  title: 'Fornieri & Azar | Real Estate Agents East & South East Melbourne',
+  description: 'Leading boutique real estate agency in East and South East Melbourne. We offer premium sales campaigns, expert buyer advocacy, and dedicated property management.',
+};
 
 export default function Home() {
-  const [searchQuery, setSearchQuery] = useState('');
-  const [propertyType, setPropertyType] = useState('');
-  const handleSearch = (e) => {
-    e.preventDefault();
-    const params = new URLSearchParams();
-    if (searchQuery) params.append('search', searchQuery);
-    if (propertyType) params.append('type', propertyType);
-    window.location.href = `/listings?${params.toString()}`;
-  };
-
   return (
     <div>
       <Header />
@@ -105,17 +98,6 @@ export default function Home() {
             <path d="M6 0V18M6 18L1 13M6 18L11 13" stroke="#000" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </div>
-
-        <style jsx>{`
-          @keyframes bounce {
-            0%, 100% {
-              transform: translateX(-50%) translateY(0);
-            }
-            50% {
-              transform: translateX(-50%) translateY(-10px);
-            }
-          }
-        `}</style>
 
         {/* Video attribution */}
         <div style={{
@@ -223,34 +205,7 @@ export default function Home() {
         </section>
 
         {/* Search Section */}
-        <section className="home-search-section">
-          <div className="home-search-container">
-            <p className="footer-search-eyebrow">Looking for a home?</p>
-            <form className="footer-search-form" onSubmit={handleSearch}>
-              <input
-                type="text"
-                className="footer-search-input"
-                placeholder="Search by suburb, street, or property type..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                aria-label="Search properties"
-              />
-              <select
-                className="footer-search-select"
-                value={propertyType}
-                onChange={(e) => setPropertyType(e.target.value)}
-                aria-label="Property type filter"
-              >
-                <option value="">All types</option>
-                <option value="sale">For sale</option>
-                <option value="rent">For rent</option>
-              </select>
-              <button type="submit" className="footer-search-btn">
-                Search
-              </button>
-            </form>
-          </div>
-        </section>
+        <HomeSearch />
 
         {/* Why Choose Us Section */}
         <section style={{

@@ -2319,4 +2319,14 @@ textarea {
   }
 }
 
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(-50%)translateY(0);
+  }
+
+  50% {
+    transform: translateX(-50%)translateY(-10px);
+  }
+}
+
 /*# sourceMappingURL=app_globals_71f961d1.css.map*/

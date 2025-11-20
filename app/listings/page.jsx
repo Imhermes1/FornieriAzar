@@ -1,8 +1,11 @@
-'use client';
-
 import Link from 'next/link';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+
+export const metadata = {
+  title: 'Properties for Sale & Rent | East & South East Melbourne',
+  description: 'Browse our exclusive collection of properties for sale and rent in East and South East Melbourne. Find your dream home with Fornieri & Azar.',
+};
 
 export default function ListingsPage() {
   return (

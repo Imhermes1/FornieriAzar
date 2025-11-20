@@ -2,12 +2,15 @@ import './globals.css';
 import FloatingContactButton from './components/FloatingContactButton';
 
 export const metadata = {
-  title: 'Fornieri & Azar | Boutique Real Estate Melbourne',
-  description: 'A trusted boutique real estate agency in Melbourne helping families buy, sell, and manage properties with honest advice and personal service.',
+  title: {
+    template: '%s | Fornieri & Azar Real Estate',
+    default: 'Fornieri & Azar | Premium Real Estate East & South East Melbourne',
+  },
+  description: 'Fornieri & Azar is a boutique real estate agency serving East and South East Melbourne. We specialise in premium property sales, buyer advocacy, property management, and project marketing.',
+  keywords: ['Real Estate Agents Melbourne', 'South East Melbourne Real Estate', 'East Melbourne Property', 'Buyer Advocate', 'Property Management', 'Luxury Real Estate', 'Fornieri & Azar'],
   openGraph: {
-    title: 'Fornieri & Azar | Boutique Real Estate Melbourne',
-    description: 'A trusted boutique real estate agency in Melbourne helping families buy, sell, and manage properties with honest advice and personal service.',
-    url: 'https://fornieriazar.com.au',
+    type: 'website',
+    locale: 'en_AU',
     siteName: 'Fornieri & Azar',
   },
 };
@@ -16,6 +19,18 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        {/* Google Analytics - Main Website */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZXT1MH0PT1"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-ZXT1MH0PT1');
+            `,
+          }}
+        />
         <style>{`
           * {
             margin: 0;
