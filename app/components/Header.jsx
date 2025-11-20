@@ -59,12 +59,7 @@ export default function Header() {
             >
               Services
             </Link>
-            <Link
-              href="/team"
-              className={`modern-header__link ${isActive('/team') ? 'active' : ''}`}
-            >
-              Team
-            </Link>
+
           </nav>
 
           {/* Right Actions */}
@@ -121,12 +116,7 @@ export default function Header() {
               >
                 Services
               </Link>
-              <Link
-                href="/team"
-                className={`modern-mobile-menu__link ${isActive('/team') ? 'active' : ''}`}
-              >
-                Team
-              </Link>
+
             </nav>
 
             <div className="modern-mobile-menu__footer">

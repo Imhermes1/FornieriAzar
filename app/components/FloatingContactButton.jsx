@@ -7,6 +7,7 @@ export default function FloatingContactButton() {
   const [isExpanded, setIsExpanded] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [activeTab, setActiveTab] = useState('chat');
+  const [showBadge, setShowBadge] = useState(true);
 
   // Email Form State
   const [formData, setFormData] = useState({
@@ -18,7 +19,12 @@ export default function FloatingContactButton() {
   const [status, setStatus] = useState({ submitting: false, submitted: false, error: null });
 
   // Chat State
-  const [messages, setMessages] = useState([]);
+  const [messages, setMessages] = useState([
+    {
+      role: 'assistant',
+      content: 'Hi! I\'m here to help with any questions about buying, selling, or renting in Melbourne. What can I help you with today?'
+    }
+  ]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const [sendingEnquiry, setSendingEnquiry] = useState(false);
@@ -161,18 +167,22 @@ export default function FloatingContactButton() {
         className="floating-contact-btn"
         onMouseEnter={() => setIsExpanded(true)}
         onMouseLeave={() => setIsExpanded(false)}
-        onClick={() => setShowModal(true)}
+        onClick={() => {
+          setShowModal(true);
+          setShowBadge(false);
+        }}
         role="button"
         tabIndex={0}
-        aria-label="Get in touch"
+        aria-label="Ask us anything"
       >
+        {showBadge && <span className="floating-contact-btn__badge">1</span>}
         <div className="floating-contact-btn__icon">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </div>
         <span className={`floating-contact-btn__text ${isExpanded ? 'visible' : ''}`}>
-          Get in touch
+          Ask us anything
         </span>
       </div>
 
@@ -195,7 +205,7 @@ export default function FloatingContactButton() {
                 className={`tab-btn ${activeTab === 'chat' ? 'active' : ''}`}
                 onClick={() => setActiveTab('chat')}
               >
-                Chat with AI
+                Live Chat (AI)
               </button>
               <button
                 className={`tab-btn ${activeTab === 'email' ? 'active' : ''}`}
@@ -424,12 +434,50 @@ export default function FloatingContactButton() {
           transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
           overflow: hidden;
           mix-blend-mode: difference;
+          animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+          0%, 100% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.05);
+          }
         }
 
         .floating-contact-btn:hover {
-          transform: translateY(-4px);
+          transform: translateY(-4px) scale(1.05);
           box-shadow: 0 16px 40px rgba(15, 15, 15, 0.4);
           background: var(--charcoal);
+          animation: none;
+        }
+
+        .floating-contact-btn__badge {
+          position: absolute;
+          top: -4px;
+          right: -4px;
+          background: #ff4444;
+          color: white;
+          font-size: 11px;
+          font-weight: 600;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 2px solid white;
+          animation: badgePulse 1.5s ease-in-out infinite;
+        }
+
+        @keyframes badgePulse {
+          0%, 100% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.1);
+          }
         }
 
         .floating-contact-btn__icon {

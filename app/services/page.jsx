@@ -9,108 +9,125 @@ export default function ServicesPage() {
     <div data-page="services">
       <Header />
       <main>
-        <section className="simple-hero" aria-labelledby="services-title">
-          <div className="simple-hero__content">
-            <p className="eyebrow">Our Services</p>
-            <h1 className="simple-hero__title" id="services-title">We're here to help every step of the way</h1>
-            <p className="simple-hero__description">From getting your home ready to sell, to finding the perfect property, to settling into your new place - we've got you covered.</p>
+        {/* Hero */}
+        <section className="minimal-hero">
+          <h1 className="minimal-hero__title">Expertise across every stage</h1>
+          <p className="minimal-hero__text">
+            From strategic sales campaigns to advocacy and development, we provide clear, honest advice to guide your property decisions.
+          </p>
+        </section>
+
+        {/* Core Services */}
+        <section className="minimal-section">
+          <div className="minimal-container">
+            <div className="minimal-services">
+              <article className="minimal-service-card" id="sales">
+                <h3>Sales Strategy</h3>
+                <p className="minimal-text">
+                  Comprehensive campaigns designed to maximise value through precision marketing and negotiation. We manage every detail from presentation to settlement.
+                </p>
+                <ul className="minimal-list">
+                  <li>Professional photography & video production</li>
+                  <li>Private sale & auction campaign management</li>
+                  <li>Strategic negotiation & settlement coordination</li>
+                </ul>
+              </article>
+
+              <article className="minimal-service-card" id="advocacy">
+                <h3>Advocacy</h3>
+                <p className="minimal-text">
+                  Strategic sourcing, expert negotiation, and bidding for homebuyers and investors. We provide the market insight you need to buy with confidence.
+                </p>
+                <ul className="minimal-list">
+                  <li>Off-market property sourcing & research</li>
+                  <li>Auction bidding & private negotiation</li>
+                  <li>Contract review & due diligence support</li>
+                </ul>
+              </article>
+
+              <article className="minimal-service-card" id="projects">
+                <h3>Projects</h3>
+                <p className="minimal-text">
+                  End-to-end sales and marketing solutions for developments of all scales, from initial floorplan advisory to final sell-through.
+                </p>
+                <ul className="minimal-list">
+                  <li>Market positioning & pricing strategy</li>
+                  <li>Campaign development & launch coordination</li>
+                  <li>Sales team support & settlement management</li>
+                </ul>
+              </article>
+
+              <article className="minimal-service-card" id="rentals">
+                <h3>Rentals</h3>
+                <p className="minimal-text">
+                  Premium property management and leasing services designed to maximise returns and secure high-quality tenants for your investment.
+                </p>
+                <ul className="minimal-list">
+                  <li>Tenant sourcing & placement</li>
+                  <li>Property maintenance & inspections</li>
+                  <li>Rent collection & financial reporting</li>
+                </ul>
+              </article>
+            </div>
           </div>
         </section>
 
-        <section className="services">
-          <div className="section-heading">
-            <p className="eyebrow">How we help</p>
-            <h2>Tailored strategies for optimal outcomes</h2>
-            <p>Every property requires a customized approach. We develop strategic plans based on market analysis, buyer profiles, and your specific objectives.</p>
-          </div>
-          <div className="service-grid">
-            <article className="service-card">
-              <h3>Property sales</h3>
-              <p>We deliver comprehensive marketing campaigns, professional presentation, and strategic negotiation to maximize your sale price.</p>
-              <ul>
-                <li>Professional photos & video tours</li>
-                <li>Private sales & auction options</li>
-                <li>Expert negotiation</li>
-                <li>Support through settlement</li>
-              </ul>
-            </article>
-            <article className="service-card">
-              <h3>Buyer services</h3>
-              <p>We identify opportunities, conduct due diligence, provide market analysis, and negotiate optimal terms on your behalf.</p>
-              <ul>
-                <li>Property identification & research</li>
-                <li>Market analysis & pricing advice</li>
-                <li>Contract review & due diligence</li>
-                <li>Strategic negotiation</li>
-              </ul>
-            </article>
-            <article className="service-card">
-              <h3>Development projects</h3>
-              <p>We provide market positioning, sales strategy, and buyer acquisition for development projects of all scales.</p>
-              <ul>
-                <li>Market positioning advice</li>
-                <li>Sales presentation & display</li>
-                <li>Launch strategy</li>
-                <li>Sales team support</li>
-              </ul>
-            </article>
-          </div>
-        </section>
-
-        <section className="experience" aria-labelledby="services-experience-title">
-          <div className="experience-media">
-            <img src="/images/LowRes_2k_07.jpg" alt="Premium property" loading="lazy" />
-          </div>
-          <div className="experience-copy">
-            <p className="eyebrow">Our marketing approach</p>
-            <h2 id="services-experience-title">Strategic marketing campaigns</h2>
-            <p>Professional photography, video content, and targeted digital advertising ensure your property reaches qualified buyers. We provide regular performance analytics and market feedback throughout the campaign.</p>
-            <div className="experience-highlights">
-              <div>
-                <p className="experience-highlights__label">Quality content</p>
-                <p className="experience-highlights__value">Professional photography & video</p>
+        {/* Feature 1: Marketing */}
+        <section className="minimal-section" style={{ paddingTop: 0 }}>
+          <div className="minimal-container">
+            <div className="minimal-grid">
+              <div className="minimal-grid__media">
+                <img
+                  src="/images/image.jpg"
+                  alt="Editorial quality presentation"
+                  loading="lazy"
+                />
               </div>
-              <div>
-                <p className="experience-highlights__label">Wide reach</p>
-                <p className="experience-highlights__value">18+ property platforms</p>
+              <div className="minimal-grid__content">
+                <p className="eyebrow">Presentation</p>
+                <h2 className="minimal-heading">The art of presentation</h2>
+                <p className="minimal-text">
+                  We believe in the power of first impressions. Our marketing combines editorial-quality photography with targeted digital reach to ensure your property stands out in a crowded market.
+                </p>
+                <ul className="minimal-list">
+                  <li>Professional photography & videography</li>
+                  <li>Curated styling advice</li>
+                  <li>Targeted digital campaigns</li>
+                </ul>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="testimonials" aria-label="Client testimonials">
-          <div className="section-heading">
-            <p className="eyebrow">Happy clients</p>
-            <h2>Hear from people we've helped</h2>
-          </div>
-          <div className="testimonial-grid">
-            <figure className="testimonial-card">
-              <blockquote>
-                "Luke helped us sell our home privately in just two weeks and got us more than we expected. He was professional and kept everything confidential."
-              </blockquote>
-              <figcaption>Sophie, Toorak</figcaption>
-            </figure>
-            <figure className="testimonial-card">
-              <blockquote>
-                "After searching for years, they found us a home we never would have known was for sale. Their research was thorough and the advice was spot-on."
-              </blockquote>
-              <figcaption>Robert, Brighton</figcaption>
-            </figure>
-            <figure className="testimonial-card">
-              <blockquote>
-                "The marketing for our property was beautiful - professional videos, stunning photos, and it was everywhere online. Very impressive."
-              </blockquote>
-              <figcaption>James, South Yarra</figcaption>
-            </figure>
+        {/* Feature 2: Approach */}
+        <section className="minimal-section">
+          <div className="minimal-container">
+            <div className="minimal-grid">
+              <div className="minimal-grid__content">
+                <p className="eyebrow">Approach</p>
+                <h2 className="minimal-heading">A considered approach</h2>
+                <p className="minimal-text">
+                  We don't rely on volume. We focus on a select number of clients to ensure every campaign receives the attention it deserves. This allows us to be agile, responsive, and completely dedicated to your result.
+                </p>
+              </div>
+              <div className="minimal-grid__media">
+                <img
+                  src="/images/LowRes_2k_08.jpg"
+                  alt="Strategic approach"
+                  loading="lazy"
+                />
+              </div>
+            </div>
           </div>
         </section>
 
-        <section className="cta" aria-labelledby="services-cta-title">
+        {/* CTA Section */}
+        <section className="cta">
           <div className="cta-inner">
             <div className="cta-copy">
-              <p className="eyebrow">Get started</p>
-              <h2 id="services-cta-title">Ready to develop your property strategy?</h2>
-              <p>Contact us to discuss your objectives and timeline. We'll develop a customized approach to achieve your goals.</p>
+              <p className="eyebrow">Next Steps</p>
+              <h2>Start the conversation</h2>
+              <p>Whether you're selling, buying, or developing, we're ready to provide the advice you need.</p>
             </div>
             <div className="cta-actions">
               <Link className="btn btn--primary" href="/contact">Get in touch</Link>

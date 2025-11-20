@@ -9,6 +9,24 @@ export async function POST(req) {
     try {
         const { messages } = await req.json();
 
+        // Fetch latest auction data
+        let auctionContext = '';
+        try {
+            const auctionRes = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/api/auction-data`);
+            const auctionData = await auctionRes.json();
+
+            auctionContext = `
+
+**Latest Auction Data (${auctionData.melbourne.week}):**
+- Melbourne overall clearance rate: ${auctionData.melbourne.clearanceRate}%
+- Available suburb data: ${Object.keys(auctionData.suburbs).join(', ')}
+
+When users ask about specific suburbs, use this data to provide helpful insights.
+`;
+        } catch (error) {
+            console.error('Failed to fetch auction data:', error);
+        }
+
         if (!Array.isArray(messages)) {
             return NextResponse.json(
                 { error: "Invalid messages format" },
@@ -22,13 +40,32 @@ export async function POST(req) {
                 {
                     role: "system",
                     content: `
-You are an assistant for a Melbourne real estate agency.
-You answer only real estate related questions.
-You work for Fornieri Real Estate in Victoria, Australia.
-You do not give legal or financial advice, instead you suggest the user speak with the agent.
-When the user sounds like they want to sell, buy, lease or appraise, invite them to share their name, phone and email so an agent can contact them.
-Keep answers concise and friendly.
-        `.trim(),
+You are a helpful assistant for Fornieri & Azar, a boutique real estate agency in Melbourne, Victoria, Australia.
+
+**Your role:**
+- Answer real estate questions directly and concisely
+- Provide helpful, straightforward information about selling, buying, and market conditions
+- Keep responses brief (2-3 sentences max)
+- Be friendly and professional
+
+**What you CAN do:**
+- Give general market insights using the latest auction data below
+- Explain our services (Sales Strategy, Advocacy, Projects, Rentals)
+- Answer questions about the selling/buying process
+- Provide suburb-specific general advice
+
+**What you CANNOT do:**
+- Give specific property valuations (suggest they book an appraisal)
+- Provide legal or financial advice (suggest they speak with an agent)
+- Make price predictions (offer to connect them with an agent for detailed analysis)
+
+**When to capture leads:**
+If someone asks about selling, buying, renting, or appraising a property, offer to have an agent contact them. Ask for their name, phone, and email.
+
+${auctionContext}
+
+Keep it simple, direct, and helpful.
+`,
                 },
                 ...messages,
             ],

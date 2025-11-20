@@ -2375,3 +2375,19 @@ textarea {
         grid-template-columns: 1fr;
     }
 }
+
+/* Hero Logo */
+.hero-logo {
+    max-width: 68vw;
+    height: auto;
+    position: relative;
+    z-index: 10;
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.15));
+}
+
+@media (max-width: 768px) {
+    .hero-logo {
+        max-width: 92vw;
+        filter: drop-shadow(0 4px 16px rgba(0, 0, 0, 0.2));
+    }
+}

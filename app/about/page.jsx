@@ -77,51 +77,31 @@ export default function AboutPage() {
 
             <div className="minimal-services">
               <article className="minimal-service-card">
-                <h3>Selling</h3>
+                <h3>Sales</h3>
                 <p className="minimal-text">
-                  We deliver comprehensive marketing campaigns and strategic negotiation to maximize your sale price.
+                  Comprehensive marketing campaigns and strategic negotiation designed to maximise your sale price and deliver exceptional results.
                 </p>
-                <ul className="minimal-list">
-                  <li>Professional photography</li>
-                  <li>Auction guidance</li>
-                  <li>Expert negotiation</li>
-                </ul>
               </article>
 
               <article className="minimal-service-card">
-                <h3>Buying</h3>
+                <h3>Advocacy</h3>
                 <p className="minimal-text">
-                  We identify opportunities, conduct due diligence, and provide expert negotiation to secure the best terms.
+                  Strategic sourcing, expert negotiation, and bidding services to help you secure the right property at the right price.
                 </p>
-                <ul className="minimal-list">
-                  <li>Property search</li>
-                  <li>Contract review</li>
-                  <li>Settlement support</li>
-                </ul>
               </article>
 
               <article className="minimal-service-card">
-                <h3>Property Management</h3>
+                <h3>Rentals</h3>
                 <p className="minimal-text">
-                  We provide premium management services, ensuring your investment is well-maintained and yielding maximum returns.
+                  Premium property management and leasing services designed to maximise returns and secure high-quality tenants.
                 </p>
-                <ul className="minimal-list">
-                  <li>Tenant selection</li>
-                  <li>Maintenance management</li>
-                  <li>Rent collection</li>
-                </ul>
               </article>
 
               <article className="minimal-service-card">
                 <h3>Projects</h3>
                 <p className="minimal-text">
-                  We partner with developers to deliver strategic market positioning and sales campaign management.
+                  Strategic market positioning and sales campaign management for developments of all scales.
                 </p>
-                <ul className="minimal-list">
-                  <li>Market positioning</li>
-                  <li>Pricing strategy</li>
-                  <li>Campaign management</li>
-                </ul>
               </article>
             </div>
           </div>
@@ -133,7 +113,7 @@ export default function AboutPage() {
             <div className="minimal-grid minimal-grid--reverse">
               <div className="minimal-grid__media">
                 <img
-                  src="/images/LowRes_2k_08.jpg"
+                  src="/images/0361.01 5 Princely Tce, Templestowe-3.jpg"
                   alt="Premium property interior"
                   loading="lazy"
                 />
@@ -144,16 +124,49 @@ export default function AboutPage() {
                 <p className="minimal-text">
                   Our campaigns combine professional photography, video content, and targeted digital advertising to reach qualified buyers. We provide regular performance analytics to keep you informed.
                 </p>
-                <div className="minimal-stats" style={{ border: 'none', padding: '20px 0', margin: 0, gap: '20px' }}>
-                  <div className="minimal-stat" style={{ textAlign: 'left' }}>
-                    <span className="minimal-stat__value" style={{ fontSize: '24px' }}>18+</span>
-                    <span className="minimal-stat__label">Platforms</span>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Philosophy Section */}
+        <section className="minimal-section">
+          <div className="minimal-container">
+            <div className="minimal-grid">
+              <div className="minimal-grid__content">
+                <p className="eyebrow">Our Philosophy</p>
+                <h2 className="minimal-heading">Values that define us</h2>
+
+                <div style={{ display: 'grid', gap: '32px', marginTop: '32px' }}>
+                  <div>
+                    <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: '16px', marginBottom: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Discretion</h3>
+                    <p className="minimal-text" style={{ marginBottom: 0 }}>
+                      We understand the value of privacy. Our off-market strategies and confidential approach ensure your business remains yours.
+                    </p>
                   </div>
-                  <div className="minimal-stat" style={{ textAlign: 'left' }}>
-                    <span className="minimal-stat__value" style={{ fontSize: '24px' }}>12.6%</span>
-                    <span className="minimal-stat__label">Above Reserve</span>
+
+                  <div>
+                    <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: '16px', marginBottom: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Excellence</h3>
+                    <p className="minimal-text" style={{ marginBottom: 0 }}>
+                      From marketing materials to property presentation, we believe that every detail matters in achieving a premium result.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: '16px', marginBottom: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Integrity</h3>
+                    <p className="minimal-text" style={{ marginBottom: 0 }}>
+                      We build long-term relationships based on honest advice, transparency, and an unwavering commitment to your best interests.
+                    </p>
                   </div>
                 </div>
+              </div>
+              <div className="minimal-grid__media">
+                <img
+                  src="/images/image (1).jpg"
+                  alt="Our Philosophy"
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>
@@ -187,12 +200,12 @@ export default function AboutPage() {
                 <p className="eyebrow">Founder / OIEC</p>
                 <h2 className="minimal-heading">Luke Fornieri</h2>
                 <p className="minimal-text">
-                  Luke brings over two decades of experience in Melbourne's premium property market. Known for strategic negotiation and a results-driven approach.
+                  Luke has established a remarkable track record, known for closing deals and fostering enduring relationships. His personalised approach serves a diverse clientele, including high-profile individuals.
                 </p>
                 <ul className="minimal-list">
-                  <li>Certified Estate Agent</li>
-                  <li>REIV Member</li>
-                  <li>Top Agent 2024</li>
+                  <li>Licensed Estate Agent</li>
+                  <li>Strategic Advisor</li>
+                  <li>Market Analyst</li>
                 </ul>
                 <div style={{ marginTop: '16px' }}>
                   <a className="btn btn--primary" href="mailto:luke@fornieriazar.com.au?subject=Enquiry for Luke Fornieri">Work with Luke</a>
@@ -210,15 +223,15 @@ export default function AboutPage() {
                 />
               </div>
               <div className="minimal-grid__content">
-                <p className="eyebrow">Director / Auctioneer</p>
+                <p className="eyebrow">Founder / Auctioneer</p>
                 <h2 className="minimal-heading">Chris Azar</h2>
                 <p className="minimal-text">
                   Chris combines deep market knowledge with an unwavering commitment to client success. His approachable style and attention to detail ensure a seamless property journey.
                 </p>
                 <ul className="minimal-list">
-                  <li>Licensed Estate Agent</li>
-                  <li>Property Management Specialist</li>
-                  <li>Market Analyst</li>
+                  <li>Senior Auctioneer</li>
+                  <li>Client Relations</li>
+                  <li>Campaign Strategist</li>
                 </ul>
                 <div style={{ marginTop: '16px' }}>
                   <a className="btn btn--primary" href="mailto:chris@fornieriazar.com.au?subject=Enquiry for Chris Azar">Work with Chris</a>

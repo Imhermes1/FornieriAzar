@@ -54,6 +54,7 @@ export default function Home() {
           position: 'absolute',
           inset: 0,
           backdropFilter: 'blur(8px)',
+          backgroundColor: 'rgba(255, 255, 255, 0.15)',
           pointerEvents: 'none',
           zIndex: 2
         }} />
@@ -63,7 +64,7 @@ export default function Home() {
           position: 'absolute',
           width: '800px',
           height: '800px',
-          background: 'radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 40%, rgba(255, 255, 255, 0) 80%)',
+          background: 'radial-gradient(circle, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.2) 40%, rgba(255, 255, 255, 0) 80%)',
           borderRadius: '50%',
           filter: 'blur(60px)',
           zIndex: 9
@@ -76,12 +77,7 @@ export default function Home() {
           width={2000}
           height={2000}
           priority
-          style={{
-            maxWidth: '68vw',
-            height: 'auto',
-            position: 'relative',
-            zIndex: 10
-          }}
+          className="hero-logo"
         />
 
         {/* Scroll indicator */}
@@ -95,7 +91,8 @@ export default function Home() {
           alignItems: 'center',
           gap: '12px',
           opacity: 0.6,
-          zIndex: 10
+          zIndex: 10,
+          animation: 'bounce 2s ease-in-out infinite'
         }}>
           <span style={{
             fontSize: '11px',
@@ -105,9 +102,20 @@ export default function Home() {
             fontWeight: '800'
           }}>Explore</span>
           <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M6 0V18M6 18L1 13M6 18L11 13" stroke="#000" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M6 0V18M6 18L1 13M6 18L11 13" stroke="#000" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </div>
+
+        <style jsx>{`
+          @keyframes bounce {
+            0%, 100% {
+              transform: translateX(-50%) translateY(0);
+            }
+            50% {
+              transform: translateX(-50%) translateY(-10px);
+            }
+          }
+        `}</style>
 
         {/* Video attribution */}
         <div style={{
@@ -120,7 +128,7 @@ export default function Home() {
           zIndex: 10,
           fontWeight: '500'
         }}>
-          Video from Josh
+          Video from Pat Whelen
         </div>
       </section>
 

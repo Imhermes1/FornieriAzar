@@ -2304,4 +2304,19 @@ textarea {
   }
 }
 
+.hero-logo {
+  z-index: 10;
+  filter: drop-shadow(0 4px 12px #00000026);
+  max-width: 68vw;
+  height: auto;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .hero-logo {
+    filter: drop-shadow(0 4px 16px #0003);
+    max-width: 92vw;
+  }
+}
+
 /*# sourceMappingURL=app_globals_71f961d1.css.map*/

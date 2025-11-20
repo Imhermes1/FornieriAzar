@@ -17,8 +17,8 @@ export default function Footer() {
         <div className="footer-action-card">
           <div className="footer-action-card__icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              <path d="M9 22V12H15V22" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M9 22V12H15V22" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
           <div className="footer-action-card__content">
@@ -33,8 +33,8 @@ export default function Footer() {
         <div className="footer-action-card">
           <div className="footer-action-card__icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="11" cy="11" r="8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              <path d="M21 21L16.65 16.65" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              <circle cx="11" cy="11" r="8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M21 21L16.65 16.65" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
           <div className="footer-action-card__content">
@@ -61,7 +61,7 @@ export default function Footer() {
               <div className="footer-contact-grid">
                 <div>
                   <span className="footer-contact-label">Office</span>
-                  <p>PO Box Suite 5028<br/>165 Waverley Road<br/>Malvern East VIC 3145</p>
+                  <p>PO Box Suite 5028<br />165 Waverley Road<br />Malvern East VIC 3145</p>
                 </div>
                 <div>
                   <span className="footer-contact-label">Contact</span>
@@ -79,10 +79,10 @@ export default function Footer() {
             <div className="footer-nav-column">
               <h3>Services</h3>
               <ul>
-                <li><Link href="/services#sales">Property sales</Link></li>
-                <li><Link href="/services#buying">Buyer advocacy</Link></li>
-                <li><Link href="/services#rental">Rental management</Link></li>
-                <li><Link href="/services#appraisal">Appraisals</Link></li>
+                <li><Link href="/services#sales">Sales Strategy</Link></li>
+                <li><Link href="/services#advocacy">Advocacy</Link></li>
+                <li><Link href="/services#projects">Projects</Link></li>
+                <li><Link href="/services#rentals">Rentals</Link></li>
               </ul>
             </div>
 
@@ -90,7 +90,7 @@ export default function Footer() {
               <h3>Discover</h3>
               <ul>
                 <li><Link href="/about">Our story</Link></li>
-                <li><Link href="/team">Meet the team</Link></li>
+                <li><Link href="/about#team">Meet the team</Link></li>
                 <li><Link href="/listings">Current listings</Link></li>
                 <li><Link href="/contact">Get in touch</Link></li>
               </ul>

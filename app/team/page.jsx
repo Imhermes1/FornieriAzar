@@ -18,22 +18,41 @@ export default function TeamPage() {
         </section>
 
         <section className="team" aria-label="Leadership profile">
-          <div className="team-card">
+          <div className="team-card" style={{ marginBottom: '40px' }}>
             <div className="team-card__media">
               <img src="/images/Luke_010_HiRes.jpg" alt="Luke Fornieri" loading="lazy" />
             </div>
             <div className="team-card__body">
               <p className="eyebrow">Founder</p>
               <h2>Luke Fornieri</h2>
-              <p>Luke brings over twenty years of experience in Melbourne's premium property market. Known for strategic negotiation, market analysis, and a results-focused approach, he delivers exceptional outcomes across sales, acquisitions, and development projects.</p>
+              <p>Luke has established a remarkable track record, known for closing deals and fostering enduring relationships. His personalised approach serves a diverse clientele, including high-profile individuals.</p>
               <ul className="team-card__credentials">
-                <li>Certified Estate Agent & Auctioneer</li>
-                <li>Member, Real Estate Institute of Victoria</li>
-                <li>Featured in AFR Top Agents 2024</li>
+                <li>Licensed Estate Agent</li>
+                <li>Strategic Advisor</li>
+                <li>Market Analyst</li>
               </ul>
               <div className="cta-actions">
                 <a className="btn btn--primary" href="mailto:hello@fornieriazar.com.au">Get in touch with Luke</a>
                 <Link className="btn btn--ghost" href="/services">Our services</Link>
+              </div>
+            </div>
+          </div>
+
+          <div className="team-card">
+            <div className="team-card__media">
+              <img src="/images/chris_bigger.png" alt="Chris Azar" loading="lazy" />
+            </div>
+            <div className="team-card__body">
+              <p className="eyebrow">Founder / Auctioneer</p>
+              <h2>Chris Azar</h2>
+              <p>Chris combines deep market knowledge with an unwavering commitment to client success. His approachable style and attention to detail ensure a seamless property journey.</p>
+              <ul className="team-card__credentials">
+                <li>Senior Auctioneer</li>
+                <li>Client Relations</li>
+                <li>Campaign Strategist</li>
+              </ul>
+              <div className="cta-actions">
+                <a className="btn btn--primary" href="mailto:chris@fornieriazar.com.au">Get in touch with Chris</a>
               </div>
             </div>
           </div>
@@ -68,7 +87,7 @@ export default function TeamPage() {
             </figure>
             <figure className="testimonial-card">
               <blockquote>
-                "They're always on top of every detail, and inspections are always perfectly organized and welcoming."
+                "They're always on top of every detail, and inspections are always perfectly organised and welcoming."
               </blockquote>
               <figcaption>Rachel, Interior Stylist</figcaption>
             </figure>
