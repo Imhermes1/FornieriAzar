@@ -23,7 +23,7 @@ export default function TeamPage() {
         <section className="team" aria-label="Leadership profile">
           <div className="team-card" style={{ marginBottom: '40px' }}>
             <div className="team-card__media">
-              <img src="/images/Luke_010_HiRes.jpg" alt="Luke Fornieri" loading="lazy" />
+              <img src="/images/lukeprofile.png?v=3" alt="Luke Fornieri" loading="lazy" style={{ objectPosition: 'top' }} />
             </div>
             <div className="team-card__body">
               <p className="eyebrow">Founder</p>

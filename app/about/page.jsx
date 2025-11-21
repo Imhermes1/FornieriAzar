@@ -194,9 +194,10 @@ export default function AboutPage() {
             <div className="minimal-grid" style={{ marginBottom: '80px' }}>
               <div className="minimal-grid__media">
                 <img
-                  src="/images/luke_big.png?v=2"
+                  src="/images/lukeprofile.png"
                   alt="Luke Fornieri"
                   loading="lazy"
+                  style={{ objectPosition: 'top' }}
                 />
               </div>
               <div className="minimal-grid__content">
