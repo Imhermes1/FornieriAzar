@@ -1,13 +1,34 @@
+
 import Link from 'next/link';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import ListingCard from '../components/ListingCard';
+import { getFilteredListings } from '@/lib/rexsoftware-helper';
 
 export const metadata = {
   title: 'Properties for Sale & Rent | East & South East Melbourne',
-  description: 'Browse our exclusive collection of properties for sale and rent in East and South East Melbourne. Find your dream home with Fornieri & Azar.',
+  description: 'Browse our exclusive collection of properties for sale and rent in East and South East Melbourne.',
 };
 
-export default function ListingsPage() {
+// Force dynamic since searchParams can change and we want fresh data
+export const dynamic = 'force-dynamic';
+
+export default async function ListingsPage(props) {
+  // Await searchParams in Next.js 15+ (or 13+ generally recommended)
+  const searchParams = await props.searchParams;
+
+  const { listings, total } = await getFilteredListings({
+    status: searchParams.status,
+    type: searchParams.type,
+    minPrice: searchParams.minPrice,
+    maxPrice: searchParams.maxPrice,
+    bedrooms: searchParams.bedrooms,
+    suburb: searchParams.suburb,
+    limit: 50 // Show more per page
+  });
+
+  const hasListings = listings && listings.length > 0;
+
   return (
     <div data-page="listings">
       <Header />
@@ -21,42 +42,24 @@ export default function ListingsPage() {
         </section>
 
         <section className="listings" aria-label="Featured properties">
+          {/* Filter Info Bar */}
+          <div className="filter-summary">
+            <p>{total} properties found</p>
+            {/* Could add active filters display here */}
+          </div>
+
           <div className="listing-grid">
-            <div style={{
-              gridColumn: '1 / -1',
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              justifyContent: 'center',
-              padding: '60px 20px',
-              textAlign: 'center',
-              background: 'var(--white)',
-              borderRadius: 'var(--radius-sm)',
-              border: '1px solid rgba(5, 6, 8, 0.1)'
-            }}>
-              <h3 style={{
-                fontFamily: 'var(--font-heading)',
-                fontSize: '24px',
-                marginBottom: '16px',
-                color: 'var(--off-black)'
-              }}>View Our Current Collection</h3>
-              <p style={{
-                maxWidth: '500px',
-                marginBottom: '32px',
-                color: 'var(--gray-600)',
-                lineHeight: '1.6'
-              }}>
-                Explore our complete portfolio of premium properties on realestate.com.au while we update our website listings.
-              </p>
-              <a
-                href="https://www.realestate.com.au/agency/fornieri-azar-XWHDYV"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn--primary"
-              >
-                View All Listings
-              </a>
-            </div>
+            {hasListings ? (
+              listings.map(listing => (
+                <ListingCard key={listing.id} listing={listing} />
+              ))
+            ) : (
+              <div className="no-results">
+                <h3>No properties found</h3>
+                <p>Try adjusting your search filters or check back later.</p>
+                <Link href="/listings" className="btn btn--secondary">Clear Filters</Link>
+              </div>
+            )}
           </div>
         </section>
 
