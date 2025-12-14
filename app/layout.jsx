@@ -1,5 +1,6 @@
 import './globals.css';
 import FloatingContactButton from './components/FloatingContactButton';
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata = {
   title: {
@@ -67,6 +68,7 @@ export default function RootLayout({ children }) {
       <body>
         {children}
         <FloatingContactButton />
+        <Analytics />
       </body>
     </html>
   );
