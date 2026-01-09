@@ -77,8 +77,8 @@ export const metadata = {
   },
   manifest: '/site.webmanifest',
   icons: {
-    icon: '/images/FnA.svg',
-    apple: '/images/FnA.svg', // SVG works as touch icon in modern iOS
+    icon: '/images/F&A_Logo_V1.svg',
+    apple: '/images/F&A_Logo_V1.svg', // SVG works as touch icon in modern iOS
   },
 };
 
