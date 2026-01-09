@@ -9,17 +9,38 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [propertyDropdownOpen, setPropertyDropdownOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [isOverFooter, setIsOverFooter] = useState(false);
   const pathname = usePathname();
   const dropdownRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
+      // Header is "scrolled" (solid) if it's more than 50px from top
+      // AND not over the footer
+      setScrolled(window.scrollY > 50);
     };
 
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+
+    // Use IntersectionObserver to detect when footer is in view
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsOverFooter(entry.isIntersecting);
+      },
+      { threshold: 0.1 } // Trigger when 10% of footer is visible
+    );
+
+    const footer = document.querySelector('footer');
+    if (footer) observer.observe(footer);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      if (footer) observer.unobserve(footer);
+    };
   }, []);
+
+  // Header is transparent if at the very top OR over the footer
+  const isTransparent = !scrolled || isOverFooter;
 
   // Close dropdown when clicking outside
   useEffect(() => {
@@ -44,7 +65,7 @@ export default function Header() {
 
   return (
     <>
-      <header className={`modern-header ${scrolled ? 'scrolled' : ''} ${menuOpen ? 'menu-open' : ''}`}>
+      <header className={`modern-header ${!isTransparent ? 'scrolled' : ''} ${menuOpen ? 'menu-open' : ''}`}>
         <div className="modern-header__container">
           {/* Logo */}
           <Link href="/" className="modern-header__logo">

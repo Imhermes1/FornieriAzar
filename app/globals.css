@@ -127,8 +127,11 @@ img {
 }
 
 .modern-header.scrolled {
-    background: transparent;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     height: 60px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
 }
 
 .modern-header__container {
