@@ -1,6 +1,40 @@
-[00:00:01.287] Server  LOG      ✓ Ready in 931ms
-[00:00:29.886] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:29.962] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:00.560] Server  ERROR   (node:38634) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/lukefornieri/Fornieri%20&%20Azar%20Website/next.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/lukefornieri/Fornieri & Azar Website/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[00:00:00.824] Server  LOG      ✓ Ready in 580ms
+[00:00:03.204] Server  LOG     Fetching listings via Rex API JSON endpoint...
+[00:00:05.677] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:06.009] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:06.442] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:06.442] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/sell","route":"/sell"}
+[00:00:06.442] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/sell color: rgb(120, 120, 120) color: inherit {"dp":"/sell","o":"http://localhost:3000/sell","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767912469299}
+[00:00:06.537] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:06.537] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/services","route":"/services"}
+[00:00:06.537] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services color: rgb(120, 120, 120) color: inherit {"dp":"/services","o":"http://localhost:3000/services","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767912468829}
+[00:00:06.793] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:07.494] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:07.494] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/buy","route":"/buy"}
+[00:00:07.494] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/buy color: rgb(120, 120, 120) color: inherit {"dp":"/buy","o":"http://localhost:3000/buy","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767912469950}
+[00:01:39.591] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767912562447}
+[00:03:19.467] Browser WARN    Image with src "https://au-crm.cdns.rexsoftware.com/app/livestore/accounts/6194/listings/4842096/images/149662008-image-m_0114-dd13-0bcd-1ac3-f5c9-bb0d-5d61-0639_20251216060341.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:03:35.366] Server  LOG     Fetching listings via Rex API JSON endpoint...
+[00:03:36.654] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:37.096] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:03:37.096] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/buy","route":"/buy"}
+[00:03:37.096] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/buy color: rgb(120, 120, 120) color: inherit {"dp":"/buy","o":"http://localhost:3000/buy","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767912679953}
+[00:03:58.357] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767912701189}
+[00:05:54.678] Server  LOG      ✓ Compiled in 633ms
+[00:06:48.853] Server  LOG      ✓ Compiled in 442ms
+[00:07:34.689] Server  LOG      ✓ Compiled in 442ms
+[00:08:13.442] Server  LOG      ✓ Compiled in 148ms
+[00:09:28.476] Server  LOG      ✓ Compiled in 507ms
+[00:11:11.967] Server  LOG      ✓ Compiled in 696ms
+[00:12:11.832] Server  LOG      ✓ Compiled in 531ms
+[00:12:56.058] Server  LOG      ✓ Compiled in 121ms
+[00:23:26.217] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:23:26.217] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -23,21 +57,76 @@ It can also happen if the client has a browser extension installed which messes 
                 <RedirectErrorBoundary router={{...}}>
                   <Head>
                   <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.jsx">
+                    <SegmentViewNode type="layout" pagePath={"/Fornier..."}>
                       <SegmentTrieNode>
                       <link>
                       <script>
                       <script>
                       <RootLayout>
-                        <html
-                          lang="en"
--                         data-jetski-tab-id="1416999943"
-                        >
+                        <html lang="en">
+                          <head>
+                          <body
+-                           data-new-gr-c-s-check-loaded="14.1268.0"
+-                           data-gr-ext-installed=""
+                          >
                   ...
 
-[00:01:37.216] Server  LOG      ✓ Compiled in 214ms
-[00:03:44.805] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:03:45.125] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:23:26.217] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:23:26.217] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:23:26.217] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767913868656}
+[00:24:23.703] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:24:24.005] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:24:24.005] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/contact","route":"/contact"}
+[00:24:24.005] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767913926867}
+[00:24:32.411] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:24:32.676] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:24:32.676] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:24:32.676] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767913935531}
+[00:27:01.744] Server  LOG      ✓ Compiled in 782ms
+[00:27:53.518] Server  LOG      ✓ Compiled in 188ms
+[00:28:07.015] Server  LOG      ✓ Compiled in 268ms
+[00:28:56.343] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:28:56.636] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:28:56.636] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:28:56.636] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767914199501}
+[00:29:01.562] Server  LOG      ✓ Compiled in 356ms
+[00:29:19.515] Server  LOG      ✓ Compiled in 149ms
+[02:52:50.586] Server  LOG      ✓ Compiled in 1009ms
+[02:53:39.865] Server  LOG      ✓ Compiled in 306ms
+[02:56:56.569] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:56:56.746] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[02:56:56.747] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[02:56:56.747] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767923079586}
+[02:57:55.715] Server  LOG      ✓ Compiled in 536ms
+[02:57:56.014] Browser LOG     Video autoplay prevented: {}
+[02:57:56.343] Browser LOG     Video autoplay prevented: {}
+[02:58:05.113] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:58:05.568] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[02:58:05.568] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[02:58:05.568] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767923148424}
+[02:59:04.670] Server  LOG      ✓ Compiled in 396ms
+[02:59:29.349] Server  LOG      ✓ Compiled in 387ms
+[02:59:30.475] Browser LOG     Autoplay blocked: {}
+[02:59:30.584] Browser LOG     Autoplay blocked: {}
+[02:59:43.837] Server  LOG      ✓ Compiled in 139ms
+[02:59:55.223] Server  LOG      ✓ Compiled in 181ms
+[03:00:32.687] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:00:32.998] Browser LOG     Autoplay blocked: {}
+[03:00:32.999] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[03:00:32.999] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[03:00:32.999] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767923295795}
+[03:00:42.553] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:00:42.767] Browser LOG     Autoplay blocked: {}
+[03:00:42.771] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[03:00:42.772] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[03:00:42.772] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767923305613}
+[03:01:09.939] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:01:09.939] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[03:01:09.939] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[03:01:09.939] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767923332510}
+[03:01:09.939] Browser LOG     Autoplay blocked: {}
+[03:05:04.020] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:05:04.432] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -55,20 +144,836 @@ It can also happen if the client has a browser extension installed which messes 
         <ReplaySsrOnlyErrors>
         <DevRootHTTPAccessFallbackBoundary>
           <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
-            <HTTPAccessFallbackErrorBoundary pathname="/about" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+            <HTTPAccessFallbackErrorBoundary pathname="/images/65..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
               <RedirectBoundary>
                 <RedirectErrorBoundary router={{...}}>
                   <Head>
                   <__next_root_layout_boundary__>
-                    <SegmentViewNode type="layout" pagePath="layout.jsx">
+                    <SegmentViewNode type="layout" pagePath={"/Fornier..."}>
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head>
+                          <body
+-                           className="antigravity-scroll-lock"
+                          >
+                  ...
+
+[03:05:04.432] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[03:05:04.432] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/images/6532832-hd_1920_1080_24fps.mp4","route":"/images/6532832-hd_1920_1080_24fps.mp4"}
+[03:05:04.432] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/images/6532832-hd_1920_1080_24fps.mp4 color: rgb(120, 120, 120) color: inherit {"dp":"/images/6532832-hd_1920_1080_24fps.mp4","o":"http://localhost:3000/images/6532832-hd_1920_1080_24fps.mp4","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767923567252}
+[03:06:12.018] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:06:12.018] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath={"/Fornier..."}>
                       <SegmentTrieNode>
                       <link>
                       <script>
                       <script>
                       <RootLayout>
-                        <html
-                          lang="en"
--                         data-jetski-tab-id="1416999943"
-                        >
+                        <html lang="en">
+                          <head>
+                          <body
+-                           data-new-gr-c-s-check-loaded="14.1268.0"
+-                           data-gr-ext-installed=""
+                          >
                   ...
 
+[03:06:12.018] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[03:06:12.018] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[03:06:12.018] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767923634476}
+[03:06:14.708] Browser LOG     Autoplay blocked: {}
+[03:09:57.642] Server  LOG      ✓ Compiled in 1210ms
+[03:10:40.087] Server  LOG      ✓ Compiled in 1116ms
+[03:11:03.041] Server  LOG      ✓ Compiled in 732ms
+[03:12:11.642] Server  LOG      ✓ Compiled in 1102ms
+[03:13:12.476] Server  LOG      ✓ Compiled in 851ms
+[03:13:49.757] Server  LOG      ✓ Compiled in 238ms
+[03:13:52.913] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:13:53.880] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath={"/Fornier..."}>
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head>
+                          <body
+-                           className="antigravity-scroll-lock"
+                          >
+                  ...
+
+[03:13:54.334] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[03:13:54.334] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[03:13:54.334] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767924096825}
+[03:31:04.790] Server  LOG      ✓ Compiled in 2.4s
+[03:31:43.896] Server  LOG      ✓ Compiled in 4.4s
+[03:42:25.926] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:42:26.290] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[03:42:26.290] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[03:42:26.290] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767925809116}
+[03:43:10.406] Server  LOG      ✓ Compiled in 326ms
+[03:43:30.034] Server  LOG      ✓ Compiled in 239ms
+[03:45:35.683] Server  LOG      ✓ Compiled in 285ms
+[03:45:46.722] Server  LOG      ✓ Compiled in 299ms
+[03:46:02.304] Server  LOG      ✓ Compiled in 174ms
+[03:47:05.568] Server  LOG      ✓ Compiled in 549ms
+[03:47:34.279] Server  LOG      ✓ Compiled in 116ms
+[03:48:02.815] Browser WARN    Footer video autoplay failed: {}
+[03:48:02.815] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767926145673}
+[03:48:11.186] Server  LOG      ✓ Compiled in 298ms
+[03:48:20.589] Server  LOG      ✓ Compiled in 121ms
+[03:48:49.206] Server  LOG      ✓ Compiled in 599ms
+[03:56:28.850] Server  LOG      ✓ Compiled in 434ms
+[03:56:44.366] Server  LOG      ✓ Compiled in 145ms
+[03:57:52.787] Server  LOG      ✓ Compiled in 296ms
+[03:58:51.477] Server  LOG      ✓ Compiled in 133ms
+[04:00:55.087] Server  LOG      ✓ Compiled in 133ms
+[04:02:41.546] Server  LOG      ✓ Compiled in 325ms
+[04:02:59.545] Server  LOG      ✓ Compiled in 115ms
+[04:03:48.012] Server  LOG      ✓ Compiled in 200ms
+[04:05:11.730] Server  LOG      ✓ Compiled in 307ms
+[04:05:52.601] Server  LOG      ✓ Compiled in 351ms
+[04:06:13.635] Server  LOG      ✓ Compiled in 177ms
+[04:06:55.352] Server  LOG      ✓ Compiled in 413ms
+[04:07:30.889] Server  LOG      ✓ Compiled in 402ms
+[04:07:54.291] Server  LOG      ✓ Compiled in 51ms
+[04:08:25.060] Server  LOG      ✓ Compiled in 1293ms
+[04:08:27.638] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+
+Check the render method of `ContactPage`.
+[04:09:25.752] Server  LOG      ✓ Compiled in 776ms
+[04:09:25.792] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[04:09:28.635] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:09:28.853] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[04:09:28.853] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/contact","route":"/contact"}
+[04:09:28.853] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767927431701}
+[04:10:01.984] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:10:02.295] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[04:10:02.295] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/contact","route":"/contact"}
+[04:10:02.295] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767927465134}
+[04:10:32.885] Server  LOG      ✓ Compiled in 580ms
+[04:10:49.211] Server  LOG      ✓ Compiled in 123ms
+[04:10:49.452] Browser WARN    Footer video autoplay failed: {}
+[04:11:01.004] Server  LOG      ✓ Compiled in 315ms
+[04:11:42.595] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:11:42.865] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[04:11:42.865] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/contact","route":"/contact"}
+[04:11:42.865] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767927565755}
+[04:11:56.636] Browser WARN    Footer video autoplay failed: {}
+[04:11:56.637] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767927579527}
+[04:14:33.749] Server  LOG      ✓ Compiled in 1040ms
+[04:14:34.398] Server  ERROR    ⨯ ReferenceError: HomeSearch is not defined
+[04:14:34.608] Browser ERROR   uncaughtError: ReferenceError: HomeSearch is not defined
+[04:14:47.226] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[04:14:48.194] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:14:48.513] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[04:14:48.513] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[04:14:48.513] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767927751404}
+[04:17:25.465] Server  LOG      ✓ Compiled in 689ms
+[04:21:31.531] Server  LOG      ✓ Compiled in 1455ms
+[04:21:34.066] Browser WARN    Hero video autoplay failed: {}
+[04:23:55.118] Server  LOG      ✓ Compiled in 377ms
+[04:25:00.141] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:25:01.328] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[04:25:01.328] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[04:25:01.328] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767928364230}
+[04:25:26.216] Server  LOG      ✓ Compiled in 530ms
+[04:26:09.097] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:26:09.842] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[04:26:09.842] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[04:26:09.842] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767928432746}
+[04:27:34.740] Server  LOG      ✓ Compiled in 222ms
+[04:27:47.525] Server  LOG      ✓ Compiled in 191ms
+[04:27:58.895] Server  LOG      ✓ Compiled in 559ms
+[04:28:13.259] Server  LOG      ✓ Compiled in 245ms
+[04:31:46.887] Server  LOG      ✓ Compiled in 323ms
+[04:32:39.911] Server  LOG      ✓ Compiled in 263ms
+[04:33:48.147] Server  LOG      ✓ Compiled in 786ms
+[04:33:58.537] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:33:58.747] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[04:33:58.747] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/privacy","route":"/privacy"}
+[04:33:58.747] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/privacy color: rgb(120, 120, 120) color: inherit {"dp":"/privacy","o":"http://localhost:3000/privacy","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767928901655}
+[04:34:01.513] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:34:02.113] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[04:34:02.113] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[04:34:02.113] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767928904673}
+[04:35:15.182] Server  LOG      ✓ Compiled in 1502ms
+[04:35:44.616] Server  LOG      ✓ Compiled in 937ms
+[04:39:38.490] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:39:38.768] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[04:39:38.768] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/privacy","route":"/privacy"}
+[04:39:38.768] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/privacy color: rgb(120, 120, 120) color: inherit {"dp":"/privacy","o":"http://localhost:3000/privacy","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767929241677}
+[04:39:41.711] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:39:42.139] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath={"/Fornier..."}>
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head>
+                          <body
+-                           data-new-gr-c-s-check-loaded="14.1268.0"
+-                           data-gr-ext-installed=""
+                          >
+                  ...
+
+[04:39:42.335] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[04:39:42.335] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[04:39:42.336] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767929245237}
+[04:39:44.830] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:39:44.957] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[04:39:44.957] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/privacy","route":"/privacy"}
+[04:39:44.957] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/privacy color: rgb(120, 120, 120) color: inherit {"dp":"/privacy","o":"http://localhost:3000/privacy","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767929247866}
+[04:39:46.605] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:39:46.846] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[04:39:46.846] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[04:39:46.846] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767929249671}
+[04:41:03.042] Server  LOG      ✓ Compiled in 375ms
+[04:42:00.508] Server  LOG      ✓ Compiled in 686ms
+[04:43:31.070] Server  LOG      ✓ Compiled in 782ms
+[04:43:48.560] Server  LOG      ✓ Compiled in 114ms
+[04:49:01.457] Browser WARN    Footer video autoplay failed: {}
+[04:49:01.458] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/privacy color: rgb(120, 120, 120) color: inherit {"dp":"/privacy","o":"http://localhost:3000/privacy","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767929804337}
+[04:52:43.787] Server  LOG      ✓ Compiled in 571ms
+[04:53:22.301] Server  LOG      ✓ Compiled in 774ms
+[04:55:29.089] Browser LOG     Autoplay blocked {}
+[04:55:29.089] Browser WARN    Footer video autoplay failed: {}
+[04:55:29.091] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767930191954}
+[04:55:37.599] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:55:37.894] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath={"/Fornier..."}>
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head>
+                          <body
+-                           data-new-gr-c-s-check-loaded="14.1268.0"
+-                           data-gr-ext-installed=""
+                          >
+                  ...
+
+[04:55:37.894] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[04:55:37.894] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[04:55:37.894] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767930200810}
+[04:56:58.502] Server  LOG      ✓ Compiled in 352ms
+[04:57:19.917] Server  LOG      ✓ Compiled in 242ms
+[04:58:07.299] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:58:07.681] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[04:58:07.681] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[04:58:07.681] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767930350597}
+[04:58:49.777] Server  LOG      ✓ Compiled in 640ms
+[05:02:49.631] Server  LOG     Fetching listings via Rex API JSON endpoint...
+[05:02:52.399] Server  LOG     Fetching listings via Rex API JSON endpoint...
+[05:02:53.104] Browser WARN    Footer video autoplay failed: {}
+[05:02:53.104] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/buy color: rgb(120, 120, 120) color: inherit {"dp":"/buy","o":"http://localhost:3000/buy","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767930636014}
+[05:02:53.322] Browser ERROR   uncaughtError: TypeError: Cannot set properties of null (setting 'src')
+[05:04:13.839] Server  LOG      ✓ Compiled in 1004ms
+[05:04:16.613] Server  LOG     Fetching listings via Rex API JSON endpoint...
+[05:04:43.833] Browser WARN    Footer video autoplay failed: {}
+[05:04:43.833] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/property/4842096 color: rgb(120, 120, 120) color: inherit {"dp":"/property/[id]","o":"http://localhost:3000/property/4842096","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767930746667}
+[05:05:05.903] Server  LOG      ✓ Compiled in 454ms
+[05:06:33.664] Server  LOG      ✓ Compiled in 1093ms
+[05:06:58.162] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:06:58.619] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[05:06:58.619] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/property/4842096","route":"/property/[id]"}
+[05:06:58.619] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/property/4842096 color: rgb(120, 120, 120) color: inherit {"dp":"/property/[id]","o":"http://localhost:3000/property/4842096","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767930881543}
+[05:08:34.796] Server  LOG      ✓ Compiled in 770ms
+[05:10:20.090] Server  LOG      ✓ Compiled in 1206ms
+[05:10:40.878] Server  LOG      ✓ Compiled in 592ms
+[05:11:13.503] Server  LOG      ✓ Compiled in 385ms
+[05:12:36.681] Server  LOG      ✓ Compiled in 684ms
+[05:12:54.622] Server  LOG      ✓ Compiled in 159ms
+[05:13:35.023] Server  LOG      ✓ Compiled in 663ms
+[05:14:55.704] Server  LOG      ✓ Compiled in 726ms
+[05:17:04.481] Server  LOG      ✓ Compiled in 719ms
+[05:18:00.110] Server  LOG      ✓ Compiled in 443ms
+[05:19:13.097] Server  LOG      ✓ Compiled in 386ms
+[05:21:26.644] Server  LOG      ✓ Compiled in 435ms
+[05:24:00.806] Server  LOG      ✓ Compiled in 424ms
+[05:24:57.160] Server  LOG      ✓ Compiled in 353ms
+[05:26:01.038] Server  LOG      ✓ Compiled in 818ms
+[05:26:34.382] Server  LOG      ✓ Compiled in 411ms
+[05:27:06.894] Server  LOG      ✓ Compiled in 99ms
+[05:29:31.952] Server  LOG      ✓ Compiled in 328ms
+[05:32:03.836] Server  LOG      ✓ Compiled in 353ms
+[05:33:33.616] Server  LOG      ✓ Compiled in 446ms
+[05:34:08.604] Browser LOG     Autoplay blocked {}
+[05:34:08.604] Browser WARN    Footer video autoplay failed: {}
+[05:34:08.606] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767932511487}
+[05:40:11.035] Server  LOG     Fetching listings via Rex API JSON endpoint...
+[05:40:12.323] Browser WARN    Footer video autoplay failed: {}
+[05:40:12.323] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/buy color: rgb(120, 120, 120) color: inherit {"dp":"/buy","o":"http://localhost:3000/buy","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767932875254}
+[05:40:23.084] Browser WARN    Footer video autoplay failed: {}
+[05:40:23.084] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/property/4842096 color: rgb(120, 120, 120) color: inherit {"dp":"/property/[id]","o":"http://localhost:3000/property/4842096","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767932886017}
+[05:41:53.694] Server  LOG      ✓ Compiled in 1579ms
+[05:42:19.445] Server  LOG      ✓ Compiled in 802ms
+[05:42:57.927] Server  LOG      ✓ Compiled in 427ms
+[05:44:21.843] Server  LOG      ✓ Compiled in 634ms
+[05:45:59.567] Server  LOG      ✓ Compiled in 393ms
+[05:48:05.490] Server  LOG      ✓ Compiled in 442ms
+[05:48:47.104] Server  LOG      ✓ Compiled in 262ms
+[05:49:27.355] Server  LOG      ✓ Compiled in 521ms
+[05:51:17.069] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:51:17.803] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[05:51:17.803] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/property/4842096","route":"/property/[id]"}
+[05:51:17.804] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/property/4842096#gallery color: rgb(120, 120, 120) color: inherit {"dp":"/property/[id]","o":"http://localhost:3000/property/4842096#gallery","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767933540728}
+[05:55:06.871] Server  LOG      ✓ Compiled in 1982ms
+[05:55:47.772] Server  LOG      ✓ Compiled in 988ms
+[05:56:17.436] Server  LOG      ✓ Compiled in 581ms
+[05:57:11.929] Server  LOG      ✓ Compiled in 622ms
+[05:57:36.070] Server  LOG      ✓ Compiled in 192ms
+[05:58:01.355] Server  LOG      ✓ Compiled in 204ms
+[06:00:49.996] Server  LOG      ✓ Compiled in 497ms
+[06:01:24.552] Server  LOG      ✓ Compiled in 558ms
+[06:01:36.552] Server  LOG      ✓ Compiled in 207ms
+[06:02:08.097] Server  LOG      ✓ Compiled in 134ms
+[06:02:37.051] Server  LOG      ✓ Compiled in 282ms
+[06:03:02.248] Server  LOG      ✓ Compiled in 300ms
+[06:04:44.650] Server  LOG      ✓ Compiled in 705ms
+[06:05:46.797] Server  LOG      ✓ Compiled in 436ms
+[06:15:51.544] Server  LOG      ✓ Compiled in 825ms
+[06:16:49.361] Server  LOG      ✓ Compiled in 519ms
+[06:17:22.904] Server  LOG      ✓ Compiled in 534ms
+[06:17:45.377] Server  LOG      ✓ Compiled in 200ms
+[06:18:26.163] Server  LOG      ✓ Compiled in 530ms
+[06:18:37.693] Server  LOG      ✓ Compiled in 336ms
+[06:18:47.484] Server  LOG      ✓ Compiled in 80ms
+[06:18:56.143] Server  LOG      ✓ Compiled in 112ms
+[06:19:05.111] Server  LOG      ✓ Compiled in 85ms
+[06:20:27.680] Server  LOG      ✓ Compiled in 387ms
+[06:21:00.669] Server  LOG      ✓ Compiled in 490ms
+[06:21:30.341] Server  LOG      ✓ Compiled in 279ms
+[06:21:56.153] Server  LOG      ✓ Compiled in 240ms
+[06:22:14.736] Server  LOG      ✓ Compiled in 117ms
+[06:22:32.591] Server  LOG      ✓ Compiled in 346ms
+[06:23:04.807] Server  LOG      ✓ Compiled in 511ms
+[06:23:22.654] Server  LOG      ✓ Compiled in 100ms
+[06:23:33.577] Server  LOG      ✓ Compiled in 106ms
+[06:35:49.911] Server  LOG        Reload env: .env.local
+[06:36:02.846] Server  LOG      ✓ Compiled in 4.3s
+[06:36:16.006] Server  LOG      ✓ Compiled in 1046ms
+[06:39:52.188] Server  LOG      ✓ Compiled in 1052ms
+[06:40:31.849] Server  LOG      ✓ Compiled in 819ms
+[06:40:51.553] Server  LOG      ✓ Compiled in 350ms
+[06:41:17.746] Browser WARN    Footer video autoplay failed: {}
+[06:41:17.746] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767936540636}
+[06:41:22.059] Browser WARN    Footer video autoplay failed: {}
+[06:41:22.060] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/property/4842096#gallery color: rgb(120, 120, 120) color: inherit {"dp":"/property/[id]","o":"http://localhost:3000/property/4842096#gallery","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767936545012}
+[06:41:52.025] Server  LOG      ✓ Compiled in 639ms
+[06:43:17.246] Server  LOG      ✓ Compiled in 711ms
+[06:45:22.292] Server  LOG      ✓ Compiled in 1296ms
+[06:45:25.693] Server  ERROR    ⨯ ReferenceError: PropertyContent is not defined
+[06:45:26.157] Browser ERROR   uncaughtError: ReferenceError: PropertyContent is not defined
+[06:45:35.927] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[06:45:35.928] Server  LOG      ✓ Compiled in 1116ms
+[06:45:49.674] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:45:51.561] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[06:45:51.561] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/property/4842096","route":"/property/[id]"}
+[06:45:51.561] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/property/4842096#gallery color: rgb(120, 120, 120) color: inherit {"dp":"/property/[id]","o":"http://localhost:3000/property/4842096#gallery","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767936813697}
+[07:39:22.802] Server  LOG      ✓ Compiled in 3.2s
+[07:39:24.578] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:39:24.578] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:39:26.180] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:39:26.180] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:39:26.485] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:39:26.486] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:39:26.606] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:39:26.606] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:39:26.655] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:39:26.655] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:39:26.825] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:39:26.825] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:39:27.329] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:39:27.330] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:39:27.385] Server  LOG      ✓ Compiled in 467ms
+[07:39:29.521] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[07:39:30.049] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[07:39:30.049] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/property/4842096","route":"/property/[id]"}
+[07:39:30.049] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/property/4842096#gallery color: rgb(120, 120, 120) color: inherit {"dp":"/property/[id]","o":"http://localhost:3000/property/4842096#gallery","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767940032859}
+[07:39:31.696] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /_not-found. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:39:31.696] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /_not-found. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:40:21.468] Server  LOG      ✓ Compiled in 52ms
+[07:40:21.638] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[07:40:21.638] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[09:46:00.377] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /buy. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[09:46:00.377] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /buy. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[09:46:01.784] Server  LOG     Fetching listings via Rex API JSON endpoint...
+[09:46:04.785] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[09:46:04.785] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[09:46:04.836] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[09:46:04.836] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[09:46:05.426] Browser LOG     Autoplay blocked {}
+[09:46:05.427] Browser WARN    Footer video autoplay failed: {}
+[09:46:05.427] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767947628348}
+[09:46:09.739] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /buy. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[09:46:09.739] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /buy. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[09:46:09.747] Server  LOG     Fetching listings via Rex API JSON endpoint...
+[09:46:09.997] Browser WARN    Footer video autoplay failed: {}
+[09:46:09.997] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/buy?type=projects color: rgb(120, 120, 120) color: inherit {"dp":"/buy","o":"http://localhost:3000/buy?type=projects","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767947632981}
+[09:46:11.401] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /buy. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[09:46:11.401] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /buy. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[09:46:11.405] Server  LOG     Fetching listings via Rex API JSON endpoint...
+[09:47:44.756] Server  LOG      ✓ Compiled in 482ms
+[09:47:46.435] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /buy. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[09:47:46.435] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /buy. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[09:47:46.441] Server  LOG     Fetching listings via Rex API JSON endpoint...
+[09:47:46.587] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /buy. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[09:47:46.587] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /buy. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[09:47:46.588] Server  LOG     Fetching listings via Rex API JSON endpoint...
+[09:47:54.325] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /buy. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[09:47:54.325] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /buy. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[09:47:54.328] Server  LOG     Fetching listings via Rex API JSON endpoint...
+[09:48:56.720] Server  LOG      ✓ Compiled in 391ms
+[09:49:07.007] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /buy. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[09:49:07.007] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /buy. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[09:49:07.039] Server  LOG     Fetching listings via Rex API JSON endpoint...
+[09:49:54.013] Server  LOG      ✓ Compiled in 305ms
+[09:55:19.736] Server  LOG      ✓ Compiled in 425ms
+[09:55:21.437] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /buy. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[09:55:21.437] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /buy. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[09:55:22.552] Server  LOG     Fetching listings via Rex API JSON endpoint...
+[09:55:31.654] Server  LOG      ✓ Compiled in 595ms
+[09:57:59.789] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[09:57:59.789] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[09:58:00.218] Browser WARN    Footer video autoplay failed: {}
+[09:58:00.218] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/property/4842096 color: rgb(120, 120, 120) color: inherit {"dp":"/property/[id]","o":"http://localhost:3000/property/4842096","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767948343192}
+[09:59:50.224] Server  LOG      ✓ Compiled in 1703ms
+[09:59:50.462] Browser ERROR   ./Fornieri & Azar Website/app/globals.css:3803:1
+Parsing CSS source code failed
+  3801 |     }
+  3802 | }
+> 3803 | }
+       | ^
+  3804 |
+  3805 | .property-grid-container {
+  3806 |     display: grid;
+
+Invalid empty selector
+
+Import trace:
+  Client Component Browser:
+    ./Fornieri & Azar Website/app/globals.css [Client Component Browser]
+    ./Fornieri & Azar Website/app/layout.jsx [Server Component]
+[10:00:11.767] Server  LOG      ✓ Compiled in 308ms
+[10:00:12.511] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:00:12.512] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:00:12.780] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:00:12.780] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:00:12.894] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:00:12.894] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:00:12.957] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:00:12.957] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:00:13.010] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:00:13.010] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:00:13.051] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:00:13.051] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:00:13.088] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:00:13.088] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:00:13.126] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:00:13.126] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:00:33.828] Server  LOG      ✓ Compiled in 946ms
+[10:00:36.604] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:00:36.605] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:03:35.823] Server  LOG      ✓ Compiled in 434ms
+[10:04:19.330] Server  LOG      ✓ Compiled in 442ms
+[10:04:21.346] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:04:21.346] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:05:26.441] Server  LOG      ✓ Compiled in 554ms
+[10:05:43.277] Server  LOG      ✓ Compiled in 197ms
+[10:05:44.603] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:05:44.604] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:05:56.560] Server  LOG      ✓ Compiled in 222ms
+[10:19:50.097] Server  LOG      ✓ Compiled in 151ms
+[10:20:14.907] Server  LOG      ✓ Compiled in 762ms
+[10:20:16.446] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:20:16.447] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:20:16.892] Browser WARN    Image with src "http://localhost:3000/images/FNA.png" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[10:29:23.854] Server  LOG      ✓ Compiled in 712ms
+[10:29:25.481] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:29:25.481] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:30:14.387] Server  LOG      ✓ Compiled in 282ms
+[10:37:12.873] Server  LOG      ✓ Compiled in 410ms
+[10:37:15.741] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:37:15.741] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:38:04.874] Server  LOG      ✓ Compiled in 196ms
+[10:40:14.587] Server  LOG      ✓ Compiled in 295ms
+[10:40:15.462] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:40:15.462] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:40:15.679] Browser WARN    Image with src "https://au-crm.cdns.rexsoftware.com/app/livestore/accounts/6194/listings/4842096/images/149662008-image-m_0114-dd13-0bcd-1ac3-f5c9-bb0d-5d61-0639_20251216060341.jpg" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[10:41:30.281] Server  LOG      ✓ Compiled in 384ms
+[10:43:31.490] Server  LOG      ✓ Compiled in 481ms
+[10:43:32.612] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:43:32.613] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:43:33.181] Browser WARN    Image with src "https://au-crm.cdns.rexsoftware.com/app/livestore/accounts/6194/listings/4842096/images/149662008-image-a_480e-7402-5cb6-bbd3-97a3-50b0-dbf5-b261_20251216060342.jpg" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[10:44:27.359] Server  LOG      ✓ Compiled in 224ms
+[10:44:28.279] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:44:28.279] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:45:27.982] Server  LOG      ✓ Compiled in 300ms
+[10:46:53.952] Server  LOG      ✓ Compiled in 185ms
+[10:52:13.505] Server  LOG      ✓ Compiled in 788ms
+[10:52:15.903] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:52:15.904] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:52:37.874] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:52:37.874] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:53:26.372] Server  LOG      ✓ Compiled in 310ms
+[10:56:56.677] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:56:56.677] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:56:57.567] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[10:56:58.075] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[10:56:58.075] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/property/4842096","route":"/property/[id]"}
+[10:56:58.075] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/property/4842096 color: rgb(120, 120, 120) color: inherit {"dp":"/property/[id]","o":"http://localhost:3000/property/4842096","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767951881075}
+[10:57:06.620] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:57:06.620] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:57:29.185] Server  LOG      ✓ Compiled in 262ms
+[10:58:37.967] Server  LOG      ✓ Compiled in 198ms
+[10:58:39.093] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:58:39.093] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:59:30.017] Server  LOG      ✓ Compiled in 143ms
+[10:59:39.417] Server  LOG      ✓ Compiled in 40ms
+[10:59:57.290] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[10:59:57.290] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[11:00:33.476] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[11:00:33.476] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[11:00:34.348] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[11:00:34.639] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[11:00:34.639] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/property/4842096","route":"/property/[id]"}
+[11:00:34.639] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/property/4842096 color: rgb(120, 120, 120) color: inherit {"dp":"/property/[id]","o":"http://localhost:3000/property/4842096","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767952097641}
+[11:01:59.477] Server  LOG      ✓ Compiled in 134ms
+[11:02:46.121] Server  LOG      ✓ Compiled in 242ms
+[11:02:47.226] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[11:02:47.226] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[11:03:05.417] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[11:03:05.417] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[11:03:31.216] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /sell. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[11:03:31.217] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /sell. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[11:03:31.481] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/sell color: rgb(120, 120, 120) color: inherit {"dp":"/sell","o":"http://localhost:3000/sell","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767952274477}
+[11:03:37.346] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /sell. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[11:03:37.346] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /sell. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[11:03:37.350] Server  LOG      ✓ Compiled in 121ms
+[11:03:40.396] Browser WARN    Footer video autoplay failed: {}
+[11:03:40.396] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/property/4842096 color: rgb(120, 120, 120) color: inherit {"dp":"/property/[id]","o":"http://localhost:3000/property/4842096","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767952283367}
+[11:03:44.930] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /sell. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[11:03:44.930] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /sell. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[11:03:45.077] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/sell color: rgb(120, 120, 120) color: inherit {"dp":"/sell","o":"http://localhost:3000/sell","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767952288077}
+[11:03:58.844] Server  LOG      ✓ Compiled in 191ms
+[11:04:22.971] Browser WARN    Footer video autoplay failed: {}
+[11:04:22.971] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/property/4842096 color: rgb(120, 120, 120) color: inherit {"dp":"/property/[id]","o":"http://localhost:3000/property/4842096","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767952325894}
+[11:04:56.380] Server  LOG      ✓ Compiled in 344ms
+[11:05:16.332] Server  LOG      ✓ Compiled in 223ms
+[11:06:27.215] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[11:06:27.216] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[11:06:32.565] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button onClick={function onClick} className=... style=... children=...>
+                  ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[11:06:33.367] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[11:06:33.367] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[11:06:33.411] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[11:06:33.639] Browser ERROR   uncaughtError: Error: Event handlers cannot be passed to Client Component props.
+  <button onClick={function onClick} className=... style=... children=...>
+                  ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[11:06:39.746] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button onClick={function onClick} className=... style=... children=...>
+                  ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[11:06:40.184] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[11:06:40.185] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[11:06:40.564] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[11:06:40.565] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[11:06:40.748] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[11:06:40.918] Browser ERROR   uncaughtError: Error: Event handlers cannot be passed to Client Component props.
+  <button onClick={function onClick} className=... style=... children=...>
+                  ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[11:07:22.195] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[11:07:22.206] Server  LOG      ✓ Compiled in 752ms
+[11:07:23.930] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[11:07:23.930] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[11:07:24.464] Server  ERROR    ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button onClick={function onClick} className=... style=... children=...>
+                  ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[11:07:25.014] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[11:07:25.120] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[11:07:25.120] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[11:07:25.246] Browser ERROR   uncaughtError: Error: Event handlers cannot be passed to Client Component props.
+  <button onClick={function onClick} className=... style=... children=...>
+                  ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+[11:07:48.683] Server  LOG      ✓ Compiled in 766ms
+[11:07:51.481] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[11:07:51.481] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[11:07:51.672] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[11:07:52.018] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[11:07:52.018] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/property/4842096","route":"/property/[id]"}
+[11:07:52.018] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/property/4842096 color: rgb(120, 120, 120) color: inherit {"dp":"/property/[id]","o":"http://localhost:3000/property/4842096","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767952535020}
+[11:10:06.836] Server  LOG      ✓ Compiled in 269ms
+[11:10:07.283] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[11:10:07.283] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[11:11:51.537] Server  LOG      ✓ Compiled in 279ms
+[11:11:52.019] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[11:11:52.019] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[11:12:22.341] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /sell. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[11:12:22.341] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /sell. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[11:12:22.772] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/sell color: rgb(120, 120, 120) color: inherit {"dp":"/sell","o":"http://localhost:3000/sell","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767952805690}
+[11:13:03.302] Server  LOG      ✓ Compiled in 374ms
+[11:13:08.394] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[11:13:08.394] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[11:13:08.726] Browser LOG     Autoplay blocked {}
+[11:13:08.727] Browser WARN    Footer video autoplay failed: {}
+[11:13:08.727] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767952851702}
+[11:13:28.245] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[11:13:28.245] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[11:13:29.433] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[11:13:29.815] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[11:13:29.815] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[11:13:29.815] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767952872791}
+[11:15:15.465] Server  LOG      ✓ Compiled in 272ms
+[11:16:51.954] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[11:16:51.955] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[11:16:59.686] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[11:16:59.686] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[11:17:00.414] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[11:17:00.694] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[11:17:00.695] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[11:17:00.695] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1767953083699}
+[11:17:21.659] Server  LOG      ✓ Compiled in 175ms
+[11:18:06.848] Server  LOG      ✓ Compiled in 243ms
+[11:19:11.205] Server  LOG      ✓ Compiled in 235ms
+[11:19:56.706] Server  LOG      ✓ Compiled in 203ms
+[11:20:48.963] Server  LOG      ✓ Compiled in 209ms
+[11:23:50.111] Server  LOG      ✓ Compiled in 354ms
+[11:25:17.100] Server  LOG      ✓ Compiled in 396ms
+[11:28:14.556] Server  LOG      ✓ Compiled in 204ms
+[11:28:49.774] Server  LOG      ✓ Compiled in 247ms
+[11:29:33.074] Server  LOG      ✓ Compiled in 223ms
+[11:30:05.587] Server  LOG      ✓ Compiled in 196ms
+[11:31:08.335] Server  LOG      ✓ Compiled in 171ms
+[11:31:44.451] Server  LOG      ✓ Compiled in 272ms
+[11:33:21.408] Server  LOG      ✓ Compiled in 424ms
+[11:34:27.873] Server  LOG      ✓ Compiled in 458ms

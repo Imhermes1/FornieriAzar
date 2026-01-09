@@ -13,57 +13,39 @@ export default function ContactPage() {
     <div data-page="contact">
       <Header />
       <main>
-        <section className="simple-hero" aria-labelledby="contact-title">
-          <div className="simple-hero__content">
-            <p className="eyebrow">Get in touch</p>
-            <h1 className="simple-hero__title" id="contact-title">Discuss your property needs</h1>
-            <p className="simple-hero__description">Whether you're considering a sale, seeking acquisition opportunities, or require market analysis, contact us to explore your options.</p>
-          </div>
-        </section>
+        <section className="contact-main">
+          <div className="contact-main__container">
+            <div className="contact-main__header">
+              <p className="contact-main__intro">
+                For all general enquiries outside of the scope of our offices - including press and media - please contact us below. We'll get back to you shortly.
+              </p>
+            </div>
 
-        <section className="cta" aria-labelledby="contact-form-title">
-          <div className="cta-inner">
-            <div className="cta-copy">
-              <p className="eyebrow">Contact us</p>
-              <h2 id="contact-form-title">How can we help?</h2>
-              <p>We usually get back to you within one business day. Your information is kept private and only used to help with your enquiry.</p>
-              <div className="experience-highlights">
-                <div>
-                  <p className="experience-highlights__label">Office</p>
-                  <p className="experience-highlights__value">Malvern East VIC 3145</p>
+            <div className="contact-main__grid">
+              <div className="contact-info">
+                <div className="contact-info__item">
+                  <span className="contact-info__label">PRESS ENQUIRIES</span>
+                  <a href="mailto:marketingteam@fornieriazar.com.au" className="contact-info__email">marketingteam@fornieriazar.com.au</a>
+                </div>
+
+                <div className="contact-info__item">
+                  <span className="contact-info__label">CAREERS</span>
+                  <a href="mailto:work@fornieriazar.com.au" className="contact-info__email">work@fornieriazar.com.au</a>
+                </div>
+
+                <div className="contact-info__item">
+                  <span className="contact-info__label">GENERAL ENQUIRIES</span>
+                  <a href="mailto:team@fornieriazar.com.au" className="contact-info__email">team@fornieriazar.com.au</a>
                 </div>
               </div>
+
+              <div className="contact-form-wrapper">
+                <ContactForm />
+              </div>
             </div>
-            <ContactForm />
           </div>
         </section>
 
-        <section className="testimonials" aria-label="Client testimonials">
-          <div className="section-heading">
-            <p className="eyebrow">What people say</p>
-            <h2>Feedback from our clients</h2>
-          </div>
-          <div className="testimonial-grid">
-            <figure className="testimonial-card">
-              <blockquote>
-                "Luke was professional, kept us informed every step of the way, and got us a price well above what we expected."
-              </blockquote>
-              <figcaption>Emma, Brighton</figcaption>
-            </figure>
-            <figure className="testimonial-card">
-              <blockquote>
-                "From the first meeting to when we got the keys, the whole process was smooth and transparent. We always felt looked after."
-              </blockquote>
-              <figcaption>Mark & Lisa, Toorak</figcaption>
-            </figure>
-            <figure className="testimonial-card">
-              <blockquote>
-                "Their knowledge of the local market and strong network of contacts has been invaluable for our family's property needs."
-              </blockquote>
-              <figcaption>The Chen Family</figcaption>
-            </figure>
-          </div>
-        </section>
       </main>
       <Footer />
     </div>

@@ -21,10 +21,16 @@ export default function sitemap() {
             priority: 0.8,
         },
         {
-            url: `${baseUrl}/listings`,
+            url: `${baseUrl}/buy`,
             lastModified: new Date(),
-            changeFrequency: 'weekly',
+            changeFrequency: 'daily',
             priority: 0.9,
+        },
+        {
+            url: `${baseUrl}/rent`,
+            lastModified: new Date(),
+            changeFrequency: 'daily',
+            priority: 0.8,
         },
         {
             url: `${baseUrl}/buyers`,

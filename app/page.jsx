@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import HomeSearch from './components/HomeSearch';
+import HeroVideo from './components/HeroVideo';
 
 export const metadata = {
   title: 'Fornieri & Azar | Real Estate Agents East & South East Melbourne',
@@ -16,7 +17,7 @@ export default function Home() {
       {/* Hero section with background video */}
       <section style={{
         position: 'relative',
-        height: '75vh',
+        height: '100vh',
         minHeight: '600px',
         display: 'flex',
         alignItems: 'center',
@@ -24,29 +25,13 @@ export default function Home() {
         overflow: 'hidden'
       }}>
         {/* Background Video */}
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            objectFit: 'cover',
-            zIndex: 1
-          }}
-        >
-          <source src="/video/8284679-uhd_3840_2160_24fps.mp4" type="video/mp4" />
-        </video>
+        <HeroVideo />
 
         {/* Frosted blur overlay */}
         <div style={{
           position: 'absolute',
           inset: 0,
-          backdropFilter: 'blur(8px)',
+          backdropFilter: 'blur(4px)',
           backgroundColor: 'rgba(255, 255, 255, 0.15)',
           pointerEvents: 'none',
           zIndex: 2
@@ -63,14 +48,56 @@ export default function Home() {
           zIndex: 9
         }} />
 
-        {/* Centered Logo */}
-        <Image
-          src="/images/FnA.svg"
-          alt="Fornieri & Azar"
-          width={2000}
-          height={2000}
-          priority
-          className="hero-logo"
+        {/* Centered Logo - Matching Header Look but HUGE */}
+        <h1 className="hero-logo-text">
+          FORNIERI <span>&</span> AZAR
+        </h1>
+
+        {/* Structured Data for SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "RealEstateAgent",
+              "name": "Fornieri & Azar",
+              "image": "https://fornieriazar.com.au/images/LowRes_2k_18.jpg",
+              "@id": "https://fornieriazar.com.au",
+              "url": "https://fornieriazar.com.au",
+              "telephone": "0423 633 740",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Suite 5028, 165 Waverley Road",
+                "addressLocality": "Malvern East",
+                "addressRegion": "VIC",
+                "postalCode": "3145",
+                "addressCountry": "AU"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": -37.877,
+                "longitude": 145.044
+              },
+              "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday",
+                  "Sunday"
+                ],
+                "opens": "00:00",
+                "closes": "23:59"
+              },
+              "sameAs": [
+                "https://www.instagram.com/fornieri.azar/",
+                "https://www.linkedin.com/in/lukefornieri/"
+              ]
+            })
+          }}
         />
 
         {/* Scroll indicator */}
@@ -99,19 +126,6 @@ export default function Home() {
           </svg>
         </div>
 
-        {/* Video attribution */}
-        <div style={{
-          position: 'absolute',
-          bottom: '16px',
-          right: '20px',
-          fontSize: '0.85rem',
-          color: '#000',
-          letterSpacing: '0.05em',
-          zIndex: 10,
-          fontWeight: '500'
-        }}>
-          Video from Pat Whelen
-        </div>
       </section>
 
       {/* Main content that scrolls over hero */}

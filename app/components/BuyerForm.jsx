@@ -164,7 +164,7 @@ export default function BuyerForm() {
         .buyer-form {
           background: var(--white);
           padding: 48px;
-          border-radius: var(--radius-sm);
+          border-radius: 24px;
           border: 1px solid rgba(5, 6, 8, 0.1);
         }
 
@@ -191,7 +191,7 @@ export default function BuyerForm() {
         .form-group select {
           padding: 12px 16px;
           border: 1px solid rgba(5, 6, 8, 0.2);
-          border-radius: 8px;
+          border-radius: 100px;
           font-size: 16px;
           font-family: var(--font-body);
           transition: border-color 0.2s;
@@ -207,7 +207,7 @@ export default function BuyerForm() {
           background: #fee;
           color: #c00;
           padding: 12px 16px;
-          border-radius: 8px;
+          border-radius: var(--radius-sm);
           margin-bottom: 16px;
           font-size: 14px;
         }

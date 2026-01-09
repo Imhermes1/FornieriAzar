@@ -6,57 +6,60 @@ export default function ListingCard({ listing }) {
         id,
         address,
         suburb,
-        price,
+        state,
+        images,
         bedrooms,
         bathrooms,
         carSpaces,
-        images,
-        propertyType
+        status,
+        originalStatus
     } = listing;
 
     // Use first image or placeholder
-    const mainImage = images && images.length > 0 ? images[0] : '/images/placeholder-property.jpg';
+    const mainImage = images && images.length > 0 ? images[0] : '/images/FNA.png';
+
+    // Format address display
+    const displayAddress = address || 'Address on Request';
+    const displayLocation = [suburb, state].filter(Boolean).join(' ').toUpperCase();
 
     return (
-        <Link href={`/property/${id}`} className="listing-card group">
-            <div className="listing-card__image-container">
-                {/* Using a standard img tag for external URLs if domain not configured in next.config.js, 
-                but ideally use Next Image. Assuming external domains might not be whitelisted yet, 
-                safest is standard img or Next Image with unoptimized if needed. 
-                Using unoptimized Image for now. */}
+        <Link href={`/property/${id}`} className="property-card">
+            <div className="property-card__image">
                 <Image
                     src={mainImage}
-                    alt={address}
+                    alt={displayAddress}
                     fill
-                    className="listing-card__image transition-transform duration-500 group-hover:scale-105"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     style={{ objectFit: 'cover' }}
+                    className={status === 'sold' ? 'grayscale-img' : ''}
                     unoptimized
                 />
-                <div className="listing-card__badge">
-                    {propertyType === 'rental' ? 'For Rent' : 'For Sale'}
+
+                {status === 'sold' && (
+                    <div className="property-card__badge property-card__badge--sold">SOLD</div>
+                )}
+                {status === 'rented' && (
+                    <div className="property-card__badge property-card__badge--rented">LEASED</div>
+                )}
+                {originalStatus === 'under_offer' && status !== 'sold' && (
+                    <div className="property-card__badge">UNDER OFFER</div>
+                )}
+                {/* Hover Stats Overlay */}
+                <div className="property-card__hover-stats">
+                    {bedrooms > 0 && (
+                        <span className="hover-stat">{bedrooms} Bed</span>
+                    )}
+                    {bathrooms > 0 && (
+                        <span className="hover-stat">{bathrooms} Bath</span>
+                    )}
+                    {carSpaces > 0 && (
+                        <span className="hover-stat">{carSpaces} Car</span>
+                    )}
                 </div>
             </div>
-
-            <div className="listing-card__content">
-                <div className="listing-card__price">{price}</div>
-                <h3 className="listing-card__address">{address}</h3>
-                <p className="listing-card__suburb">{suburb}</p>
-
-                <div className="listing-card__features">
-                    <div className="feature">
-                        <span className="feature__icon">🛏</span>
-                        <span className="feature__value">{bedrooms}</span>
-                    </div>
-                    <div className="feature">
-                        <span className="feature__icon">🚿</span>
-                        <span className="feature__value">{bathrooms}</span>
-                    </div>
-                    <div className="feature">
-                        <span className="feature__icon">🚗</span>
-                        <span className="feature__value">{carSpaces}</span>
-                    </div>
-                </div>
+            <div className="property-card__info">
+                <h3 className="property-card__address">{displayAddress}</h3>
+                <p className="property-card__suburb">{displayLocation}</p>
             </div>
         </Link>
     );

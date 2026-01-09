@@ -1,8 +1,24 @@
 import './globals.css';
 import FloatingContactButton from './components/FloatingContactButton';
 import { Analytics } from '@vercel/analytics/next';
+import { Lexend_Tera, Manrope } from 'next/font/google';
+
+const lexendTera = Lexend_Tera({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-lexend',
+  display: 'swap',
+});
+
+const manrope = Manrope({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700', '800'],
+  variable: '--font-manrope',
+  display: 'swap',
+});
 
 export const metadata = {
+  metadataBase: new URL('https://fornieriazar.com.au'),
   title: {
     template: '%s | Fornieri & Azar Real Estate',
     default: 'Fornieri & Azar | Premium Real Estate East & South East Melbourne',
@@ -28,10 +44,41 @@ export const metadata = {
     'Hampton',
     'Brighton'
   ],
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
-    type: 'website',
-    locale: 'en_AU',
+    title: 'Fornieri & Azar | Premium Real Estate Melbourne',
+    description: 'Boutique real estate agency serving Melbourne\'s East and South East. Sales, Buying, and Property Management.',
+    url: 'https://fornieriazar.com.au',
     siteName: 'Fornieri & Azar',
+    images: [
+      {
+        url: '/images/LowRes_2k_18.jpg', // Using a high-quality existing image as OG image
+        width: 1200,
+        height: 630,
+        alt: 'Fornieri & Azar Premium Real Estate',
+      },
+    ],
+    locale: 'en_AU',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Fornieri & Azar Real Estate',
+    description: 'Premium real estate services in Melbourne\'s East and South East.',
+    images: ['/images/LowRes_2k_18.jpg'],
+  },
+  themeColor: '#FAFAFA',
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 5,
+  },
+  manifest: '/site.webmanifest',
+  icons: {
+    icon: '/images/FnA.svg',
+    apple: '/images/FnA.svg', // SVG works as touch icon in modern iOS
   },
 };
 
@@ -65,7 +112,7 @@ export default function RootLayout({ children }) {
           }
         `}</style>
       </head>
-      <body>
+      <body className={`${manrope.variable} ${lexendTera.variable}`} suppressHydrationWarning>
         {children}
         <FloatingContactButton />
         <Analytics />

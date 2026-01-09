@@ -4,10 +4,12 @@ import { useState } from 'react';
 
 export default function ContactForm() {
     const [formData, setFormData] = useState({
-        fullName: '',
+        firstName: '',
+        lastName: '',
         email: '',
         phone: '',
-        interest: 'selling',
+        interests: [],
+        otherInterest: '',
         message: ''
     });
 
@@ -18,9 +20,21 @@ export default function ContactForm() {
     });
 
     const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData(prev => ({ ...prev, [name]: value }));
-        // Clear error when user starts typing
+        const { name, value, type, checked } = e.target;
+
+        if (type === 'checkbox') {
+            const currentInterests = [...formData.interests];
+            if (checked) {
+                currentInterests.push(value);
+            } else {
+                const index = currentInterests.indexOf(value);
+                if (index > -1) currentInterests.splice(index, 1);
+            }
+            setFormData(prev => ({ ...prev, interests: currentInterests }));
+        } else {
+            setFormData(prev => ({ ...prev, [name]: value }));
+        }
+
         if (status.error) {
             setStatus(prev => ({ ...prev, error: null }));
         }
@@ -30,13 +44,22 @@ export default function ContactForm() {
         e.preventDefault();
         setStatus({ submitting: true, submitted: false, error: null });
 
+        // Prepare combined metadata for the existing API
+        const submissionData = {
+            fullName: `${formData.firstName} ${formData.lastName}`.trim(),
+            email: formData.email,
+            phone: formData.phone,
+            interest: formData.interests.join(', ') + (formData.otherInterest ? ` (${formData.otherInterest})` : ''),
+            message: formData.message
+        };
+
         try {
             const response = await fetch('/api/contact', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify(formData),
+                body: JSON.stringify(submissionData),
             });
 
             const data = await response.json();
@@ -46,12 +69,13 @@ export default function ContactForm() {
             }
 
             setStatus({ submitting: false, submitted: true, error: null });
-            // Reset form after successful submission
             setFormData({
-                fullName: '',
+                firstName: '',
+                lastName: '',
                 email: '',
                 phone: '',
-                interest: 'selling',
+                interests: [],
+                otherInterest: '',
                 message: ''
             });
         } catch (error) {
@@ -63,115 +87,114 @@ export default function ContactForm() {
         }
     };
 
+    if (status.submitted) {
+        return (
+            <div className="contact-form-success">
+                <h3>Thank you.</h3>
+                <p>We've received your message and will be in touch shortly.</p>
+                <button onClick={() => setStatus({ ...status, submitted: false })} className="contact-form__submit">SEND ANOTHER</button>
+            </div>
+        );
+    }
+
     return (
-        <form className="cta-form" onSubmit={handleSubmit} aria-label="Contact form">
-            {status.submitted && (
-                <div style={{
-                    padding: '20px',
-                    background: 'rgba(147, 151, 160, 0.15)',
-                    borderRadius: '8px',
-                    border: '1px solid rgba(147, 151, 160, 0.3)',
-                    color: 'var(--white)',
-                    marginBottom: '20px'
-                }}>
-                    <strong>Thank you for your enquiry!</strong>
-                    <p style={{ margin: '8px 0 0', fontSize: '14px', opacity: 0.9 }}>
-                        We have received your message and will respond within one business day.
-                    </p>
+        <form className="contact-form" onSubmit={handleSubmit}>
+            <div className="contact-form__section">
+                <span className="contact-form__label">HOW CAN WE HELP?</span>
+                <div className="contact-form__checkbox-grid">
+                    {['Buying', 'Selling', 'Careers', 'Press'].map((item) => (
+                        <label key={item} className="contact-form__checkbox-label">
+                            <input
+                                type="checkbox"
+                                name="interests"
+                                value={item}
+                                checked={formData.interests.includes(item)}
+                                onChange={handleChange}
+                            />
+                            <span>{item}</span>
+                        </label>
+                    ))}
+                    <label className="contact-form__checkbox-label contact-form__checkbox-label--full">
+                        <input
+                            type="checkbox"
+                            name="interests"
+                            value="Other"
+                            checked={formData.interests.includes('Other')}
+                            onChange={handleChange}
+                        />
+                        <span>Other (please specify)</span>
+                    </label>
                 </div>
-            )}
+                {formData.interests.includes('Other') && (
+                    <input
+                        type="text"
+                        name="otherInterest"
+                        placeholder="Please specify"
+                        className="contact-form__input contact-form__input--other"
+                        value={formData.otherInterest}
+                        onChange={handleChange}
+                        required
+                    />
+                )}
+            </div>
 
-            {status.error && (
-                <div style={{
-                    padding: '20px',
-                    background: 'rgba(220, 38, 38, 0.15)',
-                    borderRadius: '8px',
-                    border: '1px solid rgba(220, 38, 38, 0.3)',
-                    color: 'var(--white)',
-                    marginBottom: '20px'
-                }}>
-                    <strong>Error:</strong> {status.error}
-                </div>
-            )}
-
-            <div className="form-row">
-                <label htmlFor="fullName">Full name</label>
+            <div className="contact-form__row">
                 <input
-                    id="fullName"
                     type="text"
-                    name="fullName"
-                    autoComplete="name"
-                    placeholder="Alexandra Thompson"
-                    value={formData.fullName}
+                    name="firstName"
+                    placeholder="First Name"
+                    className="contact-form__input"
+                    value={formData.firstName}
                     onChange={handleChange}
-                    disabled={status.submitting}
+                    required
+                />
+                <input
+                    type="text"
+                    name="lastName"
+                    placeholder="Last Name"
+                    className="contact-form__input"
+                    value={formData.lastName}
+                    onChange={handleChange}
                     required
                 />
             </div>
-            <div className="form-row">
-                <label htmlFor="email">Email</label>
+
+            <div className="contact-form__row">
                 <input
-                    id="email"
                     type="email"
                     name="email"
-                    autoComplete="email"
-                    placeholder="alexandra@example.com"
+                    placeholder="Email"
+                    className="contact-form__input"
                     value={formData.email}
                     onChange={handleChange}
-                    disabled={status.submitting}
                     required
                 />
-            </div>
-            <div className="form-row">
-                <label htmlFor="phone">Phone</label>
                 <input
-                    id="phone"
                     type="tel"
                     name="phone"
-                    autoComplete="tel"
-                    placeholder="+61 400 000 000"
+                    placeholder="Contact Number"
+                    className="contact-form__input"
                     value={formData.phone}
                     onChange={handleChange}
-                    disabled={status.submitting}
                 />
             </div>
-            <div className="form-row">
-                <label htmlFor="interest">I'm interested in</label>
-                <select
-                    id="interest"
-                    name="interest"
-                    value={formData.interest}
-                    onChange={handleChange}
-                    disabled={status.submitting}
-                >
-                    <option value="Selling a property">Selling my home</option>
-                    <option value="Buying a property">Buying a home</option>
-                    <option value="Property development">Property development</option>
-                    <option value="General enquiry">Just have a question</option>
-                </select>
-            </div>
-            <div className="form-row">
-                <label htmlFor="message">How can we help?</label>
+
+            <div className="contact-form__row">
                 <textarea
-                    id="message"
                     name="message"
-                    rows="4"
-                    placeholder="Tell us a bit about what you're looking for or any questions you have"
+                    placeholder="Leave a message"
+                    className="contact-form__textarea"
                     value={formData.message}
                     onChange={handleChange}
-                    disabled={status.submitting}
                     required
                 ></textarea>
             </div>
-            <button
-                className="btn btn--primary"
-                type="submit"
-                disabled={status.submitting}
-                style={{ opacity: status.submitting ? 0.6 : 1 }}
-            >
-                {status.submitting ? 'Sending...' : 'Send message'}
+
+            <button type="submit" className="contact-form__submit" disabled={status.submitting}>
+                {status.submitting ? 'SENDING...' : 'SEND'}
             </button>
-            <p className="cta-form__disclaimer">Your information is kept confidential and secure.</p>
+
+            {status.error && <p className="contact-form__error">{status.error}</p>}
         </form>
     );
 }

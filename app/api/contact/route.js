@@ -11,7 +11,7 @@ const RESEND_AUDIENCE_ID = process.env.RESEND_AUDIENCE_ID;
 export async function POST(request) {
   try {
     const body = await request.json();
-    const { fullName, email, phone, interest, message } = body;
+    const { fullName, email, phone, interest, message, agentEmail, propertyAddress } = body;
 
     // Validate required fields
     if (!fullName || !email || !message) {
@@ -144,14 +144,30 @@ Sent on ${new Date().toLocaleString('en-AU', { timeZone: 'Australia/Melbourne' }
     `.trim();
 
     // Send email via Resend
-    const { data: emailResult, error: sendError } = await resend.emails.send({
+    // Route to agent if provided, otherwise use general contact email
+    const recipientEmail = agentEmail || process.env.CONTACT_EMAIL_TO || 'enquiry@fornieriazar.com.au';
+    const ccEmail = agentEmail ? 'enquiry@fornieriazar.com.au' : undefined;
+
+    // Update subject line to include property address if it's a property enquiry
+    const subjectLine = propertyAddress
+      ? `Property Enquiry: ${propertyAddress} - ${fullName}`
+      : `New Website Enquiry from ${fullName}`;
+
+    const emailConfig = {
       from: process.env.CONTACT_EMAIL_FROM || 'website@fornieriazar.com.au',
-      to: process.env.CONTACT_EMAIL_TO || 'enquiry@fornieriazar.com.au',
+      to: recipientEmail,
       replyTo: email,
-      subject: `New Website Enquiry from ${fullName}`,
+      subject: subjectLine,
       html: emailHtml,
       text: emailText,
-    });
+    };
+
+    // Add CC if routing to agent
+    if (ccEmail) {
+      emailConfig.cc = ccEmail;
+    }
+
+    const { data: emailResult, error: sendError } = await resend.emails.send(emailConfig);
     if (sendError) throw sendError;
 
     const auditContactDetails = {

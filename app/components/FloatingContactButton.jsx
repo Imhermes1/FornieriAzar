@@ -40,6 +40,16 @@ export default function FloatingContactButton() {
     }
   }, [messages, chatView]);
 
+  // Auto-hide speech bubble after 15 seconds
+  useEffect(() => {
+    if (showBadge) {
+      const timer = setTimeout(() => {
+        setShowBadge(false);
+      }, 15000); // 15 seconds
+      return () => clearTimeout(timer);
+    }
+  }, [showBadge]);
+
   // Email Form Handler
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -179,27 +189,29 @@ export default function FloatingContactButton() {
           </button>
         </div>
 
-        <div
-          className="floating-contact-btn"
-          onMouseEnter={() => setIsExpanded(true)}
-          onMouseLeave={() => setIsExpanded(false)}
-          onClick={() => {
-            setShowModal(true);
-            setShowBadge(false);
-          }}
-          role="button"
-          tabIndex={0}
-          aria-label="Ask us anything"
-        >
+        <div className="floating-contact-btn-container" style={{ position: 'relative' }}>
           {showBadge && <span className="floating-contact-btn__badge">1</span>}
-          <div className="floating-contact-btn__icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
+          <div
+            className={`floating-contact-btn ${isExpanded ? 'expanded' : ''}`}
+            onMouseEnter={() => setIsExpanded(true)}
+            onMouseLeave={() => setIsExpanded(false)}
+            onClick={() => {
+              setShowModal(true);
+              setShowBadge(false);
+            }}
+            role="button"
+            tabIndex={0}
+            aria-label="Ask us anything"
+          >
+            <span className={`floating-contact-btn__text ${isExpanded ? 'visible' : ''}`}>
+              Ask us anything
+            </span>
+            <div className="floating-contact-btn__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </div>
           </div>
-          <span className={`floating-contact-btn__text ${isExpanded ? 'visible' : ''}`}>
-            Ask us anything
-          </span>
         </div>
       </div>
 
@@ -448,7 +460,7 @@ export default function FloatingContactButton() {
         .speech-bubble {
           background: var(--white);
           padding: 12px 16px;
-          border-radius: 12px;
+          border-radius: 20px;
           box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
           max-width: 260px;
           position: relative;
@@ -506,42 +518,43 @@ export default function FloatingContactButton() {
         .floating-contact-btn {
           display: flex;
           align-items: center;
-          gap: 12px;
-          background: var(--off-black);
-          color: var(--white);
-          padding: 16px;
+          justify-content: center;
+          background: #0f0f0f; /* Hardcoded black for consistency */
+          color: #ffffff;      /* Hardcoded white for consistency */
+          width: 52px;
+          height: 52px;
           border-radius: 50px;
-          box-shadow: 0 12px 32px rgba(15, 15, 15, 0.3);
+          box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
           cursor: pointer;
-          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1), background 0.3s ease, transform 0.3s ease;
           overflow: hidden;
-          mix-blend-mode: difference;
+          position: relative;
+          white-space: nowrap;
+          z-index: 1000;
+        }
+
+        /* Pulse only when not hovered */
+        .floating-contact-wrapper:not(:hover) .floating-contact-btn {
           animation: pulse 2s ease-in-out infinite;
-          position: relative; /* Changed from fixed */
         }
 
         @keyframes pulse {
-          0%, 100% {
-            transform: scale(1);
-          }
-          50% {
-            transform: scale(1.05);
-          }
+          0%, 100% { transform: scale(1); }
+          50% { transform: scale(1.05); }
         }
 
         .floating-contact-btn:hover {
-          transform: translateY(-4px) scale(1.05);
-          box-shadow: 0 16px 40px rgba(15, 15, 15, 0.4);
-          background: var(--charcoal);
-          animation: none;
+          transform: translateY(-4px) scale(1.02);
+          box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+          background: #1a1a1a; /* Explicit dark gray hover */
         }
 
         .floating-contact-btn__badge {
           position: absolute;
-          top: -8px;
-          right: -8px;
-          background: var(--off-black);
-          color: white;
+          top: -4px;
+          right: -4px;
+          background: #0f0f0f;
+          color: #ffffff;
           font-size: 10px;
           font-weight: 600;
           width: 18px;
@@ -550,18 +563,9 @@ export default function FloatingContactButton() {
           display: flex;
           align-items: center;
           justify-content: center;
-          border: 2px solid var(--off-white);
+          border: 2px solid #ffffff;
           box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-          z-index: 1000;
-        }
-
-        @keyframes badgePulse {
-          0%, 100% {
-            transform: scale(1);
-          }
-          50% {
-            transform: scale(1.1);
-          }
+          z-index: 1001;
         }
 
         .floating-contact-btn__icon {
@@ -571,6 +575,7 @@ export default function FloatingContactButton() {
           width: 20px;
           height: 20px;
           flex-shrink: 0;
+          color: #ffffff !important;
         }
 
         .floating-contact-btn__text {
@@ -580,13 +585,20 @@ export default function FloatingContactButton() {
           white-space: nowrap;
           opacity: 0;
           max-width: 0;
-          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+          color: #ffffff !important;
+        }
+
+        .floating-contact-btn.expanded {
+          width: 195px; 
+          justify-content: flex-end;
+          padding-right: 18px;
         }
 
         .floating-contact-btn__text.visible {
           opacity: 1;
-          max-width: 200px;
-          padding-right: 8px;
+          max-width: 150px;
+          padding-right: 12px;
         }
 
         .contact-modal-overlay {
@@ -604,7 +616,7 @@ export default function FloatingContactButton() {
 
         .contact-modal {
           background: var(--white);
-          border-radius: 20px;
+          border-radius: var(--radius-lg);
           max-width: 500px;
           width: 100%;
           position: relative;
@@ -724,7 +736,7 @@ export default function FloatingContactButton() {
           width: 100%;
           padding: 14px 16px;
           border: 1px solid var(--gray-300);
-          border-radius: 10px;
+          border-radius: var(--radius-sm);
           font-size: 15px;
           font-family: var(--font-body);
           color: var(--off-black);
@@ -755,7 +767,7 @@ export default function FloatingContactButton() {
           background: var(--off-black);
           color: var(--white);
           border: 1px solid transparent;
-          border-radius: 10px;
+          border-radius: 100px;
           font-size: 14px;
           font-weight: 600;
           letter-spacing: 0.1em;
@@ -805,7 +817,7 @@ export default function FloatingContactButton() {
         }
         .chat-bubble {
             padding: 10px 14px;
-            border-radius: 12px;
+            border-radius: 18px;
             font-size: 14px;
             line-height: 1.5;
             max-width: 80%;
@@ -841,7 +853,7 @@ export default function FloatingContactButton() {
             flex: 1;
             padding: 10px 14px;
             border: 1px solid var(--gray-300);
-            border-radius: 8px;
+            border-radius: 100px;
             font-family: var(--font-body);
             font-size: 14px;
         }
@@ -850,7 +862,7 @@ export default function FloatingContactButton() {
             background: var(--off-black);
             color: var(--white);
             border: none;
-            border-radius: 8px;
+            border-radius: 100px;
             cursor: pointer;
             font-weight: 600;
             font-size: 13px;
@@ -860,7 +872,7 @@ export default function FloatingContactButton() {
             padding: 10px;
             background: transparent;
             border: 1px solid var(--gray-200);
-            border-radius: 8px;
+            border-radius: 100px;
             color: var(--gray-600);
             font-size: 12px;
             cursor: pointer;
@@ -893,7 +905,7 @@ export default function FloatingContactButton() {
             padding: 16px 24px;
             background: transparent;
             border: 1px solid var(--gray-200);
-            border-radius: 10px;
+            border-radius: 100px;
             color: var(--gray-600);
             font-weight: 600;
             font-size: 14px;
