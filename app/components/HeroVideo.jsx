@@ -7,7 +7,7 @@ import { useEffect, useRef } from 'react';
  */
 export default function HeroVideo() {
     const videoRef = useRef(null);
-    const videoSrc = '/video/Hero/Hero_vid.mov';
+    const videoSrc = '/video/Hero/Hero_video.mp4';
     const playbackRate = 1.0;
 
     useEffect(() => {
@@ -42,7 +42,6 @@ export default function HeroVideo() {
                     objectFit: 'cover'
                 }}
             >
-                <source src={videoSrc} type="video/quicktime" />
                 <source src={videoSrc} type="video/mp4" />
             </video>
         </div>
