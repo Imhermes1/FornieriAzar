@@ -25,7 +25,7 @@ export default function HomeSearch() {
             <div className="home-search__container">
                 <div className="home-search__header">
                     <span className="home-search__eyebrow">PROPERTY SEARCH</span>
-                    <h2 className="home-search__title">Find your next <span>masterpiece.</span></h2>
+                    <h2 className="home-search__title">Find your <span>next move.</span></h2>
                 </div>
 
                 <form className="home-search__form" onSubmit={handleSearch}>
@@ -51,7 +51,7 @@ export default function HomeSearch() {
                                 <option value="">All Properties</option>
                                 <option value="sale">For Sale</option>
                                 <option value="rent">For Rent</option>
-                                <option value="sold">Sold Items</option>
+                                <option value="sold">Sold</option>
                             </select>
                         </div>
 
