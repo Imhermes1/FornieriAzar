@@ -12,11 +12,11 @@ import { useState, useEffect, useRef } from 'react';
  */
 export default function HeroVideo() {
     const videos = [
-        '/video/hero/8284677-uhd_3840_2160_24fps.mp4',
-        '/video/hero/8284679-uhd_3840_2160_24fps.mp4',
-        '/video/hero/8285135-uhd_3840_2160_24fps.mp4',
-        '/video/hero/8292260-uhd_3840_2160_24fps.mp4',
-        '/video/hero/8292264-uhd_3840_2160_24fps.mp4'
+        '/video/Hero/8284677-uhd_3840_2160_24fps.mp4',
+        '/video/Hero/8284679-uhd_3840_2160_24fps.mp4',
+        '/video/Hero/8285135-uhd_3840_2160_24fps.mp4',
+        '/video/Hero/8292260-uhd_3840_2160_24fps.mp4',
+        '/video/Hero/8292264-uhd_3840_2160_24fps.mp4'
     ];
 
     const [activeIndex, setActiveIndex] = useState(0);
