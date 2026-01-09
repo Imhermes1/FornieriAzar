@@ -20,6 +20,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+
 # Turbopack
 .turbopack/
-public/video/Hero/Hero_vid.mov
