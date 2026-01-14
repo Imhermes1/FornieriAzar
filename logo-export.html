@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fornieri & Azar Logo Export</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Tera:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: #fff;
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Lexend Tera', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.25em;
+            line-height: 1.2;
+            text-align: center;
+        }
+
+        .logo-fornieri {
+            font-size: 72px;
+            font-weight: 500;
+            color: #000;
+        }
+
+        .logo-ampersand {
+            font-size: 48px;
+            font-weight: 400;
+            color: rgba(0, 0, 0, 0.3);
+            margin: 8px 0;
+        }
+
+        .logo-azar {
+            font-size: 72px;
+            font-weight: 500;
+            color: #000;
+        }
+
+        /* Instructions */
+        .instructions {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #f0f0f0;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-family: -apple-system, sans-serif;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+        <span class="logo-fornieri">FORNIERI</span>
+        <span class="logo-ampersand">&</span>
+        <span class="logo-azar">AZAR</span>
+    </div>
+
+    <div class="instructions">
+        Screenshot this page (Cmd+Shift+4) to export the logo as an image
+    </div>
+</body>
+
+</html>

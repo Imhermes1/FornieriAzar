@@ -1,12 +1,12 @@
 import './globals.css';
 import FloatingContactButton from './components/FloatingContactButton';
 import { Analytics } from '@vercel/analytics/next';
-import { Lexend_Tera, Manrope } from 'next/font/google';
+import { Outfit, Manrope } from 'next/font/google';
 
-const lexendTera = Lexend_Tera({
+const outfit = Outfit({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
-  variable: '--font-lexend',
+  weight: ['300', '400', '500', '600', '700', '800'],
+  variable: '--font-outfit',
   display: 'swap',
 });
 
@@ -112,7 +112,7 @@ export default function RootLayout({ children }) {
           }
         `}</style>
       </head>
-      <body className={`${manrope.variable} ${lexendTera.variable}`} suppressHydrationWarning>
+      <body className={`${manrope.variable} ${outfit.variable}`} suppressHydrationWarning>
         {children}
         <FloatingContactButton />
         <Analytics />

@@ -1,11 +1,3 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/api/agents/route": "app/api/agents/route.js",
-  "/buy/page": "app/buy/page.js",
-  "/contact/page": "app/contact/page.js",
-  "/page": "app/page.js",
-  "/privacy/page": "app/privacy/page.js",
-  "/property/[id]/page": "app/property/[id]/page.js",
-  "/sell/page": "app/sell/page.js",
-  "/services/page": "app/services/page.js"
+  "/page": "app/page.js"
 }

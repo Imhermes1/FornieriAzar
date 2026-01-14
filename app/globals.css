@@ -22,7 +22,7 @@
     --gutter: clamp(20px, 3.6vw, 52px);
     --sidebar-width: clamp(46px, 3.8vw, 78px);
     --topbar-height: clamp(48px, 6vh, 58px);
-    --font-heading: var(--font-lexend), 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-heading: var(--font-outfit), 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --font-body: var(--font-manrope), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
@@ -3638,7 +3638,7 @@ main {
 
 .hero-logo-text span {
     color: rgba(0, 0, 0, 0.3);
-    font-weight: 400;
+    font-weight: 300;
     margin: 0 0.2em;
 }
 
