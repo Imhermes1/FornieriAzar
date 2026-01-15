@@ -162,7 +162,6 @@ export default function ListingFilters({ suburbs = [], searchParams = {} }) {
                 <Link href="/buy" className={!searchParams.status && !searchParams.type ? 'active' : ''}>AVAILABLE</Link>
                 <Link href="/buy?status=sold" className={searchParams.status === 'sold' ? 'active' : ''}>SOLD</Link>
                 <Link href="/buy?type=projects" className={searchParams.type === 'projects' ? 'active' : ''}>PROJECTS</Link>
-                <Link href="/buy?type=classic" className={searchParams.type === 'classic' ? 'active' : ''}>CLASSIC</Link>
             </div>
         </section>
     );

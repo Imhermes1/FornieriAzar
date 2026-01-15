@@ -61,61 +61,7 @@ export default function TeamPage() {
           </div>
         </section>
 
-        <section className="metrics" aria-label="Team metrics">
-          <div className="metric-card">
-            <p className="metric-card__value">$200M+</p>
-            <p className="metric-card__label">Worth of property sold</p>
-          </div>
-          <div className="metric-card">
-            <p className="metric-card__value">13+</p>
-            <p className="metric-card__label">Years of experience</p>
-          </div>
-          <div className="metric-card">
-            <p className="metric-card__value">100+</p>
-            <p className="metric-card__label">Properties sold</p>
-          </div>
-        </section>
 
-        <section className="testimonials" aria-label="Partner testimonials">
-          <div className="section-heading">
-            <p className="eyebrow">Working together</p>
-            <h2>What our partners say</h2>
-          </div>
-          <div className="testimonial-grid">
-            <figure className="testimonial-card">
-              <blockquote>
-                "The team works seamlessly with our development timelines and makes every property launch look amazing."
-              </blockquote>
-              <figcaption>David, Local Developer</figcaption>
-            </figure>
-            <figure className="testimonial-card">
-              <blockquote>
-                "They're always on top of every detail, and inspections are always perfectly organised and welcoming."
-              </blockquote>
-              <figcaption>Rachel, Interior Stylist</figcaption>
-            </figure>
-            <figure className="testimonial-card">
-              <blockquote>
-                "Their market knowledge and negotiation skills are excellent - my clients always feel well looked after."
-              </blockquote>
-              <figcaption>Tom, Financial Adviser</figcaption>
-            </figure>
-          </div>
-        </section>
-
-        <section className="cta" aria-labelledby="team-cta-title">
-          <div className="cta-inner">
-            <div className="cta-copy">
-              <p className="eyebrow">Get started</p>
-              <h2 id="team-cta-title">Ready to work with us?</h2>
-              <p>Contact us to discuss your property objectives and explore how our expertise can deliver results for your specific situation.</p>
-            </div>
-            <div className="cta-actions">
-              <Link className="btn btn--primary" href="/contact">Arrange a meeting</Link>
-              <a className="btn btn--ghost" href="mailto:hello@fornieriazar.com.au">Send us an email</a>
-            </div>
-          </div>
-        </section>
       </main>
       <Footer />
     </div>

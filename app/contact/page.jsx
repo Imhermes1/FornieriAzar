@@ -25,7 +25,7 @@ export default function ContactPage() {
               <div className="contact-info">
                 <div className="contact-info__item">
                   <span className="contact-info__label">PRESS ENQUIRIES</span>
-                  <a href="mailto:marketingteam@fornieriazar.com.au" className="contact-info__email">marketingteam@fornieriazar.com.au</a>
+                  <a href="mailto:marketing@fornieriazar.com.au" className="contact-info__email">marketing@fornieriazar.com.au</a>
                 </div>
 
                 <div className="contact-info__item">

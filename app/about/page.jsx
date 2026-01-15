@@ -175,17 +175,6 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Testimonials Section */}
-        <section className="minimal-section">
-          <div className="minimal-container">
-            <div className="minimal-testimonial">
-              <blockquote>
-                "Luke helped us sell our family home quickly and privately. He kept everything confidential and got us a fantastic result."
-              </blockquote>
-              <cite>Sarah & James, Toorak</cite>
-            </div>
-          </div>
-        </section>
 
         {/* Team Section */}
         <section className="minimal-section minimal-section--gray" id="team">
@@ -245,20 +234,6 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="cta">
-          <div className="cta-inner">
-            <div className="cta-copy">
-              <p className="eyebrow">Get started</p>
-              <h2>Ready to discuss your property?</h2>
-              <p>Whether you're selling, buying, or need advice, we're here to help.</p>
-            </div>
-            <div className="cta-actions">
-              <Link className="btn btn--primary" href="/contact">Get in touch</Link>
-              <Link className="btn btn--ghost" href="/services">View Services</Link>
-            </div>
-          </div>
-        </section>
       </main>
       <Footer />
     </div>

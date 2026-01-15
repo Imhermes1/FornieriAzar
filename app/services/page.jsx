@@ -124,20 +124,6 @@ export default function ServicesPage() {
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="cta">
-          <div className="cta-inner">
-            <div className="cta-copy">
-              <p className="eyebrow">Next Steps</p>
-              <h2>Start the conversation</h2>
-              <p>Whether you're selling, buying, or developing, we're ready to provide the advice you need.</p>
-            </div>
-            <div className="cta-actions">
-              <Link className="btn btn--primary" href="/contact">Get in touch</Link>
-              <a className="btn btn--ghost" href="mailto:hello@fornieriazar.com.au">Email us</a>
-            </div>
-          </div>
-        </section>
       </main>
       <Footer />
     </div>

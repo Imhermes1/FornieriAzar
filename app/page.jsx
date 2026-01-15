@@ -270,7 +270,7 @@ export default function Home() {
                   fontFamily: 'inherit',
                   marginBottom: '10px'
                 }}>
-                  $1.08M
+                  $1.6M
                 </p>
                 <p style={{
                   fontSize: '0.9rem',
@@ -279,7 +279,7 @@ export default function Home() {
                   textTransform: 'uppercase',
                   letterSpacing: '0.1em'
                 }}>
-                  Median sales price
+                  Average sales price
                 </p>
               </div>
 

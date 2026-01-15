@@ -1,22 +1,228 @@
-[00:00:00.908] Server  ERROR   (node:16646) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/lukefornieri/Fornieri%20&%20Azar%20Website/next.config.js is not specified and it doesn't parse as CommonJS.
+[00:00:00.575] Server  ERROR   (node:41828) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/lukefornieri/Fornieri%20&%20Azar%20Website/next.config.js is not specified and it doesn't parse as CommonJS.
 Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
 To eliminate this warning, add "type": "module" to /Users/lukefornieri/Fornieri & Azar Website/package.json.
 (Use `node --trace-warnings ...` to show where the warning was created)
-[00:00:01.512] Server  LOG      ✓ Ready in 1159ms
-[00:00:37.823] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+[00:00:01.021] Server  LOG      ✓ Ready in 784ms
+[00:00:09.032] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
 Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
-[00:00:37.824] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+[00:00:09.033] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
 Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
-[00:00:38.115] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+[00:00:10.335] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:10.376] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:10.376] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:10.376] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1768450696664}
+[00:00:54.467] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /privacy. Please move it to viewport export instead.
 Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
-[00:00:38.118] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+[00:00:54.468] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /privacy. Please move it to viewport export instead.
 Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
-[00:00:39.118] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:39.172] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:39.290] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:39.290] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:39.290] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1768386144991}
-[00:00:39.613] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:39.613] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:39.613] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1768386145180}
-[00:04:51.663] Server  LOG      ✓ Compiled in 412ms
+[00:00:54.721] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:00:54.722] Browser WARN    Footer video autoplay failed: {}
+[00:00:54.722] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/privacy color: rgb(120, 120, 120) color: inherit {"dp":"/privacy","o":"http://localhost:3000/privacy","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1768450741002}
+[00:01:14.254] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:01:14.255] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:01:14.454] Browser WARN    Footer video autoplay failed: {}
+[00:01:14.454] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1768450760737}
+[00:02:19.420] Server  LOG      ✓ Compiled in 102ms
+[00:02:19.619] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:02:19.619] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:02:37.133] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:02:37.133] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:02:37.318] Browser WARN    Footer video autoplay failed: {}
+[00:02:37.318] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1768450843603}
+[00:02:41.385] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /sell. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:02:41.385] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /sell. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:02:41.573] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/sell color: rgb(120, 120, 120) color: inherit {"dp":"/sell","o":"http://localhost:3000/sell","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1768450847863}
+[00:02:43.975] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:02:43.976] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:02:44.133] Browser WARN    Footer video autoplay failed: {}
+[00:02:44.133] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1768450850405}
+[00:02:48.591] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /about. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:02:48.591] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /about. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:02:48.792] Browser WARN    Footer video autoplay failed: {}
+[00:02:48.792] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/about color: rgb(120, 120, 120) color: inherit {"dp":"/about","o":"http://localhost:3000/about","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1768450855078}
+[00:03:37.192] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /about. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:03:37.192] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /about. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:04:05.169] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /team. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:04:05.171] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /team. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:04:05.366] Browser WARN    Footer video autoplay failed: {}
+[00:04:05.366] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/team color: rgb(120, 120, 120) color: inherit {"dp":"/team","o":"http://localhost:3000/team","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1768450931650}
+[00:04:13.246] Server  LOG      ✓ Compiled in 40ms
+[00:04:13.283] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /team. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:04:13.283] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /team. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:04:47.694] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /buy. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:04:47.695] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /buy. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:04:47.707] Server  LOG     Fetching listings via Rex API JSON endpoint...
+[00:04:49.073] Browser WARN    Footer video autoplay failed: {}
+[00:04:49.074] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/buy color: rgb(120, 120, 120) color: inherit {"dp":"/buy","o":"http://localhost:3000/buy","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1768450975324}
+[00:04:49.340] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /buy. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:04:49.340] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /buy. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:04:49.344] Server  LOG     Fetching listings via Rex API JSON endpoint...
+[00:04:49.352] Server  LOG      ✓ Compiled in 33ms
+[00:04:53.402] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /sell. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:04:53.403] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /sell. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:04:53.533] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/sell color: rgb(120, 120, 120) color: inherit {"dp":"/sell","o":"http://localhost:3000/sell","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1768450979824}
+[00:04:54.765] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:04:54.765] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:04:54.932] Browser WARN    Footer video autoplay failed: {}
+[00:04:54.932] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1768450981217}
+[00:04:56.725] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:04:56.725] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:04:56.865] Browser WARN    Footer video autoplay failed: {}
+[00:04:56.865] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/contact color: rgb(120, 120, 120) color: inherit {"dp":"/contact","o":"http://localhost:3000/contact","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1768450983156}
+[00:04:59.379] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:04:59.379] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:05:01.296] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:05:01.296] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:05:01.308] Server  LOG      ✓ Compiled in 38ms
+[00:05:01.431] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:05:01.431] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /contact. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:05:04.314] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /privacy. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:05:04.314] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /privacy. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:05:04.487] Browser WARN    Footer video autoplay failed: {}
+[00:05:04.487] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/privacy color: rgb(120, 120, 120) color: inherit {"dp":"/privacy","o":"http://localhost:3000/privacy","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1768450990746}
+[00:05:08.154] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /privacy. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:05:08.154] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /privacy. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:05:08.601] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:09.454] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:05:09.454] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/privacy","route":"/privacy"}
+[00:05:09.454] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/privacy color: rgb(120, 120, 120) color: inherit {"dp":"/privacy","o":"http://localhost:3000/privacy","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1768450995514}
+[00:05:11.784] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /privacy. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:05:11.785] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /privacy. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:05:12.200] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:12.353] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:05:12.353] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/privacy","route":"/privacy"}
+[00:05:12.353] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/privacy color: rgb(120, 120, 120) color: inherit {"dp":"/privacy","o":"http://localhost:3000/privacy","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1768450998644}
+[00:05:17.600] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /privacy. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:05:17.601] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /privacy. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:05:17.985] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:18.127] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:05:18.127] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/privacy","route":"/privacy"}
+[00:05:18.127] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/privacy color: rgb(120, 120, 120) color: inherit {"dp":"/privacy","o":"http://localhost:3000/privacy","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1768451004418}
+[00:05:25.711] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /services. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:05:25.711] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /services. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:05:25.893] Browser WARN    Footer video autoplay failed: {}
+[00:05:25.893] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/services#advocacy color: rgb(120, 120, 120) color: inherit {"dp":"/services","o":"http://localhost:3000/services#advocacy","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1768451012182}
+[00:05:45.004] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /services. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:05:45.004] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /services. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:05:50.750] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /services. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:05:50.751] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /services. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:05:53.744] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /services. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:05:53.744] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /services. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:05:54.710] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /services. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:05:54.711] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /services. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:06:36.532] Server  LOG      ✓ Compiled in 221ms
+[00:09:06.036] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:09:06.036] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:09:06.267] Browser WARN    Footer video autoplay failed: {}
+[00:09:06.267] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1768451232533}
+[00:09:07.155] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /sell. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:09:07.156] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /sell. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:09:07.302] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/sell color: rgb(120, 120, 120) color: inherit {"dp":"/sell","o":"http://localhost:3000/sell","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1768451233591}
+[00:09:08.354] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:09:08.354] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:09:08.531] Browser WARN    Footer video autoplay failed: {}
+[00:09:08.531] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1768451234809}
+[00:09:20.324] Server  LOG      ✓ Compiled in 307ms
+[00:10:21.862] Server  LOG      ✓ Compiled in 442ms
+[00:37:46.630] Server  LOG      ✓ Compiled in 249ms
+[00:50:07.461] Server  LOG      ✓ Compiled in 738ms
+[00:50:09.352] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[00:50:09.353] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:37:03.933] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /buy. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:37:03.933] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /buy. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:37:03.951] Server  LOG     Fetching listings via Rex API JSON endpoint...
+[02:37:04.683] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /buy. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:37:04.683] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /buy. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:37:04.685] Server  LOG     Fetching listings via Rex API JSON endpoint...
+[02:37:06.051] Browser WARN    Footer video autoplay failed: {}
+[02:37:06.051] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/buy?filter=auctions color: rgb(120, 120, 120) color: inherit {"dp":"/buy","o":"http://localhost:3000/buy?filter=auctions","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1768460112372}
+[02:37:25.112] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:37:25.112] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:37:25.318] Browser WARN    Footer video autoplay failed: {}
+[02:37:25.318] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1768460131615}
+[02:40:04.364] Server  LOG      ✓ Compiled in 1241ms
+[02:40:04.931] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:40:04.931] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:40:56.984] Server  LOG      ✓ Compiled in 597ms
+[02:40:57.180] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:40:57.180] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:41:43.228] Server  LOG      ✓ Compiled in 260ms
+[02:41:43.349] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:41:43.349] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:42:28.762] Server  LOG      ✓ Compiled in 326ms
+[02:42:28.967] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:42:28.967] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport

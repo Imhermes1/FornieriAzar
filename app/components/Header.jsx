@@ -158,76 +158,74 @@ export default function Header() {
       </header>
 
       {/* Full Menu Overlay */}
-      {menuOpen && (
-        <div
-          className="modern-full-menu"
-          onClick={() => setMenuOpen(false)}
-        >
-          <div className="modern-full-menu__content" onClick={(e) => e.stopPropagation()}>
-            <div className="modern-full-menu__header">
-              <Link href="/" className="modern-full-menu__logo" onClick={() => setMenuOpen(false)}>
-                Fornieri <span>&</span> Azar
-              </Link>
-              <button className="modern-full-menu__close" onClick={() => setMenuOpen(false)}>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <line x1="18" y1="6" x2="6" y2="18" />
-                  <line x1="6" y1="6" x2="18" y2="18" />
-                </svg>
-              </button>
+      <div
+        className={`modern-full-menu ${menuOpen ? 'active' : ''}`}
+        onClick={() => setMenuOpen(false)}
+      >
+        <div className="modern-full-menu__content" onClick={(e) => e.stopPropagation()}>
+          <div className="modern-full-menu__header">
+            <Link href="/" className="modern-full-menu__logo" onClick={() => setMenuOpen(false)}>
+              Fornieri <span>&</span> Azar
+            </Link>
+            <button className="modern-full-menu__close" onClick={() => setMenuOpen(false)}>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            </button>
+          </div>
+
+          <div className="modern-full-menu__grid">
+            {/* Services Column */}
+            <div className="modern-full-menu__col">
+              <p className="modern-full-menu__label">SERVICES</p>
+              <div className="modern-full-menu__links">
+                <Link href="/services#sales" onClick={() => setMenuOpen(false)}>Sales Strategy</Link>
+                <Link href="/services#advocacy" onClick={() => setMenuOpen(false)}>Advocacy</Link>
+                <Link href="/services#projects" onClick={() => setMenuOpen(false)}>Projects</Link>
+                <Link href="/services#rentals" onClick={() => setMenuOpen(false)}>Rentals</Link>
+              </div>
             </div>
 
-            <div className="modern-full-menu__grid">
-              {/* Services Column */}
-              <div className="modern-full-menu__col">
-                <p className="modern-full-menu__label">SERVICES</p>
-                <div className="modern-full-menu__links">
-                  <Link href="/services#sales" onClick={() => setMenuOpen(false)}>Sales Strategy</Link>
-                  <Link href="/services#advocacy" onClick={() => setMenuOpen(false)}>Advocacy</Link>
-                  <Link href="/services#projects" onClick={() => setMenuOpen(false)}>Projects</Link>
-                  <Link href="/services#rentals" onClick={() => setMenuOpen(false)}>Rentals</Link>
-                </div>
+            {/* Discover Column */}
+            <div className="modern-full-menu__col">
+              <p className="modern-full-menu__label">DISCOVER</p>
+              <div className="modern-full-menu__links">
+                <Link href="/about" onClick={() => setMenuOpen(false)}>Our story</Link>
+                <Link href="/team" onClick={() => setMenuOpen(false)}>Meet the team</Link>
+                <Link href="/buy" onClick={() => setMenuOpen(false)}>Current listings</Link>
+                <Link href="/sell" onClick={() => setMenuOpen(false)}>Sell With Us</Link>
+                <Link href="/contact" onClick={() => setMenuOpen(false)}>Get in touch</Link>
               </div>
+            </div>
 
-              {/* Discover Column */}
-              <div className="modern-full-menu__col">
-                <p className="modern-full-menu__label">DISCOVER</p>
-                <div className="modern-full-menu__links">
-                  <Link href="/about" onClick={() => setMenuOpen(false)}>Our story</Link>
-                  <Link href="/team" onClick={() => setMenuOpen(false)}>Meet the team</Link>
-                  <Link href="/buy" onClick={() => setMenuOpen(false)}>Current listings</Link>
-                  <Link href="/sell" onClick={() => setMenuOpen(false)}>Sell With Us</Link>
-                  <Link href="/contact" onClick={() => setMenuOpen(false)}>Get in touch</Link>
-                </div>
+            {/* Resources Column */}
+            <div className="modern-full-menu__col">
+              <p className="modern-full-menu__label">RESOURCES</p>
+              <div className="modern-full-menu__links">
+                <Link href="/contact?subject=media" onClick={() => setMenuOpen(false)}>Media enquiries</Link>
+                <Link href="/contact?subject=careers" onClick={() => setMenuOpen(false)}>Join our team</Link>
+                <Link href="/privacy" onClick={() => setMenuOpen(false)}>Privacy</Link>
               </div>
+            </div>
 
-              {/* Resources Column */}
-              <div className="modern-full-menu__col">
-                <p className="modern-full-menu__label">RESOURCES</p>
-                <div className="modern-full-menu__links">
-                  <Link href="/contact?subject=media" onClick={() => setMenuOpen(false)}>Media enquiries</Link>
-                  <Link href="/contact?subject=careers" onClick={() => setMenuOpen(false)}>Join our team</Link>
-                  <Link href="/privacy" onClick={() => setMenuOpen(false)}>Privacy</Link>
-                </div>
+            {/* Contact / Footer Info */}
+            <div className="modern-full-menu__col modern-full-menu__col--contact">
+              <p className="modern-full-menu__label">CONTACT</p>
+              <div className="modern-full-menu__contact-info">
+                <a href="tel:0423633740">0423 633 740</a>
+                <a href="mailto:team@fornieriazar.com.au">team@fornieriazar.com.au</a>
+                <p>Suite 5028, 165 Waverley Road,<br />Malvern East VIC 3145</p>
               </div>
-
-              {/* Contact / Footer Info */}
-              <div className="modern-full-menu__col modern-full-menu__col--contact">
-                <p className="modern-full-menu__label">CONTACT</p>
-                <div className="modern-full-menu__contact-info">
-                  <a href="tel:0423633740">0423 633 740</a>
-                  <a href="mailto:team@fornieriazar.com.au">team@fornieriazar.com.au</a>
-                  <p>Suite 5028, 165 Waverley Road,<br />Malvern East VIC 3145</p>
-                </div>
-                <div className="modern-full-menu__social">
-                  <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
-                  <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
-                  <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                </div>
+              <div className="modern-full-menu__social">
+                <a href="https://www.instagram.com/fornieri.azar/?hl=en" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://www.youtube.com/@LukeFornieri" target="_blank" rel="noopener noreferrer">YouTube</a>
+                <a href="https://www.linkedin.com/in/lukefornieri/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
               </div>
             </div>
           </div>
         </div>
-      )}
+      </div>
     </>
   );
 }

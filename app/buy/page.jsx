@@ -18,6 +18,7 @@ export default async function BuyPage(props) {
     const { listings, total, suburbs } = await getFilteredListings({
         status: searchParams.status,
         type: 'sale', // Only show sale properties
+        filter: searchParams.filter, // 'auctions' or 'inspections'
         minPrice: searchParams.minPrice,
         maxPrice: searchParams.maxPrice,
         bedrooms: searchParams.bedrooms,
