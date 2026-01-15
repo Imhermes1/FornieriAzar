@@ -3713,6 +3713,25 @@ main {
     }
 }
 
+.why-choose-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(40px, 6vw, 80px) clamp(20px, 4vw, 40px);
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .why-choose-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .why-choose-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* =====================================================
    PROPERTY DETAIL PAGE
    ===================================================== */

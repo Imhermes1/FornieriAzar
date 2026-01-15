@@ -240,25 +240,23 @@ export default function Home() {
               Why Choose Us
             </h2>
 
-            <div style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))',
-              gap: 'clamp(20px, 4vw, 40px)'
-            }}>
+            <div className="why-choose-grid">
               <div>
                 <p style={{
-                  fontSize: '2rem',
+                  fontSize: 'clamp(1.5rem, 3vw, 2.2rem)',
                   fontWeight: '700',
                   color: '#000',
-                  fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+                  fontFamily: 'inherit',
                   marginBottom: '10px'
                 }}>
                   $200M+
                 </p>
                 <p style={{
-                  fontSize: '1rem',
+                  fontSize: '0.9rem',
                   color: '#666',
-                  fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif'
+                  fontFamily: 'inherit',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.1em'
                 }}>
                   Total sales to date
                 </p>
@@ -266,18 +264,20 @@ export default function Home() {
 
               <div>
                 <p style={{
-                  fontSize: '2rem',
+                  fontSize: 'clamp(1.5rem, 3vw, 2.2rem)',
                   fontWeight: '700',
                   color: '#000',
-                  fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+                  fontFamily: 'inherit',
                   marginBottom: '10px'
                 }}>
                   $1.08M
                 </p>
                 <p style={{
-                  fontSize: '1rem',
+                  fontSize: '0.9rem',
                   color: '#666',
-                  fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif'
+                  fontFamily: 'inherit',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.1em'
                 }}>
                   Median sales price
                 </p>
@@ -285,18 +285,20 @@ export default function Home() {
 
               <div>
                 <p style={{
-                  fontSize: '2rem',
+                  fontSize: 'clamp(1.5rem, 3vw, 2.2rem)',
                   fontWeight: '700',
                   color: '#000',
-                  fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+                  fontFamily: 'inherit',
                   marginBottom: '10px'
                 }}>
                   28
                 </p>
                 <p style={{
-                  fontSize: '1rem',
+                  fontSize: '0.9rem',
                   color: '#666',
-                  fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif'
+                  fontFamily: 'inherit',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.1em'
                 }}>
                   Average days on market
                 </p>
@@ -304,37 +306,41 @@ export default function Home() {
 
               <div>
                 <p style={{
-                  fontSize: '2rem',
+                  fontSize: 'clamp(1.5rem, 3vw, 2.2rem)',
                   fontWeight: '700',
                   color: '#000',
-                  fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+                  fontFamily: 'inherit',
                   marginBottom: '10px'
                 }}>
                   10,000+
                 </p>
                 <p style={{
-                  fontSize: '1rem',
+                  fontSize: '0.9rem',
                   color: '#666',
-                  fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif'
+                  fontFamily: 'inherit',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.1em'
                 }}>
-                  Contacts in our database
+                  Contacts in database
                 </p>
               </div>
 
               <div>
                 <p style={{
-                  fontSize: '2rem',
+                  fontSize: 'clamp(1.5rem, 3vw, 2.2rem)',
                   fontWeight: '700',
                   color: '#000',
-                  fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+                  fontFamily: 'inherit',
                   marginBottom: '10px'
                 }}>
                   100+
                 </p>
                 <p style={{
-                  fontSize: '1rem',
+                  fontSize: '0.9rem',
                   color: '#666',
-                  fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif'
+                  fontFamily: 'inherit',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.1em'
                 }}>
                   Properties sold
                 </p>
@@ -342,20 +348,22 @@ export default function Home() {
 
               <div>
                 <p style={{
-                  fontSize: '2rem',
+                  fontSize: 'clamp(1.5rem, 3vw, 2.2rem)',
                   fontWeight: '700',
                   color: '#000',
-                  fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+                  fontFamily: 'inherit',
                   marginBottom: '10px'
                 }}>
                   106%
                 </p>
                 <p style={{
-                  fontSize: '1rem',
+                  fontSize: '0.9rem',
                   color: '#666',
-                  fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif'
+                  fontFamily: 'inherit',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.1em'
                 }}>
-                  Average sale vs. reserve
+                  Average sale vs reserve
                 </p>
               </div>
             </div>
