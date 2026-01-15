@@ -77,8 +77,12 @@ export const metadata = {
   },
   manifest: '/site.webmanifest',
   icons: {
-    icon: '/images/F&A_Logo_V1.svg',
-    apple: '/images/F&A_Logo_V1.svg', // SVG works as touch icon in modern iOS
+    icon: [
+      { url: '/favicon.jpg', type: 'image/jpeg' },
+    ],
+    apple: [
+      { url: '/favicon.jpg', type: 'image/jpeg' },
+    ],
   },
 };
 
