@@ -206,6 +206,7 @@ export default function Header() {
                 <Link href="/contact?subject=media" onClick={() => setMenuOpen(false)}>Media enquiries</Link>
                 <Link href="/contact?subject=careers" onClick={() => setMenuOpen(false)}>Join our team</Link>
                 <Link href="/privacy" onClick={() => setMenuOpen(false)}>Privacy</Link>
+                <Link href="/terms" onClick={() => setMenuOpen(false)}>Terms of Use</Link>
               </div>
             </div>
 
