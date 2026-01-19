@@ -39,7 +39,7 @@ export default function TermsPage() {
                             letterSpacing: '0.02em',
                             color: 'var(--off-black)'
                         }}>
-                            Terms & Conditions
+                            Terms of Use
                         </h1>
                     </div>
 
