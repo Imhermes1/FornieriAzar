@@ -1,17 +1,19 @@
 {
-    "name": "Fornieri & Azar Real Estate",
-    "short_name": "F & A",
-    "description": "Premium real estate services in Melbourne's East and South East.",
-    "start_url": "/",
-    "display": "standalone",
-    "background_color": "#ffffff",
-    "theme_color": "#000000",
+    "name": "Fornieri & Azar",
+    "short_name": "F&A",
     "icons": [
         {
-            "src": "/favicon.jpg",
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
             "sizes": "512x512",
-            "type": "image/jpeg",
-            "purpose": "any maskable"
+            "type": "image/png"
         }
-    ]
+    ],
+    "theme_color": "#FAFAFA",
+    "background_color": "#ffffff",
+    "display": "standalone"
 }
