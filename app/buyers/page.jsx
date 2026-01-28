@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Script from 'next/script';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import BuyerForm from '../components/BuyerForm';
@@ -12,20 +11,6 @@ export const metadata = {
 export default function BuyersPage() {
     return (
         <>
-            {/* Google Analytics - Only on Buyers Page */}
-            <Script
-                src="https://www.googletagmanager.com/gtag/js?id=G-YGW53YMYVD"
-                strategy="afterInteractive"
-            />
-            <Script id="google-analytics" strategy="afterInteractive">
-                {`
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-                    gtag('config', 'G-YGW53YMYVD');
-                `}
-            </Script>
-
             <div data-page="buyers">
                 <Header />
                 <main>

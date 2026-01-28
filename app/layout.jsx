@@ -92,15 +92,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* Google Analytics - Main Website */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZXT1MH0PT1"></script>
+        {/* Google tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3D447ZRH15"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-ZXT1MH0PT1');
+              gtag('config', 'G-3D447ZRH15');
             `,
           }}
         />
