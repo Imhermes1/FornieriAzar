@@ -195,6 +195,7 @@ export default function Header() {
                 <Link href="/team" onClick={() => setMenuOpen(false)}>Meet the team</Link>
                 <Link href="/buy" onClick={() => setMenuOpen(false)}>Current listings</Link>
                 <Link href="/sell" onClick={() => setMenuOpen(false)}>Sell With Us</Link>
+                <Link href="/blog" onClick={() => setMenuOpen(false)}>Blog</Link>
                 <Link href="/contact" onClick={() => setMenuOpen(false)}>Get in touch</Link>
               </div>
             </div>

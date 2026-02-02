@@ -1,48 +1,55 @@
-export default function sitemap() {
-    const baseUrl = 'https://fornieriazar.com.au'; // Replace with actual domain if different
+import { getAllGuides } from '@/lib/content/guides-data';
+import { getBlogPosts } from '@/lib/craft-api';
 
-    return [
-        {
-            url: baseUrl,
-            lastModified: new Date(),
-            changeFrequency: 'yearly',
-            priority: 1,
-        },
-        {
-            url: `${baseUrl}/about`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly',
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/services`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly',
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/buy`,
-            lastModified: new Date(),
-            changeFrequency: 'daily',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/rent`,
-            lastModified: new Date(),
-            changeFrequency: 'daily',
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/buyers`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly',
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/contact`,
-            lastModified: new Date(),
-            changeFrequency: 'yearly',
-            priority: 0.5,
-        },
-    ];
+const BASE_URL = 'https://fornieriazar.com.au';
+
+async function getSitemap() {
+  const staticPages = [
+    '',
+    '/about',
+    '/services',
+    '/buy',
+    '/rent',
+    '/sell',
+    '/buyers',
+    '/contact',
+    '/guide',
+    '/blog',
+    '/listings',
+    '/team',
+    '/privacy',
+    '/terms',
+  ];
+
+  const guides = getAllGuides();
+  const blogPosts = await getBlogPosts();
+
+  const guideUrls = guides.map((guide) => ({
+    url: `${BASE_URL}/guide/${guide.slug}`,
+    lastModified: new Date(guide.lastUpdated),
+    changeFrequency: 'monthly',
+    priority: guide.priority,
+  }));
+
+  const blogUrls = blogPosts.map((post) => ({
+    url: `${BASE_URL}/blog/${post.slug}`,
+    lastModified: new Date(post.publishedAt),
+    changeFrequency: 'weekly',
+    priority: 0.7,
+  }));
+
+  return [
+    ...staticPages.map((page) => ({
+      url: `${BASE_URL}${page}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: page === '' ? 1.0 : 0.8,
+    })),
+    ...guideUrls,
+    ...blogUrls,
+  ];
+}
+
+export default async function sitemap() {
+  return await getSitemap();
 }

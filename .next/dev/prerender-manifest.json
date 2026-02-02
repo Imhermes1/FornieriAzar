@@ -1,11 +1,1 @@
-{
-  "version": 4,
-  "routes": {},
-  "dynamicRoutes": {},
-  "notFoundRoutes": [],
-  "preview": {
-    "previewModeId": "b721ce85aa78ef70d73001339dd3fd97",
-    "previewModeSigningKey": "200fe2f4979006095b916d0eed80df87717e4dd3ef6494410534ab89a0be45b7",
-    "previewModeEncryptionKey": "d5b2f7e5095e9a25a86996ef0471ac6ebca3ce82ed30741c77c71f6cfbf211ab"
-  }
-}
+{"version":4,"routes":{"/blog/first-time-buyer-programs-grants-complete-2026-guide":{},"/blog/how-much-does-it-cost-to-sell-a-house-in-victoria-2026-guide":{},"/blog/auction-vs-private-sale-which-gets-you-more-money-2026-guide":{},"/blog/how-to-prepare-your-home-for-sale-room-by-room-checklist-2026-guide":{},"/blog/how-to-buy-your-first-home-in-melbourne-2026-ultimate-guide":{},"/blog/understanding-property-valuations-what-agents-wont-tell-you-2026-guide":{},"/blog/will-rates-rise-tomorrow-what-the-feb-2026-decision-means-for-melbourne-buyers":{}},"dynamicRoutes":{"/blog/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/blog/[slug]","routeRegex":"^\\/blog\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"97da5f41c83044f9c5f323ebf7f0fa2e","previewModeSigningKey":"ffcfca56e06ee57cdfe8771e2f1cc33f9f0f3aaa74d7385d1afd2f722995c648","previewModeEncryptionKey":"b8035f78996c01f580c1bc6c7d416f36c3fcfaf788e6256874dba1f657452568"}}
