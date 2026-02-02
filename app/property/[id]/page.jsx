@@ -27,10 +27,16 @@ export async function generateMetadata({ params }) {
         const listing = response.result;
         const address = listing?.property?.adr_street_address || 'Property';
         const suburb = listing?.property?.adr_suburb_or_town || '';
+        const firstImage = listing?.images?.[0]?.url || '/images/FNA.png';
 
         return {
             title: `${address}, ${suburb} | Fornieri & Azar`,
             description: listing?.advert_internet?.body?.slice(0, 160) || `View this property in ${suburb}`,
+            openGraph: {
+                title: `${address}, ${suburb}`,
+                description: listing?.advert_internet?.body?.slice(0, 160) || `View this property in ${suburb}`,
+                images: [{ url: firstImage, width: 1200, height: 630, alt: `${address}, ${suburb}` }],
+            },
         };
     } catch {
         return {
@@ -101,10 +107,24 @@ export default async function PropertyPage({ params }) {
     // Filter images to ensure we only have property photos in the gallery/hero
     const heroImage = images[0] || '/images/FNA.png';
 
+    const breadcrumbSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://fornieriazar.com.au' },
+            { '@type': 'ListItem', position: 2, name: 'Buy', item: 'https://fornieriazar.com.au/buy' },
+            { '@type': 'ListItem', position: 3, name: `${address}, ${suburb}` },
+        ],
+    };
+
     // SOLD PROPERTY LAYOUT - Match reference image
     if (status === 'sold') {
         return (
             <div data-page="property">
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+                />
                 <Header />
                 <main className="property-page">
                     {/* 1. Fullscreen hero */}
@@ -115,7 +135,6 @@ export default async function PropertyPage({ params }) {
                             fill
                             priority
                             style={{ objectFit: 'cover' }}
-                            unoptimized
                         />
                     </section>
 
@@ -164,7 +183,6 @@ export default async function PropertyPage({ params }) {
                                 alt="Property detail"
                                 fill
                                 style={{ objectFit: 'cover' }}
-                                unoptimized
                             />
                         </div>
                         <div className="sold-cta-split__text-wrapper">
@@ -202,6 +220,10 @@ export default async function PropertyPage({ params }) {
     // REGULAR LISTING LAYOUT
     return (
         <div data-page="property">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
             <Header />
             <main className="property-page">
                 {/* Hero section with massive property image */}
@@ -212,7 +234,6 @@ export default async function PropertyPage({ params }) {
                         fill
                         priority
                         style={{ objectFit: 'cover' }}
-                        unoptimized
                     />
                 </section>
 

@@ -9,6 +9,7 @@ export const metadata = {
   openGraph: {
     title: 'Blog | Fornieri & Azar',
     description: 'Latest real estate insights and market updates.',
+    images: [{ url: '/images/LowRes_2k_18.jpg', width: 1200, height: 630, alt: 'Fornieri & Azar Blog' }],
   },
 };
 

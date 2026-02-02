@@ -2,6 +2,7 @@ import './globals.css';
 import FloatingContactButton from './components/FloatingContactButton';
 import { Analytics } from '@vercel/analytics/next';
 import { Outfit, Manrope } from 'next/font/google';
+import Script from 'next/script';
 
 const outfit = Outfit({
   subsets: ['latin'],
@@ -92,18 +93,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* Google tag (gtag.js) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3D447ZRH15"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-3D447ZRH15');
-            `,
-          }}
-        />
+        {/* Preload hero poster for instant display */}
+        <link rel="preload" href="/video/Hero/Hero_poster.jpg" as="image" fetchPriority="high" />
+
         <style>{`
           * {
             margin: 0;
@@ -122,6 +114,18 @@ export default function RootLayout({ children }) {
         {children}
         <FloatingContactButton />
         <Analytics />
+
+        {/* Google Analytics - loaded after page interactive */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-3D447ZRH15"
+          strategy="lazyOnload"
+        />
+        <Script id="gtag-init" strategy="lazyOnload">
+          {`window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-3D447ZRH15');`}
+        </Script>
       </body>
     </html>
   );

@@ -1,5 +1,6 @@
 import { getAllGuides } from '@/lib/content/guides-data';
 import { getBlogPosts } from '@/lib/craft-api';
+import { fetchRexListings } from '@/lib/rexsoftware-helper';
 
 const BASE_URL = 'https://fornieriazar.com.au';
 
@@ -23,6 +24,7 @@ async function getSitemap() {
 
   const guides = getAllGuides();
   const blogPosts = await getBlogPosts();
+  const properties = await fetchRexListings();
 
   const guideUrls = guides.map((guide) => ({
     url: `${BASE_URL}/guide/${guide.slug}`,
@@ -38,6 +40,13 @@ async function getSitemap() {
     priority: 0.7,
   }));
 
+  const propertyUrls = properties.map((property) => ({
+    url: `${BASE_URL}/property/${property.id}`,
+    lastModified: new Date(property.updatedAt || property.createdAt),
+    changeFrequency: 'daily',
+    priority: 0.6,
+  }));
+
   return [
     ...staticPages.map((page) => ({
       url: `${BASE_URL}${page}`,
@@ -47,6 +56,7 @@ async function getSitemap() {
     })),
     ...guideUrls,
     ...blogUrls,
+    ...propertyUrls,
   ];
 }
 

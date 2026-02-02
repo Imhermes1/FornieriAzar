@@ -47,7 +47,6 @@ export default function PropertySidebar({
                                 alt={agentName}
                                 fill
                                 style={{ objectFit: 'cover' }}
-                                unoptimized
                             />
                         </div>
                     )}

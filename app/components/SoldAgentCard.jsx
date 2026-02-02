@@ -34,7 +34,6 @@ export default function SoldAgentCard({ agentName, agentPhone, agentEmail, agent
                                 alt={agentName}
                                 fill
                                 style={{ objectFit: 'cover' }}
-                                unoptimized
                             />
                         </div>
                     )}

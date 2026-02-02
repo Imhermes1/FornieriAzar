@@ -9,6 +9,7 @@ export const metadata = {
   openGraph: {
     title: 'Real Estate Guides | Fornieri & Azar',
     description: 'Expert guides for buying and selling property in Melbourne.',
+    images: [{ url: '/images/LowRes_2k_18.jpg', width: 1200, height: 630, alt: 'Real Estate Guides' }],
   },
 };
 

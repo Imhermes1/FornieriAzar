@@ -69,6 +69,16 @@ export default async function GuidePage({ params }) {
     ],
   } : null;
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://fornieriazar.com.au' },
+      { '@type': 'ListItem', position: 2, name: 'Guides', item: 'https://fornieriazar.com.au/guide' },
+      { '@type': 'ListItem', position: 3, name: guide.shortTitle },
+    ],
+  };
+
   return (
     <>
       <Header />
@@ -83,6 +93,10 @@ export default async function GuidePage({ params }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       )}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
 
       <main className="min-h-screen">
         <article className="bg-gray-50 py-16">

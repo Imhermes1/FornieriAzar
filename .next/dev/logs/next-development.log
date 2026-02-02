@@ -284,3 +284,56 @@ Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
 [00:45:52.720] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/will-rates-rise-tomorrow-what-the-feb-2026-decision-means-for-melbourne-buyers color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]","o":"http://localhost:3000/blog/will-rates-rise-tomorrow-what-the-feb-2026-decision-means-for-melbourne-buyers","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1769996300944}
 [00:45:55.878] Browser WARN    Footer video autoplay failed: {}
 [00:45:55.878] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog color: rgb(120, 120, 120) color: inherit {"dp":"/blog","o":"http://localhost:3000/blog","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1769996304101}
+[00:54:57.933] Server  LOG      ✓ Compiled in 177ms
+[01:39:53.206] Server  LOG      ✓ Compiled in 566ms
+[01:39:59.586] Server  LOG      ✓ Compiled in 18ms
+[01:40:07.031] Server  LOG      ✓ Compiled in 64ms
+[02:17:16.035] Server  LOG      ✓ Compiled in 312ms
+[02:17:33.056] Server  LOG      ✓ Compiled in 206ms
+[02:17:35.197] Server  LOG      ✓ Compiled in 30ms
+[02:43:26.209] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:43:26.210] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:43:27.153] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:43:27.424] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[02:43:27.424] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[02:43:27.425] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1770003355665}
+[02:43:36.864] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /buy. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:43:36.864] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /buy. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:43:36.868] Server  LOG     Fetching listings via Rex API JSON endpoint...
+[02:43:38.272] Server  WARN     ⚠ The "images.domains" configuration is deprecated. Please use "images.remotePatterns" configuration instead.
+[02:43:38.287] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[02:43:38.287] Browser WARN    Footer video autoplay failed: {}
+[02:43:38.287] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/buy color: rgb(120, 120, 120) color: inherit {"dp":"/buy","o":"http://localhost:3000/buy","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1770003366527}
+[02:43:46.584] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:43:46.584] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:43:46.867] Browser WARN    Footer video autoplay failed: {}
+[02:43:46.867] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/property/4882535 color: rgb(120, 120, 120) color: inherit {"dp":"/property/[id]","o":"http://localhost:3000/property/4882535","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1770003375001}
+[02:44:18.393] Browser WARN    Footer video autoplay failed: {}
+[02:44:18.393] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/buy color: rgb(120, 120, 120) color: inherit {"dp":"/buy","o":"http://localhost:3000/buy","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1770003406630}
+[02:44:20.727] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:44:20.727] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /property/[id]. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:44:20.883] Browser WARN    Footer video autoplay failed: {}
+[02:44:20.883] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/property/4841628 color: rgb(120, 120, 120) color: inherit {"dp":"/property/[id]","o":"http://localhost:3000/property/4841628","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1770003409123}
+[02:44:21.296] Browser WARN    Image with src "https://au-crm.cdns.rexsoftware.com/app/livestore/accounts/6194/account_users/283506/profile_image/lukerex_fd7a-f1f0-b9a4-d6f4-eb1e-a0c2-e1f4-a477_20251213044607.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:44:24.606] Browser WARN    Footer video autoplay failed: {}
+[02:44:24.606] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/buy color: rgb(120, 120, 120) color: inherit {"dp":"/buy","o":"http://localhost:3000/buy","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1770003412844}
+[02:44:28.700] Browser WARN    Footer video autoplay failed: {}
+[02:44:28.701] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/property/4841628 color: rgb(120, 120, 120) color: inherit {"dp":"/property/[id]","o":"http://localhost:3000/property/4841628","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1770003416936}
+[02:44:32.871] Browser WARN    Footer video autoplay failed: {}
+[02:44:32.871] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/buy color: rgb(120, 120, 120) color: inherit {"dp":"/buy","o":"http://localhost:3000/buy","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1770003421112}
+[02:44:33.034] Browser LOG     Hero video autoplay blocked {}
+[02:44:33.034] Browser WARN    Footer video autoplay failed: {}
+[02:44:33.034] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1770003421273}
+[02:44:33.957] Server  WARN     ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:44:33.957] Server  WARN     ⚠ Unsupported metadata viewport is configured in metadata export in /. Please move it to viewport export instead.
+Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+[02:58:41.861] Server  LOG      ✓ Compiled in 98ms

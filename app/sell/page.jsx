@@ -3,7 +3,12 @@ import SellForm from '../components/SellForm';
 
 export const metadata = {
     title: 'Sell With Us | Fornieri & Azar Real Estate',
-    description: 'Ready to sell your property? Get a free market appraisal from the Fornieri & Azar team.'
+    description: 'Ready to sell your property? Get a free market appraisal from the Fornieri & Azar team.',
+    openGraph: {
+        title: 'Sell With Us | Fornieri & Azar Real Estate',
+        description: 'Ready to sell your property? Get a free market appraisal from the Fornieri & Azar team.',
+        images: [{ url: '/images/LowRes_2k_18.jpg', width: 1200, height: 630, alt: 'Sell With Fornieri & Azar' }],
+    },
 };
 
 export default function SellPage() {

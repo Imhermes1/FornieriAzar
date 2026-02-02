@@ -8,6 +8,11 @@ import { getFilteredListings } from '@/lib/rexsoftware-helper';
 export const metadata = {
     title: 'Properties for Sale | East & South East Melbourne | Fornieri & Azar',
     description: 'Browse our exclusive collection of properties for sale in East and South East Melbourne.',
+    openGraph: {
+        title: 'Properties for Sale | East & South East Melbourne',
+        description: 'Browse our exclusive collection of properties for sale in East and South East Melbourne.',
+        images: [{ url: '/images/LowRes_2k_18.jpg', width: 1200, height: 630, alt: 'Properties for Sale' }],
+    },
 };
 
 export const dynamic = 'force-dynamic';

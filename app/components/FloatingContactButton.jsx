@@ -3,6 +3,13 @@
 import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 
+// GA4 Event Tracking Helper
+function trackEvent(eventName, params = {}) {
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('event', eventName, params);
+  }
+}
+
 export default function FloatingContactButton() {
   const [isExpanded, setIsExpanded] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -74,6 +81,9 @@ export default function FloatingContactButton() {
         throw new Error(data.error || 'Failed to send enquiry');
       }
 
+      // Track successful email enquiry
+      trackEvent('enquiry_submitted', { type: 'email' });
+
       setStatus({ submitting: false, submitted: true, error: null });
       setFormData({ name: '', email: '', phone: '', message: '' });
 
@@ -103,6 +113,11 @@ export default function FloatingContactButton() {
     setMessages(newMessages);
     setInput("");
     setLoading(true);
+
+    // Track chat message sent
+    trackEvent('chat_message_sent', {
+      message_count: newMessages.filter(m => m.role === 'user').length
+    });
 
     try {
       const res = await fetch("/api/chat", {
@@ -152,6 +167,12 @@ export default function FloatingContactButton() {
       });
 
       if (res.ok) {
+        // Track successful chat enquiry
+        trackEvent('enquiry_submitted', {
+          type: 'chat',
+          message_count: messages.filter(m => m.role === 'user').length
+        });
+
         // Show success state in chat view
         setChatView('success');
         setTimeout(() => {
@@ -198,6 +219,7 @@ export default function FloatingContactButton() {
             onClick={() => {
               setShowModal(true);
               setShowBadge(false);
+              trackEvent('chat_opened', { method: 'floating_button' });
             }}
             role="button"
             tabIndex={0}
@@ -232,13 +254,19 @@ export default function FloatingContactButton() {
             <div className="contact-modal__tabs">
               <button
                 className={`tab-btn ${activeTab === 'chat' ? 'active' : ''}`}
-                onClick={() => setActiveTab('chat')}
+                onClick={() => {
+                  setActiveTab('chat');
+                  trackEvent('chat_tab_switched', { tab: 'chat' });
+                }}
               >
                 Live Chat (AI)
               </button>
               <button
                 className={`tab-btn ${activeTab === 'email' ? 'active' : ''}`}
-                onClick={() => setActiveTab('email')}
+                onClick={() => {
+                  setActiveTab('email');
+                  trackEvent('chat_tab_switched', { tab: 'email' });
+                }}
               >
                 Email Us
               </button>

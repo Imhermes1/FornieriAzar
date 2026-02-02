@@ -179,7 +179,6 @@ export default function PropertyGallery({ images, address, suburb }) {
                                 alt={`Property image ${index + 1}`}
                                 fill
                                 style={{ objectFit: 'cover' }}
-                                unoptimized
                                 priority={index < 3}
                             />
                         </div>
@@ -270,7 +269,6 @@ export default function PropertyGallery({ images, address, suburb }) {
                                             alt={`Property image ${currentIndex + 1}`}
                                             fill
                                             style={{ objectFit: 'contain' }}
-                                            unoptimized
                                         />
                                     );
                                 }

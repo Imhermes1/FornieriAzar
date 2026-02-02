@@ -1,10 +1,16 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 export const metadata = {
   title: 'About Us | Top Real Estate Agents East & South East Melbourne',
   description: 'Meet the team at Fornieri & Azar. We are experienced real estate professionals dedicated to achieving exceptional results in East and South East Melbourne.',
+  openGraph: {
+    title: 'About Us | Top Real Estate Agents East & South East Melbourne',
+    description: 'Meet the team at Fornieri & Azar. We are experienced real estate professionals dedicated to achieving exceptional results in East and South East Melbourne.',
+    images: [{ url: '/images/LowRes_2k_18.jpg', width: 1200, height: 630, alt: 'Fornieri & Azar Team' }],
+  },
 };
 
 export default function AboutPage() {
@@ -28,10 +34,11 @@ export default function AboutPage() {
           <div className="minimal-container">
             <div className="minimal-grid">
               <div className="minimal-grid__media">
-                <img
+                <Image
                   src="/images/HighRes_6k_18.jpg"
                   alt="Luxury property marketing"
-                  loading="lazy"
+                  fill
+                  style={{ objectFit: 'cover' }}
                 />
               </div>
               <div className="minimal-grid__content">
@@ -115,10 +122,11 @@ export default function AboutPage() {
           <div className="minimal-container">
             <div className="minimal-grid minimal-grid--reverse">
               <div className="minimal-grid__media">
-                <img
+                <Image
                   src="/images/0361.01 5 Princely Tce, Templestowe-3.jpg"
                   alt="Premium property interior"
-                  loading="lazy"
+                  fill
+                  style={{ objectFit: 'cover' }}
                 />
               </div>
               <div className="minimal-grid__content">
@@ -165,10 +173,11 @@ export default function AboutPage() {
                 </div>
               </div>
               <div className="minimal-grid__media">
-                <img
+                <Image
                   src="/images/image (1).jpg"
                   alt="Our Philosophy"
-                  loading="lazy"
+                  fill
+                  style={{ objectFit: 'cover' }}
                 />
               </div>
             </div>
@@ -182,11 +191,11 @@ export default function AboutPage() {
             {/* Luke */}
             <div className="minimal-grid" style={{ marginBottom: '80px' }}>
               <div className="minimal-grid__media">
-                <img
+                <Image
                   src="/images/lukeprofile.png"
                   alt="Luke Fornieri"
-                  loading="lazy"
-                  style={{ objectPosition: 'top' }}
+                  fill
+                  style={{ objectFit: 'cover', objectPosition: 'top' }}
                 />
               </div>
               <div className="minimal-grid__content">
@@ -209,10 +218,11 @@ export default function AboutPage() {
             {/* Chris */}
             <div className="minimal-grid minimal-grid--reverse">
               <div className="minimal-grid__media">
-                <img
+                <Image
                   src="/images/chris_bigger.png"
                   alt="Chris Azar"
-                  loading="lazy"
+                  fill
+                  style={{ objectFit: 'cover' }}
                 />
               </div>
               <div className="minimal-grid__content">
